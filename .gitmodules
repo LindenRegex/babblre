@@ -1,0 +1,60 @@
+[submodule "vendor/quickjs-ng"]
+	path = vendor/quickjs-ng
+	url = https://github.com/quickjs-ng/quickjs
+	ignore = dirty
+[submodule "vendor/mujs"]
+	path = vendor/mujs
+	url = https://github.com/ccxvii/mujs
+	ignore = dirty
+[submodule "vendor/oniguruma"]
+	path = vendor/oniguruma
+	url = https://github.com/kkos/oniguruma
+	ignore = dirty
+[submodule "vendor/pcre2"]
+	path = vendor/pcre2
+	url = https://github.com/PCRE2Project/pcre2
+	ignore = dirty
+[submodule "vendor/re2"]
+	path = vendor/re2
+	url = https://github.com/google/re2
+	ignore = dirty
+[submodule "vendor/tre"]
+	path = vendor/tre
+	url = https://github.com/laurikari/tre
+	ignore = dirty
+[submodule "vendor/pcre1"]
+	path = vendor/pcre1
+	url = https://github.com/luvit/pcre
+	ignore = dirty
+[submodule "vendor/lexertl17"]
+	path = vendor/lexertl17
+	url = https://github.com/BenHanson/lexertl17
+	ignore = dirty
+[submodule "vendor/zig-regex"]
+	path = vendor/zig-regex
+	url = https://github.com/tiehuis/zig-regex
+	ignore = dirty
+[submodule "vendor/pire"]
+	path = vendor/pire
+	url = https://github.com/yandex/pire
+	ignore = dirty
+[submodule "vendor/regelk"]
+	path = vendor/regelk
+	url = https://github.com/epfl-systemf/RegElk
+	ignore = dirty
+[submodule "vendor/reflex"]
+	path = vendor/reflex
+	url = https://github.com/Genivia/RE-flex
+	ignore = dirty
+[submodule "vendor/rematch"]
+	path = vendor/rematch
+	url = https://github.com/REmatchChile/REmatch
+	ignore = dirty
+[submodule "vendor/re2c"]
+	path = vendor/re2c
+	url = https://github.com/skvadrik/re2c
+	ignore = dirty
+[submodule "vendor/abseil-cpp"]
+	path = vendor/abseil-cpp
+	url = https://github.com/abseil/abseil-cpp
+	ignore = dirty
