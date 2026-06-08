@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
+    <OutputType>Exe</OutputType>
+    <WasmMainJSPath>main.js</WasmMainJSPath>
+    <WasmEnableThreads>false</WasmEnableThreads>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Resharp" Version="1.0.5" />
+    <!-- Resharp (F#) needs FSharp.Core 10.0.0.0 but its nupkg declares no dependency on it; reference it explicitly. -->
+    <PackageReference Include="FSharp.Core" Version="10.0.109" />
+  </ItemGroup>
+</Project>
