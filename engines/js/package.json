@@ -1,0 +1,4 @@
+{
+  "type": "module",
+  "//": "browser.js/re2js.js/engine262.js are ES modules (they use import/export). Tags them so Node's e2e harness imports them the same way the browser does. engine262.js and re2js.js additionally import from a CDN, so Node needs --experimental-network-imports to load those two."
+}
