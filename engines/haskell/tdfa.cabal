@@ -1,0 +1,17 @@
+cabal-version: 3.0
+name: tdfa-wasm
+version: 0.1.0
+build-type: Simple
+
+executable tdfa
+  main-is: Main.hs
+  other-modules: Wrapper
+  build-depends: base, array, regex-tdfa
+  default-language: Haskell2010
+  ghc-options: -no-hs-main -optl-mexec-model=reactor
+               -optl-Wl,--export=engine_count
+               -optl-Wl,--export=engine_info
+               -optl-Wl,--export=engine_match
+               -optl-Wl,--export=alloc
+               -optl-Wl,--export=dealloc
+               -optl-Wl,--export=hs_init
