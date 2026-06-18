@@ -1,0 +1,1 @@
+-Dre_compile=tinyre_compile -Dre_match=tinyre_match -Dre_max_matches=tinyre_max_matches -Dre_free=tinyre_free -Dre_dup=tinyre_dup -Dre_flags=tinyre_flags -Dre_uc_len=tinyre_uc_len -Dre_comp=tinyre_comp -Dre_sizecode=tinyre_sizecode -Dre_pikevm=tinyre_pikevm -Dutf8_length=tinyre_utf8_length
