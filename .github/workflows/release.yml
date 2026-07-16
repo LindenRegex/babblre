@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  build:
+    permissions:
+      contents: read
+      packages: write
+    uses: ./.github/workflows/build.yml
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # create the release
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      - name: Package dist/
+        run: tar czf dist-${{ github.ref_name }}.tar.gz -C dist .
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist-${{ github.ref_name }}.tar.gz
+          generate_release_notes: true
