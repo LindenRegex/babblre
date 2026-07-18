@@ -51,9 +51,11 @@ const colorCache = new Map();
 const colorsOf = (cid) => { let d = colorCache.get(cid); if (!d) colorCache.set(cid, d = van.derive(() => (colorTick.val, colorMap(cid)))); return d; };
 CASES.forEach((c) => colorsOf(c.id));
 
-const srcSel = van.state(new Set(SOURCE_ORDER));
-const filtered = (s) => CASES.filter((c) => s.has(caseSource(c.id)));
-const orderState = van.state(filtered(new Set(SOURCE_ORDER)));
+const CURATED = 'default';
+const FEATURED = new Set(CASES.filter((c) => c.featured).map((c) => c.id));
+const srcSel = van.state(new Set(FEATURED.size ? [CURATED] : SOURCE_ORDER));
+const filtered = (s) => CASES.filter((c) => (s.has(CURATED) && FEATURED.has(c.id)) || s.has(caseSource(c.id)));
+const orderState = van.state(filtered(srcSel.val));
 const order = () => orderState.val;
 function toggleSrc(s) { srcSel.val = toggled(srcSel.val, s); orderState.val = filtered(srcSel.val); }
 function resort() {
@@ -130,7 +132,8 @@ function view() {
 function toolbar() {
   return div({ class: 'toolbar' },
     div({ class: 'srcfilter' }, span('examples:'),
-      ...SOURCE_ORDER.map((s) => button({ class: () => srcSel.val.has(s) ? 'on' : '', onclick: () => toggleSrc(s) }, s)),
+      ...[...(FEATURED.size ? [CURATED] : []), ...SOURCE_ORDER].map((s) =>
+        button({ class: () => srcSel.val.has(s) ? 'on' : '', onclick: () => toggleSrc(s) }, s)),
       button({ class: 'sortbtn', onclick: resort }, '↓ sort by divergence'),
       button({ class: 'modebtn', title: 'offset units: Unicode codepoints vs UTF-8 bytes',
               onclick: () => { dispMode.val = dispMode.val === 'unicode' ? 'utf8' : 'unicode'; } },

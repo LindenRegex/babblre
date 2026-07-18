@@ -1,5 +1,9 @@
 import { test, expect } from '@playwright/test';
+import { readFileSync } from 'node:fs';
 
+const CASES_LIST = JSON.parse(readFileSync(new URL('../web/cases.json', import.meta.url), 'utf8'));
+const SOURCE_ORDER = [...new Set(CASES_LIST.map((c) => c.source))];
+const FEATURED = CASES_LIST.filter((c) => c.featured);
 const CORE_MIN = 18, TOTAL_MIN = 60;
 
 async function openMatrix(page) {
@@ -8,9 +12,16 @@ async function openMatrix(page) {
   return page.locator('table.mtx tbody tr').count();
 }
 const cell = (page, engine, c) => page.locator(`[data-engine="${engine}"][data-case="${c}"]`);
+const exact = (s) => new RegExp('^' + s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$');
+async function showAll(page) {
+  if (!FEATURED.length) return;
+  for (const s of SOURCE_ORDER) await page.locator('.srcfilter button', { hasText: exact(s) }).click();
+  await page.locator('.srcfilter button', { hasText: exact('default') }).click();
+}
 
 test('home (swapped matrix): core engines render; selector lists the roster; C1 captures; D1 empty group', async ({ page }) => {
   const n = await openMatrix(page);
+  await showAll(page);
   expect(n).toBeGreaterThanOrEqual(CORE_MIN);
   expect(await page.locator('.selector .chk').count()).toBeGreaterThanOrEqual(TOTAL_MIN);
   await expect(cell(page, 'boost-posix', 'live')).toHaveCount(1);
@@ -47,6 +58,7 @@ test('catastrophic input: engine limit vs native timeout, then the worker recove
 test('each separately-built runtime loads on demand and matches', async ({ page }) => {
   test.setTimeout(480000);
   await openMatrix(page);
+  await showAll(page);
   // one engine per lazily-loaded module
   for (const [label, id] of [
     ['regex-tdfa', 'regex-tdfa'],            // GHC wasm reactor

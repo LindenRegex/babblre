@@ -26,6 +26,8 @@
 {"engine":"actual-ecma","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"actual-ecma","case":"L7","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"actual-ecma","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"actual-ecma","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"actual-ecma","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"actual-ecma","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"actual-ecma","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"actual-ecma","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -56,6 +58,8 @@
 {"engine":"actual-ecma","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"actual-ecma","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"actual-ecma","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"actual-ecma","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"actual-ecma","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"actual-ecma","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"actual-ecma","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"actual-ecma","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid regular expression: /\"\\\t\n\u0001(/d: Unterminated group"}}
@@ -87,6 +91,8 @@
 {"engine":"automata-lib","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"'<(>' cannot appear immediately before '<OptionToken: ?>'."}}
 {"engine":"automata-lib","case":"L7","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"'<UnionToken: |>' cannot appear immediately before '<)>'."}}
+{"engine":"automata-lib","case":"L9","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"automata-lib","case":"L10","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"LF1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"LF2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"LF3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -117,6 +123,8 @@
 {"engine":"automata-lib","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"U3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"automata-lib","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"automata-lib","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid character '\n' in '\"\\\t\n\u0001('"}}
@@ -148,6 +156,8 @@
 {"engine":"boost-grep","case":"L6","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-grep","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"Found a backreference to a non-existant sub-expression.  The error occurred while parsing the regular expression: '(a)?\\1b>>>HERE>>>'."}}
 {"engine":"boost-grep","case":"L8","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"boost-grep","case":"L9","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"boost-grep","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"Found a backreference to a non-existant sub-expression.  The error occurred while parsing the regular expression: '(a\\1|b)+>>>HERE>>>'."}}
 {"engine":"boost-grep","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-grep","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"boost-grep","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -178,6 +188,8 @@
 {"engine":"boost-grep","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"boost-grep","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"boost-grep","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-grep","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-grep","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-grep","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-grep","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-grep","case":"io-esc","result":{"ok":true,"matched":false,"groups":[]}}
@@ -209,6 +221,8 @@
 {"engine":"boost-pcre","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"boost-pcre","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-pcre","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"boost-pcre","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"boost-pcre","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"boost-pcre","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"boost-pcre","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"boost-pcre","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -239,6 +253,8 @@
 {"engine":"boost-pcre","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"boost-pcre","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"boost-pcre","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-pcre","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-pcre","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-pcre","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-pcre","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-pcre","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Unmatched marking parenthesis ( or \\(.  The error occurred while parsing the regular expression: '\"\\\t\n\u0001(>>>HERE>>>'."}}
@@ -270,6 +286,8 @@
 {"engine":"boost-posix","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid preceding regular expression prior to repetition operator.  The error occurred while parsing the regular expression fragment: '(?>>>HERE>>><=PLDI)[0-'."}}
 {"engine":"boost-posix","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid octal escape sequence.  The error occurred while parsing the regular expression: '(a)?>>>HERE>>>\\1b'."}}
 {"engine":"boost-posix","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"boost-posix","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid preceding regular expression prior to repetition operator.  The error occurred while parsing the regular expression: '((a?)(b??>>>HERE>>>))*'."}}
+{"engine":"boost-posix","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid octal escape sequence.  The error occurred while parsing the regular expression: '(a>>>HERE>>>\\1|b)+'."}}
 {"engine":"boost-posix","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"boost-posix","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"boost-posix","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -300,6 +318,8 @@
 {"engine":"boost-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"boost-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"boost-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-posix","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-posix","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Unmatched marking parenthesis ( or \\(.  The error occurred while parsing the regular expression: '\"\\\t\n\u0001(>>>HERE>>>'."}}
@@ -331,6 +351,8 @@
 {"engine":"dk-brics","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
 {"engine":"dk-brics","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dk-brics","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
+{"engine":"dk-brics","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dk-brics","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"dk-brics","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dk-brics","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"dk-brics","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -361,6 +383,8 @@
 {"engine":"dk-brics","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dk-brics","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"dk-brics","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dk-brics","case":"U4","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"dk-brics","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dk-brics","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dk-brics","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dk-brics","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
@@ -392,6 +416,8 @@
 {"engine":"dotnet-bt","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"dotnet-bt","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dotnet-bt","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"dotnet-bt","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"dotnet-bt","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[1,3]]}}
 {"engine":"dotnet-bt","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid pattern '\\Qa\\E' at offset 2. Unrecognized escape sequence \\Q."}}
 {"engine":"dotnet-bt","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"dotnet-bt","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -422,6 +448,8 @@
 {"engine":"dotnet-bt","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dotnet-bt","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"dotnet-bt","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-bt","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-bt","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-bt","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-bt","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dotnet-bt","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid pattern '\"\\\t\n\u0001(' at offset 6. Not enough )'s."}}
@@ -453,6 +481,8 @@
 {"engine":"dotnet-ecma","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"dotnet-ecma","case":"L7","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"dotnet-ecma","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"dotnet-ecma","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"dotnet-ecma","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[1,3]]}}
 {"engine":"dotnet-ecma","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-ecma","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"dotnet-ecma","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -483,6 +513,8 @@
 {"engine":"dotnet-ecma","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dotnet-ecma","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"dotnet-ecma","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-ecma","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-ecma","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-ecma","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-ecma","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dotnet-ecma","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid pattern '\"\\\t\n\u0001(' at offset 6. Not enough )'s."}}
@@ -514,6 +546,8 @@
 {"engine":"dotnet-nb","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"RegexOptions.NonBacktracking is not supported in conjunction with expressions containing: 'positive lookahead (?= pattern) or positive lookbehind (?<= pattern)'."}}
 {"engine":"dotnet-nb","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"RegexOptions.NonBacktracking is not supported in conjunction with expressions containing: 'backreference (\\ number)'."}}
 {"engine":"dotnet-nb","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[2,2],[2,2],[2,2]]}}
+{"engine":"dotnet-nb","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[2,2],[2,2],[2,2]]}}
+{"engine":"dotnet-nb","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"RegexOptions.NonBacktracking is not supported in conjunction with expressions containing: 'backreference (\\ number)'."}}
 {"engine":"dotnet-nb","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid pattern '\\Qa\\E' at offset 2. Unrecognized escape sequence \\Q."}}
 {"engine":"dotnet-nb","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"RegexOptions.NonBacktracking is not supported in conjunction with expressions containing: 'contiguous matches (\\G)'."}}
 {"engine":"dotnet-nb","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -544,6 +578,8 @@
 {"engine":"dotnet-nb","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dotnet-nb","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"dotnet-nb","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-nb","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-nb","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-nb","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-nb","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dotnet-nb","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid pattern '\"\\\t\n\u0001(' at offset 6. Not enough )'s."}}
@@ -575,6 +611,8 @@
 {"engine":"engine262","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"engine262","case":"L7","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"engine262","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"engine262","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"engine262","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"engine262","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid identity escape"}}
 {"engine":"engine262","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid identity escape"}}
 {"engine":"engine262","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid identity escape"}}
@@ -605,6 +643,8 @@
 {"engine":"engine262","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"engine262","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"engine262","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"engine262","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"engine262","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"engine262","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"engine262","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"engine262","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Expected ) but got "}}
@@ -636,6 +676,8 @@
 {"engine":"fado","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"Unexpected token Token('_OPTIONT', '?') at line 1, column 2."}}
 {"engine":"fado","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '\\' in the current parser context, at line 1 col 5"}}
 {"engine":"fado","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"Unexpected token Token('RPAR', ')') at line 1, column 5."}}
+{"engine":"fado","case":"L9","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"fado","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '\\' in the current parser context, at line 1 col 3"}}
 {"engine":"fado","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '\\' in the current parser context, at line 1 col 1"}}
 {"engine":"fado","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '\\' in the current parser context, at line 1 col 1"}}
 {"engine":"fado","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '\\' in the current parser context, at line 1 col 1"}}
@@ -666,6 +708,8 @@
 {"engine":"fado","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"fado","case":"U2","result":{"ok":false,"matched":false,"groups":[],"error":"Unexpected token Token('_CONCATT', '.') at line 1, column 1."}}
 {"engine":"fado","case":"U3","result":{"ok":false,"matched":false,"groups":[],"error":"Unexpected token Token('_CONCATT', '.') at line 1, column 1."}}
+{"engine":"fado","case":"U4","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '#' in the current parser context, at line 1 col 1"}}
+{"engine":"fado","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '=' in the current parser context, at line 1 col 1"}}
 {"engine":"fado","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"fado","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"fado","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '\\' in the current parser context, at line 1 col 2"}}
@@ -697,6 +741,8 @@
 {"engine":"fancy-regex","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"fancy-regex","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"fancy-regex","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"fancy-regex","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"fancy-regex","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"fancy-regex","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"Parsing error at position 0: Invalid escape: \\Q"}}
 {"engine":"fancy-regex","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"fancy-regex","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -727,6 +773,8 @@
 {"engine":"fancy-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"fancy-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"fancy-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"fancy-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"fancy-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"fancy-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"fancy-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"fancy-regex","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Parsing error at position 6: Opening parenthesis without closing parenthesis"}}
@@ -758,6 +806,8 @@
 {"engine":"glibc","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid preceding regular expression"}}
 {"engine":"glibc","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"glibc","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"glibc","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid back reference"}}
 {"engine":"glibc","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"glibc","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -788,6 +838,8 @@
 {"engine":"glibc","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"glibc","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"glibc","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Unmatched ( or \\("}}
@@ -819,6 +871,8 @@
 {"engine":"go-regexp","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid named capture: `(?<=PLDI)[0-9]{2,4}`"}}
 {"engine":"go-regexp","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid escape sequence: `\\1`"}}
 {"engine":"go-regexp","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"go-regexp","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"go-regexp","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid escape sequence: `\\1`"}}
 {"engine":"go-regexp","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"go-regexp","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid escape sequence: `\\G`"}}
 {"engine":"go-regexp","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid escape sequence: `\\Z`"}}
@@ -849,6 +903,8 @@
 {"engine":"go-regexp","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"go-regexp","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"go-regexp","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"go-regexp","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"go-regexp","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"go-regexp","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"go-regexp","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"go-regexp","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: missing closing ): `\"\\\t\n\u0001(`"}}
@@ -880,6 +936,8 @@
 {"engine":"greenery","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"Could not parse '(?<=PLDI)[0-9]{2,4}' beyond index 0"}}
 {"engine":"greenery","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"Could not parse '(a)?\\\\1b' beyond index 4"}}
 {"engine":"greenery","case":"L8","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"greenery","case":"L9","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"greenery","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"Could not parse '(a\\\\1|b)+' beyond index 0"}}
 {"engine":"greenery","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"Could not parse '\\\\Qa\\\\E' beyond index 0"}}
 {"engine":"greenery","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"Could not parse '\\\\G' beyond index 0"}}
 {"engine":"greenery","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"Could not parse '\\\\Ab\\\\Z' beyond index 0"}}
@@ -910,6 +968,8 @@
 {"engine":"greenery","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"greenery","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"greenery","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"greenery","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"greenery","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"greenery","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"greenery","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"greenery","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Could not parse '\"\\\\\\t\\n\\x01(' beyond index 1"}}
@@ -941,6 +1001,8 @@
 {"engine":"icu","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"icu","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"icu","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"icu","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"icu","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[1,3]]}}
 {"engine":"icu","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"icu","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"icu","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -971,6 +1033,8 @@
 {"engine":"icu","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"icu","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"icu","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"icu","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"icu","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"icu","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"icu","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"icu","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: U_REGEX_MISMATCHED_PAREN"}}
@@ -1002,6 +1066,8 @@
 {"engine":"interegular","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"lookbacks are not implemented"}}
 {"engine":"interegular","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"Group references are not implemented"}}
 {"engine":"interegular","case":"L8","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"interegular","case":"L9","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"interegular","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"Group references are not implemented"}}
 {"engine":"interegular","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":""}}
 {"engine":"interegular","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":""}}
 {"engine":"interegular","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"Escape \\A is not implemented"}}
@@ -1032,6 +1098,8 @@
 {"engine":"interegular","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"interegular","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"interegular","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"interegular","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"interegular","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"interegular","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"interegular","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"interegular","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":""}}
@@ -1063,6 +1131,8 @@
 {"engine":"java-util","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"java-util","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"java-util","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"java-util","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"java-util","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"java-util","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"java-util","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"java-util","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -1093,6 +1163,8 @@
 {"engine":"java-util","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"java-util","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"java-util","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"java-util","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"java-util","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"java-util","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"java-util","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"java-util","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
@@ -1124,6 +1196,8 @@
 {"engine":"lexertl","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"Unknown option at index 2 in rule id 1."}}
 {"engine":"lexertl","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"lexertl","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"A syntax error occurred: '|' against ')' preceding index 5 in rule id 1."}}
+{"engine":"lexertl","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"The following regex can match zero chars: ((a?)(b??))*\n(Use regex_flags::match_zero_len to suppress this error.)"}}
+{"engine":"lexertl","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"lexertl","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"lexertl","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"lexertl","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1154,6 +1228,8 @@
 {"engine":"lexertl","case":"U1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"lexertl","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"lexertl","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"lexertl","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"lexertl","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"lexertl","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"lexertl","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"lexertl","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Unexpected end of regex (missing '\"') in rule id 1."}}
@@ -1185,6 +1261,8 @@
 {"engine":"matp","case":"L6","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"matp","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"matp","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"matp","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"matp","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"matp","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"matp","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"matp","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1215,6 +1293,8 @@
 {"engine":"matp","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"matp","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"matp","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"matp","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"matp","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"matp","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"matp","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"matp","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
@@ -1246,6 +1326,8 @@
 {"engine":"memo-regex","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"memo-regex","case":"L7","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"memo-regex","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"memo-regex","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"memo-regex","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"memo-regex","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"memo-regex","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"memo-regex","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -1276,6 +1358,8 @@
 {"engine":"memo-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"memo-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"memo-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"memo-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"memo-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"memo-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"memo-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"memo-regex","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
@@ -1307,6 +1391,8 @@
 {"engine":"minrx","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: ? * + or {interval} not preceded by valid subpattern"}}
 {"engine":"minrx","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"minrx","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"minrx","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"minrx","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"minrx","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"minrx","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"minrx","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1337,6 +1423,8 @@
 {"engine":"minrx","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"minrx","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"minrx","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"minrx","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"minrx","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"minrx","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"minrx","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"minrx","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: unbalanced ("}}
@@ -1368,6 +1456,8 @@
 {"engine":"mujs","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: syntax error"}}
 {"engine":"mujs","case":"L7","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"mujs","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: infinite loop matching the empty string"}}
+{"engine":"mujs","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: infinite loop matching the empty string"}}
+{"engine":"mujs","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid back-reference"}}
 {"engine":"mujs","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape character"}}
 {"engine":"mujs","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape character"}}
 {"engine":"mujs","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape character"}}
@@ -1398,6 +1488,8 @@
 {"engine":"mujs","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"mujs","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"mujs","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"mujs","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"mujs","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"mujs","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"mujs","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"mujs","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: unmatched '('"}}
@@ -1429,6 +1521,8 @@
 {"engine":"musl-posix","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Repetition not preceded by valid expression"}}
 {"engine":"musl-posix","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"musl-posix","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"musl-posix","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"musl-posix","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"musl-posix","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"musl-posix","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"musl-posix","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1459,6 +1553,8 @@
 {"engine":"musl-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"musl-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"musl-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"musl-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"musl-posix","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"musl-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"musl-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"musl-posix","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Missing ')'"}}
@@ -1490,6 +1586,8 @@
 {"engine":"nim-regex","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"nim-regex","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid octal literal. Expected octal digit, but found b\n(a)?\\1b\n    ^"}}
 {"engine":"nim-regex","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"nim-regex","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"nim-regex","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid octal literal. Expected octal digit, but found |\n(a\\1|b)+\n  ^"}}
 {"engine":"nim-regex","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"nim-regex","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"nim-regex","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1520,6 +1618,8 @@
 {"engine":"nim-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"nim-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"nim-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"nim-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"nim-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"nim-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"nim-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"nim-regex","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid capturing group. Found too many opening symbols"}}
@@ -1551,6 +1651,8 @@
 {"engine":"nu-re","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"nu-re","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"nu-re","case":"L8","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"nu-re","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
+{"engine":"nu-re","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"nu-re","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"nu-re","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"nu-re","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
@@ -1581,6 +1683,8 @@
 {"engine":"nu-re","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"nu-re","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"nu-re","case":"U3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"nu-re","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"nu-re","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"nu-re","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"nu-re","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"nu-re","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
@@ -1612,6 +1716,8 @@
 {"engine":"ocaml-re","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Perl.Not_supported"}}
 {"engine":"ocaml-re","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[2,2],[2,2],[2,2]]}}
+{"engine":"ocaml-re","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[2,2],[2,2],[2,2]]}}
+{"engine":"ocaml-re","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Perl.Not_supported"}}
 {"engine":"ocaml-re","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"ocaml-re","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"ocaml-re","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -1642,6 +1748,8 @@
 {"engine":"ocaml-re","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-re","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"ocaml-re","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-re","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
@@ -1673,6 +1781,8 @@
 {"engine":"ocaml-re-emacs","case":"L6","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-re-emacs","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Not_supported"}}
 {"engine":"ocaml-re-emacs","case":"L8","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"ocaml-re-emacs","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Parse_error"}}
+{"engine":"ocaml-re-emacs","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Not_supported"}}
 {"engine":"ocaml-re-emacs","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Parse_error"}}
 {"engine":"ocaml-re-emacs","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Parse_error"}}
 {"engine":"ocaml-re-emacs","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Parse_error"}}
@@ -1703,6 +1813,8 @@
 {"engine":"ocaml-re-emacs","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-re-emacs","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"ocaml-re-emacs","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-emacs","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-emacs","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Parse_error"}}
 {"engine":"ocaml-re-emacs","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re-emacs","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-re-emacs","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Parse_error"}}
@@ -1734,6 +1846,8 @@
 {"engine":"ocaml-re-posix","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re-posix","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re-posix","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[2,2],[2,2],[2,2]]}}
+{"engine":"ocaml-re-posix","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
+{"engine":"ocaml-re-posix","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re-posix","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re-posix","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re-posix","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
@@ -1764,6 +1878,8 @@
 {"engine":"ocaml-re-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-re-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"ocaml-re-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-posix","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-re-posix","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
@@ -1795,6 +1911,8 @@
 {"engine":"ocaml-str","case":"L6","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-str","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-str","case":"L8","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"ocaml-str","case":"L9","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"ocaml-str","case":"L10","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-str","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-str","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"ocaml-str","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1825,6 +1943,8 @@
 {"engine":"ocaml-str","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-str","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"ocaml-str","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-str","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-str","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-str","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-str","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-str","case":"io-esc","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1856,6 +1976,8 @@
 {"engine":"oniguruma","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"oniguruma","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"oniguruma","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"oniguruma","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"oniguruma","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"oniguruma","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"oniguruma","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"oniguruma","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -1886,6 +2008,8 @@
 {"engine":"oniguruma","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"oniguruma","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"oniguruma","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"oniguruma","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"oniguruma","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"oniguruma","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: end pattern with unmatched parenthesis"}}
@@ -1917,6 +2041,8 @@
 {"engine":"oniguruma-posix","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: target of repeat operator is not specified"}}
 {"engine":"oniguruma-posix","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"oniguruma-posix","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[2,2],[2,2],[2,2]]}}
+{"engine":"oniguruma-posix","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[2,2],[2,2],[2,2]]}}
+{"engine":"oniguruma-posix","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"oniguruma-posix","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"oniguruma-posix","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"oniguruma-posix","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1947,6 +2073,8 @@
 {"engine":"oniguruma-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"oniguruma-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"oniguruma-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma-posix","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"oniguruma-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"oniguruma-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"oniguruma-posix","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: end pattern with unmatched parenthesis"}}
@@ -1978,6 +2106,8 @@
 {"engine":"pcre1","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"pcre1","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre1","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"pcre1","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"pcre1","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[1,3]]}}
 {"engine":"pcre1","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"pcre1","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"pcre1","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -2008,6 +2138,8 @@
 {"engine":"pcre1","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre1","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"pcre1","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre1","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: missing )"}}
@@ -2039,6 +2171,8 @@
 {"engine":"pcre1-dfa","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"pcre1-dfa","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"match error"}}
 {"engine":"pcre1-dfa","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1-dfa","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1-dfa","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"match error"}}
 {"engine":"pcre1-dfa","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"pcre1-dfa","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"pcre1-dfa","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -2069,6 +2203,8 @@
 {"engine":"pcre1-dfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre1-dfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"pcre1-dfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1-dfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1-dfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1-dfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1-dfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre1-dfa","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: missing )"}}
@@ -2100,6 +2236,8 @@
 {"engine":"pcre2","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"pcre2","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre2","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"pcre2","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"pcre2","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[1,3]]}}
 {"engine":"pcre2","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"pcre2","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"pcre2","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -2130,6 +2268,8 @@
 {"engine":"pcre2","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre2","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"pcre2","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre2","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: missing closing parenthesis"}}
@@ -2161,6 +2301,8 @@
 {"engine":"pcre2-dfa","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"pcre2-dfa","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre2-dfa","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2-dfa","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2-dfa","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"pattern contains an item that is not supported for DFA matching"}}
 {"engine":"pcre2-dfa","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"pcre2-dfa","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"pcre2-dfa","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -2191,6 +2333,8 @@
 {"engine":"pcre2-dfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre2-dfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"pcre2-dfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2-dfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2-dfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2-dfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2-dfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre2-dfa","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: missing closing parenthesis"}}
@@ -2222,6 +2366,8 @@
 {"engine":"pire","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Syntax error in regexp"}}
 {"engine":"pire","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Control character in tokens sequence"}}
 {"engine":"pire","case":"L8","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"pire","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Syntax error in regexp"}}
+{"engine":"pire","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Regexp parse error: syntax error"}}
 {"engine":"pire","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Control character in tokens sequence"}}
 {"engine":"pire","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Control character in tokens sequence"}}
 {"engine":"pire","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Control character in tokens sequence"}}
@@ -2252,6 +2398,8 @@
 {"engine":"pire","case":"U1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pire","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pire","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"pire","case":"U4","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"pire","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pire","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pire","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pire","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Control character in tokens sequence"}}
@@ -2283,6 +2431,8 @@
 {"engine":"plan9","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: missing operand for ?"}}
 {"engine":"plan9","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"plan9","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: missing operand for |"}}
+{"engine":"plan9","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"ran out of thread-list space","kind":"limit"}}
+{"engine":"plan9","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"plan9","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"plan9","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"plan9","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2313,6 +2463,8 @@
 {"engine":"plan9","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"plan9","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"plan9","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"plan9","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"plan9","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"plan9","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"plan9","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"plan9","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: unmatched left paren"}}
@@ -2344,6 +2496,8 @@
 {"engine":"pyformlang","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"The regex is misformed here. Regex: |"}}
 {"engine":"pyformlang","case":"L7","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"The regex is misformed here. Regex: |"}}
+{"engine":"pyformlang","case":"L9","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"pyformlang","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"cannot refer to an open group at position 2"}}
 {"engine":"pyformlang","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"bad escape \\Q at position 0"}}
 {"engine":"pyformlang","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"bad escape \\G at position 0"}}
 {"engine":"pyformlang","case":"LF3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -2374,6 +2528,8 @@
 {"engine":"pyformlang","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"U3","result":{"killed":true}}
+{"engine":"pyformlang","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"pyformlang","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"missing ), unterminated subpattern at position 5 (line 2, column 2)"}}
@@ -2405,6 +2561,8 @@
 {"engine":"python-re","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"python-re","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-re","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"python-re","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"python-re","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"cannot refer to an open group at position 2"}}
 {"engine":"python-re","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"bad escape \\Q at position 0"}}
 {"engine":"python-re","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"bad escape \\G at position 0"}}
 {"engine":"python-re","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -2435,6 +2593,8 @@
 {"engine":"python-re","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"python-re","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"python-re","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-re","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-re","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-re","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-re","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-re","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"missing ), unterminated subpattern at position 5 (line 2, column 2)"}}
@@ -2466,6 +2626,8 @@
 {"engine":"python-regex","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"python-regex","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-regex","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"python-regex","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"python-regex","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"cannot refer to an open group at position 4"}}
 {"engine":"python-regex","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"bad escape \\Q at position 2"}}
 {"engine":"python-regex","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"python-regex","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -2496,6 +2658,8 @@
 {"engine":"python-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"python-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"python-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-regex","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"missing ) at position 6 (line 2, column 3)"}}
@@ -2527,6 +2691,8 @@
 {"engine":"python-regex-posix","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"python-regex-posix","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-regex-posix","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[2,2],[2,2],[2,2]]}}
+{"engine":"python-regex-posix","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[2,2],[2,2],[2,2]]}}
+{"engine":"python-regex-posix","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"cannot refer to an open group at position 4"}}
 {"engine":"python-regex-posix","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"bad escape \\Q at position 2"}}
 {"engine":"python-regex-posix","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"python-regex-posix","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -2557,6 +2723,8 @@
 {"engine":"python-regex-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"python-regex-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"python-regex-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex-posix","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-regex-posix","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"missing ) at position 6 (line 2, column 3)"}}
@@ -2588,6 +2756,8 @@
 {"engine":"quickjs","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"quickjs","case":"L7","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"quickjs","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"quickjs","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"quickjs","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"quickjs","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"quickjs","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"quickjs","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2618,6 +2788,8 @@
 {"engine":"quickjs","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"quickjs","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"quickjs","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"quickjs","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"quickjs","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"quickjs","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"quickjs","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"quickjs","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: expecting ')'"}}
@@ -2649,6 +2821,8 @@
 {"engine":"re1-backtrack","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
 {"engine":"re1-backtrack","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-backtrack","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
+{"engine":"re1-backtrack","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"backtrack overflow","kind":"limit"}}
+{"engine":"re1-backtrack","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"re1-backtrack","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-backtrack","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-backtrack","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2679,6 +2853,8 @@
 {"engine":"re1-backtrack","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re1-backtrack","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re1-backtrack","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-backtrack","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-backtrack","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-backtrack","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re1-backtrack","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-backtrack","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
@@ -2710,6 +2886,8 @@
 {"engine":"re1-pike","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
 {"engine":"re1-pike","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-pike","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
+{"engine":"re1-pike","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"re1-pike","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"re1-pike","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-pike","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-pike","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2740,6 +2918,8 @@
 {"engine":"re1-pike","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re1-pike","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re1-pike","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-pike","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-pike","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-pike","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re1-pike","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-pike","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
@@ -2771,6 +2951,8 @@
 {"engine":"re1-recursive","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
 {"engine":"re1-recursive","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursive","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
+{"engine":"re1-recursive","case":"L9","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re1-recursive","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"re1-recursive","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursive","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursive","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2801,6 +2983,8 @@
 {"engine":"re1-recursive","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re1-recursive","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re1-recursive","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-recursive","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-recursive","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursive","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re1-recursive","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursive","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
@@ -2832,6 +3016,8 @@
 {"engine":"re1-recursiveloop","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
 {"engine":"re1-recursiveloop","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursiveloop","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
+{"engine":"re1-recursiveloop","case":"L9","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re1-recursiveloop","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"re1-recursiveloop","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursiveloop","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursiveloop","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2862,6 +3048,8 @@
 {"engine":"re1-recursiveloop","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re1-recursiveloop","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re1-recursiveloop","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-recursiveloop","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-recursiveloop","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursiveloop","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re1-recursiveloop","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursiveloop","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
@@ -2893,6 +3081,8 @@
 {"engine":"re1-thompson","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
 {"engine":"re1-thompson","case":"L7","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
+{"engine":"re1-thompson","case":"L9","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"re1-thompson","case":"L10","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"LF1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"LF2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"LF3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -2923,6 +3113,8 @@
 {"engine":"re1-thompson","case":"U1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"re1-thompson","case":"U4","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"re1-thompson","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"unsupported syntax / parse error"}}
@@ -2954,6 +3146,8 @@
 {"engine":"re2","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid perl operator: (?<="}}
 {"engine":"re2","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\1"}}
 {"engine":"re2","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"re2","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"re2","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\1"}}
 {"engine":"re2","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"re2","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\G"}}
 {"engine":"re2","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\Z"}}
@@ -2984,6 +3178,8 @@
 {"engine":"re2","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"re2","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: missing ): \"\\\t\n\u0001("}}
@@ -3015,6 +3211,8 @@
 {"engine":"re2-longest","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid perl operator: (?<="}}
 {"engine":"re2-longest","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\1"}}
 {"engine":"re2-longest","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"re2-longest","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"re2-longest","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\1"}}
 {"engine":"re2-longest","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"re2-longest","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\G"}}
 {"engine":"re2-longest","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\Z"}}
@@ -3045,6 +3243,8 @@
 {"engine":"re2-longest","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2-longest","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"re2-longest","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2-longest","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2-longest","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2-longest","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2-longest","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2-longest","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: missing ): \"\\\t\n\u0001("}}
@@ -3076,6 +3276,8 @@
 {"engine":"re2c-leftmost","case":"L6","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
 {"engine":"re2c-leftmost","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"L8","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"L9","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"re2c-leftmost","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3106,6 +3308,8 @@
 {"engine":"re2c-leftmost","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2c-leftmost","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2c-leftmost","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-leftmost","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-leftmost","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2c-leftmost","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"io-esc","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
@@ -3137,6 +3341,8 @@
 {"engine":"re2c-nfa","case":"L6","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
 {"engine":"re2c-nfa","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"L8","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"L9","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"re2c-nfa","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3167,6 +3373,8 @@
 {"engine":"re2c-nfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2c-nfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2c-nfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-nfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-nfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2c-nfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"io-esc","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
@@ -3198,6 +3406,8 @@
 {"engine":"re2c-tdfa","case":"L6","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
 {"engine":"re2c-tdfa","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"L8","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"L9","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1]]}}
 {"engine":"re2c-tdfa","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3228,6 +3438,8 @@
 {"engine":"re2c-tdfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2c-tdfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2c-tdfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-tdfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-tdfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2c-tdfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"io-esc","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
@@ -3259,6 +3471,8 @@
 {"engine":"re2js","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid named capture: `(?<=PLDI)[0-9]{2,4}`"}}
 {"engine":"re2js","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid escape sequence: `\\1`"}}
 {"engine":"re2js","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"re2js","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"re2js","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid escape sequence: `\\1`"}}
 {"engine":"re2js","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"re2js","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid escape sequence: `\\G`"}}
 {"engine":"re2js","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: invalid escape sequence: `\\Z`"}}
@@ -3289,6 +3503,8 @@
 {"engine":"re2js","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"re2js","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"re2js","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"re2js","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"re2js","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2js","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2js","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2js","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: missing closing ): `\"\\\t\n\u0001(`"}}
@@ -3320,6 +3536,8 @@
 {"engine":"reflex","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: error at position 2\n(?<=PLDI)[0-9]{2,4}\n  \\___invalid syntax\n"}}
 {"engine":"reflex","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: error at position 5\n(a)?\\1b\n     \\___invalid escape\n"}}
 {"engine":"reflex","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: error at position 4\n((a|)(|b))*\n    \\___empty (sub)expression\n"}}
+{"engine":"reflex","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"reflex","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: error at position 3\n(a\\1|b)+\n   \\___invalid escape\n"}}
 {"engine":"reflex","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"reflex","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: error at position 1\n\\G\n \\___invalid escape\n"}}
 {"engine":"reflex","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3350,6 +3568,8 @@
 {"engine":"reflex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"reflex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"reflex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"reflex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"reflex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"reflex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"reflex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"reflex","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: error at position 2\n\u0001(\n  \\___mismatched ( )\n"}}
@@ -3381,6 +3601,8 @@
 {"engine":"regelk","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"regelk","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"Regex.Unsupported_backref"}}
 {"engine":"regelk","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"regelk","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"regelk","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"Regex.Unsupported_backref"}}
 {"engine":"regelk","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regelk","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"regelk","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3411,6 +3633,8 @@
 {"engine":"regelk","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regelk","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"regelk","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regelk","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regelk","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regelk","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regelk","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regelk","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Regex_parser.MenhirBasics.Error"}}
@@ -3442,6 +3666,8 @@
 {"engine":"regex-lite","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"look-around is not supported"}}
 {"engine":"regex-lite","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"backreferences are not supported"}}
 {"engine":"regex-lite","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"regex-lite","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"regex-lite","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"backreferences are not supported"}}
 {"engine":"regex-lite","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"unrecognized escape sequence"}}
 {"engine":"regex-lite","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"unrecognized escape sequence"}}
 {"engine":"regex-lite","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"unrecognized escape sequence"}}
@@ -3472,6 +3698,8 @@
 {"engine":"regex-lite","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regex-lite","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"regex-lite","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regex-lite","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regex-lite","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regex-lite","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regex-lite","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regex-lite","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"found open group without closing ')'"}}
@@ -3503,6 +3731,8 @@
 {"engine":"regex-tdfa","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
 {"engine":"regex-tdfa","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regex-tdfa","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
+{"engine":"regex-tdfa","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
+{"engine":"regex-tdfa","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"regex-tdfa","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regex-tdfa","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"regex-tdfa","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3533,6 +3763,8 @@
 {"engine":"regex-tdfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regex-tdfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"regex-tdfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regex-tdfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regex-tdfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regex-tdfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regex-tdfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regex-tdfa","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
@@ -3564,6 +3796,8 @@
 {"engine":"regexp2","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"regexp2","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regexp2","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"regexp2","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"regexp2","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[1,3]]}}
 {"engine":"regexp2","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: unrecognized escape sequence \\Q in `\\Qa\\E`"}}
 {"engine":"regexp2","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"regexp2","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -3594,6 +3828,8 @@
 {"engine":"regexp2","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"regexp2","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"regexp2","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regexp2","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regexp2","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regexp2","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regexp2","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regexp2","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"error parsing regexp: missing closing ) in `\"\\\t\n\u0001(`"}}
@@ -3625,6 +3861,8 @@
 {"engine":"regress","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"regress","case":"L7","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"regress","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"regress","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"regress","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"regress","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regress","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"regress","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3655,6 +3893,8 @@
 {"engine":"regress","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regress","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"regress","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regress","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regress","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regress","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regress","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regress","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"Unbalanced parenthesis"}}
@@ -3686,6 +3926,8 @@
 {"engine":"rematch","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Syntax error in regular expression.\n!m{(?<=PLDI)[0-9]{2,4}}\n    ^"}}
 {"engine":"rematch","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid escape character.\n!m{(a)?\\1b}\n        ^"}}
 {"engine":"rematch","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Syntax error in regular expression.\n!m{((a|)(|b))*}\n       ^"}}
+{"engine":"rematch","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Syntax error in regular expression.\n!m{((a?)(b??))*}\n           ^"}}
+{"engine":"rematch","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid escape character.\n!m{(a\\1|b)+}\n      ^"}}
 {"engine":"rematch","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid escape character.\n!m{\\Qa\\E}\n    ^"}}
 {"engine":"rematch","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid escape character.\n!m{\\G}\n    ^"}}
 {"engine":"rematch","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid escape character.\n!m{\\Ab\\Z}\n    ^"}}
@@ -3716,6 +3958,8 @@
 {"engine":"rematch","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"rematch","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"rematch","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rematch","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rematch","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rematch","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rematch","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rematch","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid escape character.\n!m{\"\\\t\n\u0001(}\n     ^"}}
@@ -3747,6 +3991,8 @@
 {"engine":"remimu","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"remimu","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"remimu","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2],null]}}
+{"engine":"remimu","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2],null]}}
+{"engine":"remimu","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"remimu","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"remimu","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"remimu","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
@@ -3777,6 +4023,8 @@
 {"engine":"remimu","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4],null]}}
 {"engine":"remimu","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"remimu","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2],null]}}
+{"engine":"remimu","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2],null]}}
+{"engine":"remimu","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3],null]}}
 {"engine":"remimu","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3],null]}}
 {"engine":"remimu","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"remimu","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
@@ -3808,6 +4056,8 @@
 {"engine":"resharp-net","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"resharp-net","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"UndefinedNumberedReference, 1"}}
 {"engine":"resharp-net","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-net","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-net","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"UndefinedNumberedReference, 1"}}
 {"engine":"resharp-net","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"\\Qa\\E; 2; UnrecognizedEscape"}}
 {"engine":"resharp-net","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"RegexNodeKind conversion not implemented: Start, \nResharp.Runtime.RegexNode"}}
 {"engine":"resharp-net","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -3838,6 +4088,8 @@
 {"engine":"resharp-net","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"resharp-net","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"resharp-net","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-net","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-net","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"resharp-net","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"resharp-net","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"resharp-net","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"\"\\\t\n\u0001(; 6; InsufficientClosingParentheses"}}
@@ -3869,6 +4121,8 @@
 {"engine":"resharp-rs","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"resharp-rs","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"parse error: UnsupportedBackreference: Span(Position(o: 4, l: 0, c: 4), Position(o: 6, l: 0, c: 6))"}}
 {"engine":"resharp-rs","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-rs","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"parse error: UnsupportedLazyQuantifier: Span(Position(o: 7, l: 0, c: 7), Position(o: 8, l: 0, c: 8))"}}
+{"engine":"resharp-rs","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"parse error: UnsupportedBackreference: Span(Position(o: 2, l: 0, c: 2), Position(o: 4, l: 0, c: 4))"}}
 {"engine":"resharp-rs","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"parse error: EscapeUnrecognized: Span(Position(o: 0, l: 0, c: 0), Position(o: 2, l: 0, c: 2))"}}
 {"engine":"resharp-rs","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"parse error: EscapeUnrecognized: Span(Position(o: 0, l: 0, c: 0), Position(o: 2, l: 0, c: 2))"}}
 {"engine":"resharp-rs","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"parse error: EscapeUnrecognized: Span(Position(o: 3, l: 0, c: 3), Position(o: 5, l: 0, c: 5))"}}
@@ -3899,6 +4153,8 @@
 {"engine":"resharp-rs","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"resharp-rs","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"resharp-rs","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-rs","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-rs","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"resharp-rs","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"resharp-rs","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"resharp-rs","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"parse error: GroupUnclosed: Span(Position(o: 5, l: 1, c: 2), Position(o: 6, l: 1, c: 3))"}}
@@ -3930,6 +4186,8 @@
 {"engine":"rust-regex","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    (?<=PLDI)[0-9]{2,4}\n    ^^^^\nerror: look-around, including look-ahead and look-behind, is not supported"}}
 {"engine":"rust-regex","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    (a)?\\1b\n        ^^\nerror: backreferences are not supported"}}
 {"engine":"rust-regex","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"rust-regex","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"rust-regex","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    (a\\1|b)+\n      ^^\nerror: backreferences are not supported"}}
 {"engine":"rust-regex","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    \\Qa\\E\n    ^^\nerror: unrecognized escape sequence"}}
 {"engine":"rust-regex","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    \\G\n    ^^\nerror: unrecognized escape sequence"}}
 {"engine":"rust-regex","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    \\Ab\\Z\n       ^^\nerror: unrecognized escape sequence"}}
@@ -3960,6 +4218,8 @@
 {"engine":"rust-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"rust-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"rust-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rust-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rust-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rust-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rust-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rust-regex","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n1: \"\\\t\n2: \u0001(\n    ^\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nerror: unclosed group"}}
@@ -3991,6 +4251,8 @@
 {"engine":"rxspencer","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: repetition-operator operand invalid"}}
 {"engine":"rxspencer","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rxspencer","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: empty (sub)expression"}}
+{"engine":"rxspencer","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: repetition-operator operand invalid"}}
+{"engine":"rxspencer","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"rxspencer","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rxspencer","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"rxspencer","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4021,6 +4283,8 @@
 {"engine":"rxspencer","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"rxspencer","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"rxspencer","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"rxspencer","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"rxspencer","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rxspencer","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rxspencer","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rxspencer","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parentheses not balanced"}}
@@ -4052,6 +4316,8 @@
 {"engine":"slre","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"slre error"}}
 {"engine":"slre","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"slre error"}}
 {"engine":"slre","case":"L8","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"slre","case":"L9","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"slre","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"slre error"}}
 {"engine":"slre","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"slre error"}}
 {"engine":"slre","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"slre error"}}
 {"engine":"slre","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"slre error"}}
@@ -4082,6 +4348,8 @@
 {"engine":"slre","case":"U1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"slre","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"slre","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"slre","case":"U4","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"slre","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"slre","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"slre","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"slre","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"slre error"}}
@@ -4113,6 +4381,8 @@
 {"engine":"sregex-pike","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-pike","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-pike","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"sregex-pike","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"sregex-pike","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-pike","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-pike","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-pike","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
@@ -4143,6 +4413,8 @@
 {"engine":"sregex-pike","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"sregex-pike","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"sregex-pike","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"sregex-pike","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"sregex-pike","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"sregex-pike","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"sregex-pike","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"sregex-pike","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
@@ -4174,6 +4446,8 @@
 {"engine":"sregex-thompson","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-thompson","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-thompson","case":"L8","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"sregex-thompson","case":"L9","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"sregex-thompson","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-thompson","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-thompson","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
 {"engine":"sregex-thompson","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
@@ -4204,6 +4478,8 @@
 {"engine":"sregex-thompson","case":"U1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"sregex-thompson","case":"U4","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
+{"engine":"sregex-thompson","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"parse error"}}
@@ -4235,6 +4511,8 @@
 {"engine":"srell","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"srell","case":"L7","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"srell","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"srell","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],[1,1],[1,2]]}}
+{"engine":"srell","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"srell","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"error_escape"}}
 {"engine":"srell","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"error_escape"}}
 {"engine":"srell","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"error_escape"}}
@@ -4265,6 +4543,8 @@
 {"engine":"srell","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"srell","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"srell","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"srell","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"srell","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"srell","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"srell","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"srell","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"error_escape"}}
@@ -4296,6 +4576,8 @@
 {"engine":"std-awk","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
 {"engine":"std-awk","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-awk","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
+{"engine":"std-awk","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained mismatched ( and )."}}
+{"engine":"std-awk","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"std-awk","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
 {"engine":"std-awk","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
 {"engine":"std-awk","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
@@ -4326,6 +4608,8 @@
 {"engine":"std-awk","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"std-awk","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"std-awk","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-awk","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-awk","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
 {"engine":"std-awk","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-awk","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-awk","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
@@ -4357,6 +4641,8 @@
 {"engine":"std-ecma","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"One of *?+{ was not preceded by a valid regular expression."}}
 {"engine":"std-ecma","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-ecma","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"std-ecma","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"std-ecma","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"std-ecma","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
 {"engine":"std-ecma","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
 {"engine":"std-ecma","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
@@ -4387,6 +4673,8 @@
 {"engine":"std-ecma","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"std-ecma","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"std-ecma","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-ecma","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-ecma","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-ecma","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-ecma","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-ecma","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained mismatched ( and )."}}
@@ -4418,6 +4706,8 @@
 {"engine":"std-grep","case":"L6","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-grep","case":"L7","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid back reference."}}
 {"engine":"std-grep","case":"L8","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"std-grep","case":"L9","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"std-grep","case":"L10","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid back reference."}}
 {"engine":"std-grep","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
 {"engine":"std-grep","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
 {"engine":"std-grep","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
@@ -4448,6 +4738,8 @@
 {"engine":"std-grep","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"std-grep","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"std-grep","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-grep","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-grep","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
 {"engine":"std-grep","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-grep","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-grep","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
@@ -4479,6 +4771,8 @@
 {"engine":"std-posix","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
 {"engine":"std-posix","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-posix","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
+{"engine":"std-posix","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained mismatched ( and )."}}
+{"engine":"std-posix","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"std-posix","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
 {"engine":"std-posix","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
 {"engine":"std-posix","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
@@ -4509,6 +4803,8 @@
 {"engine":"std-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"std-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"std-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-posix","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"The parser did not consume the entire regular expression."}}
 {"engine":"std-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-posix","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"The parser did not consume the entire regular expression."}}
@@ -4540,6 +4836,8 @@
 {"engine":"subreg","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"subreg error"}}
 {"engine":"subreg","case":"L7","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"subreg","case":"L8","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"subreg","case":"L9","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"subreg","case":"L10","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"subreg","case":"LF1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"subreg","case":"LF2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"subreg","case":"LF3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -4570,6 +4868,8 @@
 {"engine":"subreg","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"subreg","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"subreg","case":"U3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"subreg","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"subreg","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"subreg","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"subreg","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"subreg","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"subreg error"}}
@@ -4601,6 +4901,8 @@
 {"engine":"swift-regex","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
 {"engine":"swift-regex","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"swift-regex","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"swift-regex","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"swift-regex","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[1,3]]}}
 {"engine":"swift-regex","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"swift-regex","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
 {"engine":"swift-regex","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -4631,6 +4933,8 @@
 {"engine":"swift-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"swift-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"swift-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"swift-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"swift-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"swift-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"swift-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"swift-regex","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
@@ -4662,6 +4966,8 @@
 {"engine":"t-rex","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: expected paren"}}
 {"engine":"t-rex","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"t-rex","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: expected paren"}}
+{"engine":"t-rex","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,0]]}}
+{"engine":"t-rex","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"t-rex","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"t-rex","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"t-rex","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4692,6 +4998,8 @@
 {"engine":"t-rex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"t-rex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"t-rex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"t-rex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"t-rex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"t-rex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"t-rex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"t-rex","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: letter expected"}}
@@ -4723,6 +5031,8 @@
 {"engine":"tiny-regex-c","case":"L6","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tiny-regex-c","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tiny-regex-c","case":"L8","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"tiny-regex-c","case":"L9","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"tiny-regex-c","case":"L10","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tiny-regex-c","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tiny-regex-c","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"tiny-regex-c","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4753,6 +5063,8 @@
 {"engine":"tiny-regex-c","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tiny-regex-c","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"tiny-regex-c","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tiny-regex-c","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tiny-regex-c","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tiny-regex-c","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tiny-regex-c","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tiny-regex-c","case":"io-esc","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4784,6 +5096,8 @@
 {"engine":"tinyre","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"tinyre","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tinyre","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"tinyre","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"tinyre","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"tinyre","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tinyre","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"tinyre","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4814,6 +5128,8 @@
 {"engine":"tinyre","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tinyre","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
 {"engine":"tinyre","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"tinyre","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"tinyre","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tinyre","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tinyre","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tinyre","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
@@ -4845,6 +5161,8 @@
 {"engine":"tre","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid regexp"}}
 {"engine":"tre","case":"L7","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
 {"engine":"tre","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"tre","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,0],[0,0],[0,0],[0,0]]}}
+{"engine":"tre","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"tre","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"tre","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"tre","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4875,6 +5193,8 @@
 {"engine":"tre","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tre","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"tre","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tre","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Missing ')'"}}
@@ -4906,6 +5226,8 @@
 {"engine":"tre-fuzzy","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Invalid regexp"}}
 {"engine":"tre-fuzzy","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tre-fuzzy","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"tre-fuzzy","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,1],[1,2]]}}
+{"engine":"tre-fuzzy","case":"L10","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tre-fuzzy","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"tre-fuzzy","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"tre-fuzzy","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4936,6 +5258,8 @@
 {"engine":"tre-fuzzy","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tre-fuzzy","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"tre-fuzzy","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre-fuzzy","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre-fuzzy","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre-fuzzy","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre-fuzzy","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tre-fuzzy","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Missing ')'"}}
@@ -4967,6 +5291,8 @@
 {"engine":"ximtech","case":"L6","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ximtech","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ximtech","case":"L8","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"ximtech","case":"L9","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"ximtech","case":"L10","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ximtech","case":"LF1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ximtech","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"ximtech","case":"LF3","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4997,6 +5323,8 @@
 {"engine":"ximtech","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ximtech","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"ximtech","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ximtech","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ximtech","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ximtech","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ximtech","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ximtech","case":"io-esc","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5028,6 +5356,8 @@
 {"engine":"xpressive","case":"L6","result":{"ok":true,"matched":true,"groups":[[4,8]]}}
 {"engine":"xpressive","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"xpressive","case":"L8","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"xpressive","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1],[1,1],[1,1]]}}
+{"engine":"xpressive","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,3],[1,3]]}}
 {"engine":"xpressive","case":"LF1","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"xpressive","case":"LF2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"xpressive","case":"LF3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
@@ -5058,6 +5388,8 @@
 {"engine":"xpressive","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"xpressive","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"xpressive","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"xpressive","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"xpressive","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"xpressive","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"xpressive","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"xpressive","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"mismatched parenthesis"}}
@@ -5089,6 +5421,8 @@
 {"engine":"zig-regex","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"compile error"}}
 {"engine":"zig-regex","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"zig-regex","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"compile error"}}
+{"engine":"zig-regex","case":"L9","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1],[0,1],[1,1]]}}
+{"engine":"zig-regex","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"zig-regex","case":"LF1","result":{"ok":false,"matched":false,"groups":[],"error":"compile error"}}
 {"engine":"zig-regex","case":"LF2","result":{"ok":false,"matched":false,"groups":[],"error":"compile error"}}
 {"engine":"zig-regex","case":"LF3","result":{"ok":false,"matched":false,"groups":[],"error":"compile error"}}
@@ -5119,6 +5453,8 @@
 {"engine":"zig-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"zig-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"zig-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"zig-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"zig-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"zig-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"zig-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"zig-regex","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"compile error"}}
