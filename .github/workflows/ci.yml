@@ -3,15 +3,73 @@ name: CI
 on:
   push:
     branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
   workflow_dispatch:
 
 concurrency:
-  group: ci-${{ github.ref }}
+  group: ci-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
+
+env:
+  GIT_AUTHOR_NAME: github-actions[bot]
+  GIT_COMMITTER_NAME: github-actions[bot]
+  GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+  GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+  REMOTE: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
 jobs:
   build:
+    if: github.event.action != 'closed'
     permissions:
       contents: read
       packages: write
     uses: ./.github/workflows/build.yml
+
+  # Publish `main` to `/`, PRs to `pr/<branch>/<sha>/`.
+  publish:
+    needs: build
+    if: >-
+      !cancelled()
+      && (needs.build.result == 'success' || needs.build.result == 'skipped')
+      && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: gh-pages-deploy
+      cancel-in-progress: false
+    steps:
+      - if: github.event.action != 'closed'
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: Publish to gh-pages
+        env:
+          EVENT: ${{ github.event_name }}
+          ACTION: ${{ github.event.action }}
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          git clone --branch gh-pages --single-branch --depth 1 "$REMOTE" pages
+          cd pages
+
+          pr="pr/${HEAD_REF//\//-}"
+          if [ "$ACTION" = closed ]; then
+            [ -d "$pr" ] || exit 0
+            rm -rf "$pr"; msg="remove $pr"
+          elif [ "$EVENT" = push ]; then
+            find . -maxdepth 1 -mindepth 1 ! -name pr ! -name .git ! -name .nojekyll ! -name CNAME -exec rm -rf {} +
+            cp -a ../dist/. ./; msg="deploy main"
+          else
+            dir="$pr/${HEAD_SHA::7}"
+            rm -rf "$pr"; mkdir -p "$dir" && cp -a ../dist/. "$dir/"; msg="deploy $dir"
+          fi
+          touch .nojekyll   # serve dotnet/_framework/
+
+          git checkout -q --orphan latest
+          git add -A && git commit -q -m "$msg"
+          git push -q --force "$REMOTE" latest:gh-pages
