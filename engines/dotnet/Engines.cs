@@ -17,6 +17,7 @@ public partial class Engines
                 case "dotnet-bt":   opts = RegexOptions.None; break;
                 case "dotnet-ecma": opts = RegexOptions.ECMAScript; break;
                 case "dotnet-nb":   opts = RegexOptions.NonBacktracking; break;
+                case "dotnet-rtl":  opts = RegexOptions.RightToLeft; break;
                 default:            return MatchResharp(pat, input);
             }
             var re = new Regex(pat, opts);

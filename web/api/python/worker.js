@@ -3,6 +3,7 @@ const ENGINES = [
   { id: 'python-re',          name: 'CPython re',     flavor: 'Perl-ish', family: 'Perl/PCRE', version: '3.12', url: 'https://docs.python.org/3/library/re.html'  },
   { id: 'python-regex',       name: 'regex (PyPI) / Perl-NG', flavor: 'Perl-NG', family: 'Perl/PCRE',          version: '', url: 'https://github.com/mrabarnett/mrab-regex' },
   { id: 'python-regex-posix', name: 'regex (PyPI) / POSIX',   flavor: 'leftmost-longest', family: 'POSIX',     version: '', url: 'https://github.com/mrabarnett/mrab-regex' },
+  { id: 'python-regex-v1',    name: 'regex (PyPI) / V1',      flavor: 'V1 nested sets',   family: 'Perl/PCRE', version: '', url: 'https://github.com/mrabarnett/mrab-regex' },
   { id: 'greenery',           name: 'greenery',       flavor: 'accept/reject (regex↔FSM)', family: 'other', version: '', url: 'https://github.com/qntm/greenery' },
   { id: 'interegular',        name: 'interegular',    flavor: 'accept/reject (regex↔FSM)', family: 'other', version: '', url: 'https://github.com/MegaIng/interegular' },
   { id: 'automata-lib',       name: 'automata-lib',   flavor: 'accept/reject (regex→NFA)', family: 'other', version: '', url: 'https://github.com/caleb531/automata' },

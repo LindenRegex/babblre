@@ -3,9 +3,9 @@ const agent = new e262.Agent();
 e262.setSurroundingAgent(agent);
 const realm = new e262.ManagedRealm({});
 realm.scope(() => {
-  realm.evaluateScriptSkipDebugger(`globalThis.__run = function (p, s) {
+  realm.evaluateScriptSkipDebugger(`globalThis.__run = function (p, s, f) {
     try {
-      var m = new RegExp(p, 'd').exec(s);
+      var m = new RegExp(p, f).exec(s);
       if (!m) return JSON.stringify({ matched: false, groups: [] });
       var g = [];
       for (var k = 0; k < m.indices.length; k++) { var pr = m.indices[k]; g.push(pr === undefined ? null : [pr[0], pr[1]]); }
@@ -13,11 +13,11 @@ realm.scope(() => {
     } catch (e) { return JSON.stringify({ matched: false, groups: [], error: String((e && e.message) || e) }); }
   };`);
 });
-export function match(pattern, input) {
+export function match(pattern, input, flags = 'd') {
   let out;
   realm.scope(() => {
     const c = e262.EnsureCompletion(realm.evaluateScriptSkipDebugger(
-      `__run(${JSON.stringify(pattern)}, ${JSON.stringify(input)})`));
+      `__run(${JSON.stringify(pattern)}, ${JSON.stringify(input)}, ${JSON.stringify(flags)})`));
     if (c instanceof e262.ThrowCompletion) { out = { error: 'engine262 error' }; return; }
     const v = e262.ValueOfNormalCompletion(c);
     out = JSON.parse(v.stringValue ? v.stringValue() : String(v));

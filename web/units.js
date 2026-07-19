@@ -4,7 +4,8 @@ export const UNIT_BY_KIND = {
   icu: 'utf16', dotnet: 'utf16', java: 'utf16', js: 'utf16', e262: 'utf16',
   python: 'codepoints',
 };
-export const UNIT_BY_ID = { regexp2: 'codepoints', quickjs: 'utf16' };
+export const UNIT_BY_ID = { 'regexp2': 'codepoints', 'regexp2-rtl': 'codepoints',
+                            'quickjs': 'utf16', 'quickjs-u': 'utf16', 'quickjs-v': 'utf16' };
 export const unitFor = (engine) => UNIT_BY_ID[engine.id] || UNIT_BY_KIND[engine.kind] || 'bytes';
 
 export function measure(str) {

@@ -14,7 +14,7 @@ public class Main {
   public static void main(String[] args) { }
 
   @JSExport
-  public static String engineCount() { return "2"; }
+  public static String engineCount() { return "3"; }
 
   @JSExport
   public static String engineInfo(int i) {
@@ -23,18 +23,22 @@ public class Main {
       return "{\"id\":\"java-util\",\"name\":\"java.util.regex (TeaVM)\",\"flavor\":\"Perl-like; Harmony-derived reimplementation\","
            + "\"family\":\"Perl/PCRE\",\"version\":\"\","
            + "\"url\":\"https://github.com/konsoletyper/teavm\"}";
-    return "{\"id\":\"dk-brics\",\"name\":\"dk.brics.automaton\",\"flavor\":\"minimized DFA (group-0)\","
+    if (i == 1)
+      return "{\"id\":\"dk-brics\",\"name\":\"dk.brics.automaton\",\"flavor\":\"minimized DFA (group-0)\","
+           + "\"family\":\"linear\",\"version\":\"1.12\",\"url\":\"https://www.brics.dk/automaton/\"}";
+    return "{\"id\":\"dk-brics-plain\",\"name\":\"dk.brics.automaton / plain\",\"flavor\":\"minimized DFA, no extended ops (group-0)\","
          + "\"family\":\"linear\",\"version\":\"1.12\",\"url\":\"https://www.brics.dk/automaton/\"}";
   }
 
   @JSExport
   public static String engineMatch(int i, String pattern, String input) {
-    return i == 0 ? matchJava(pattern, input) : matchBrics(pattern, input);
+    return i == 0 ? matchJava(pattern, input)
+                  : matchBrics(pattern, input, i == 1 ? RegExp.ALL : RegExp.NONE);
   }
 
-  private static String matchBrics(String pattern, String input) {
+  private static String matchBrics(String pattern, String input, int flags) {
     try {
-      RunAutomaton ra = new RunAutomaton(new RegExp(pattern).toAutomaton());
+      RunAutomaton ra = new RunAutomaton(new RegExp(pattern, flags).toAutomaton());
       AutomatonMatcher m = ra.newMatcher(input);
       if (!m.find()) return "{\"matched\":false,\"groups\":[]}";
       return "{\"matched\":true,\"groups\":[[" + m.start() + "," + m.end() + "]]}";

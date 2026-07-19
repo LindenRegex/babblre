@@ -5,9 +5,9 @@ extern "C" {
 #include "pcre.h"
 }
 namespace {
-EngineResult run(const std::string& pat, const std::string& in) {
+EngineResult run(const std::string& pat, const std::string& in, int co) {
   const char* err = nullptr; int erroff = 0;
-  pcre* re = pcre_compile(pat.c_str(), 0, &err, &erroff, nullptr);
+  pcre* re = pcre_compile(pat.c_str(), co, &err, &erroff, nullptr);
   if (!re) return badPattern(err ? err : "error");
   int ncap = 0; pcre_fullinfo(re, nullptr, PCRE_INFO_CAPTURECOUNT, &ncap); ncap += 1;
   std::vector<int> ov(ncap * 3);
@@ -34,6 +34,9 @@ EngineResult dfa(const std::string& pat, const std::string& in) {
   pcre_free(re);
   return r;
 }
+EngineResult perl(const std::string& p, const std::string& s) { return run(p, s, 0); }
+EngineResult utf(const std::string& p, const std::string& s)  { return run(p, s, PCRE_UTF8 | PCRE_UCP); }
 }
-REGISTER("pcre1", "PCRE1 / Perl", "Perl/PCRE", "Perl/PCRE", "8.45", "https://www.pcre.org/original/doc/html/", run);
+REGISTER("pcre1", "PCRE1 / Perl", "Perl/PCRE", "Perl/PCRE", "8.45", "https://www.pcre.org/original/doc/html/", perl);
+REGISTER("pcre1-utf", "PCRE1 / UTF", "Perl/PCRE, UTF8+UCP", "Perl/PCRE", "8.45", "https://www.pcre.org/original/doc/html/", utf);
 REGISTER("pcre1-dfa", "PCRE1 / DFA", "leftmost-longest, group-0", "linear", "8.45", "https://www.pcre.org/original/doc/html/pcre_dfa_exec.html", dfa);

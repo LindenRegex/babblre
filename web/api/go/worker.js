@@ -1,6 +1,7 @@
 const ENGINES = [
   { id: 'go-regexp', name: 'Go regexp', flavor: 'leftmost (RE2)', family: 'linear', version: '1.25', url: 'https://pkg.go.dev/regexp' },
   { id: 'regexp2',   name: 'regexp2',   flavor: '.NET backtracking (lookaround + backrefs)', family: 'Perl/PCRE', version: '2.5', url: 'https://github.com/dlclark/regexp2' },
+  { id: 'regexp2-rtl', name: 'regexp2 / RTL', flavor: 'right-to-left scan', family: 'Perl/PCRE', version: '2.5', url: 'https://github.com/dlclark/regexp2' },
 ];
 async function load() {
   importScripts('../../wasm_exec.js');

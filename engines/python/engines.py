@@ -19,6 +19,7 @@ def _aut(eid, pat, build):
 def _m_re(eid, pat, s):           import re;    return _full(re.compile(pat), s)
 def _m_regex(eid, pat, s):        import regex; return _full(regex.compile(pat), s)
 def _m_regex_posix(eid, pat, s):  import regex; return _full(regex.compile(pat, regex.POSIX), s)
+def _m_regex_v1(eid, pat, s):     import regex; return _full(regex.compile(pat, regex.VERSION1), s)
 
 def _b_greenery(p):    from greenery import parse;                            return parse(p).to_fsm()
 def _b_interegular(p): import interegular;                                    return interegular.parse_pattern(p).to_fsm()
@@ -43,6 +44,7 @@ ENGINES = {
     "python-re":          _m_re,
     "python-regex":       _m_regex,
     "python-regex-posix": _m_regex_posix,
+    "python-regex-v1":    _m_regex_v1,
     **{eid: _membership(b, a) for eid, (b, a) in _MEMBERSHIP.items()},
 }
 

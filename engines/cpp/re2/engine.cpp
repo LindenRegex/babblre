@@ -3,8 +3,8 @@
 #include <vector>
 
 namespace {
-EngineResult run(const std::string& pat, const std::string& in, bool longest) {
-  RE2::Options opt; opt.set_log_errors(false); opt.set_longest_match(longest);
+EngineResult run(const std::string& pat, const std::string& in, bool longest, bool posix = false) {
+  RE2::Options opt; opt.set_log_errors(false); opt.set_longest_match(longest); opt.set_posix_syntax(posix); opt.set_one_line(posix);
   RE2 re(pat, opt);
   if (!re.ok()) return re.error_code() == RE2::ErrorPatternTooLarge ? limitError(re.error()) : badPattern(re.error());
   const int n = re.NumberOfCapturingGroups();
@@ -14,6 +14,8 @@ EngineResult run(const std::string& pat, const std::string& in, bool longest) {
 }
 EngineResult leftmost(const std::string& p, const std::string& s) { return run(p, s, false); }
 EngineResult longest(const std::string& p, const std::string& s)  { return run(p, s, true); }
+EngineResult posix(const std::string& p, const std::string& s)    { return run(p, s, true, true); }
 }
 REGISTER("re2", "RE2 / leftmost", "linear", "linear", "2025-11-05", "https://github.com/google/re2", leftmost);
 REGISTER("re2-longest", "RE2 / leftmost-longest", "linear", "linear", "2025-11-05", "https://github.com/google/re2", longest);
+REGISTER("re2-posix", "RE2 / POSIX", "posix_syntax, leftmost-longest", "POSIX", "2025-11-05", "https://github.com/google/re2", posix);

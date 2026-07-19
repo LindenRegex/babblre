@@ -13,15 +13,18 @@ extern "C" int  lre_check_timeout(void*) { return 0; }
 extern "C" void* lre_realloc(void*, void* ptr, size_t size) { return std::realloc(ptr, size); }
 
 namespace {
-EngineResult run(const std::string& pat, const std::string& in) {
+EngineResult run(const std::string& pat, const std::string& in, int flags) {
   // quickjs.c hands lre_compile CESU-8 for every regex except /u
-  size_t nu = qjs_utf8_to_utf16(pat.data(), pat.size(), nullptr, 0);
-  std::vector<uint16_t> u(nu + 1);
-  qjs_utf8_to_utf16(pat.data(), pat.size(), u.data(), nu);
-  std::string p(nu * 3, '\0');
-  p.resize(qjs_utf16_to_cesu8(u.data(), nu, &p[0]));
+  std::string p = pat;
+  if (!(flags & LRE_FLAG_UNICODE)) {
+    size_t nu = qjs_utf8_to_utf16(pat.data(), pat.size(), nullptr, 0);
+    std::vector<uint16_t> u(nu + 1);
+    qjs_utf8_to_utf16(pat.data(), pat.size(), u.data(), nu);
+    p.assign(nu * 3, '\0');
+    p.resize(qjs_utf16_to_cesu8(u.data(), nu, &p[0]));
+  }
   char err[128] = ""; int bclen = 0;
-  uint8_t* bc = lre_compile(&bclen, err, sizeof err, p.c_str(), p.size(), 0, nullptr);
+  uint8_t* bc = lre_compile(&bclen, err, sizeof err, p.c_str(), p.size(), flags, nullptr);
   if (!bc) return badPattern(err);
   int ncap = lre_get_capture_count(bc);
   std::vector<uint8_t*> cap(2 * ncap, nullptr);
@@ -40,5 +43,10 @@ EngineResult run(const std::string& pat, const std::string& in) {
   std::free(bc);
   return r;
 }
+EngineResult legacy(const std::string& p, const std::string& s) { return run(p, s, 0); }
+EngineResult uni(const std::string& p, const std::string& s)    { return run(p, s, LRE_FLAG_UNICODE); }
+EngineResult uniSets(const std::string& p, const std::string& s){ return run(p, s, LRE_FLAG_UNICODE_SETS); }
 }
-REGISTER("quickjs", "QuickJS-ng", "ECMAScript", "ECMAScript", "0.15.1", "https://github.com/quickjs-ng/quickjs", run);
+REGISTER("quickjs", "QuickJS-ng", "ECMAScript", "ECMAScript", "0.15.1", "https://github.com/quickjs-ng/quickjs", legacy);
+REGISTER("quickjs-u", "QuickJS-ng / u", "ECMAScript, unicode", "ECMAScript", "0.15.1", "https://github.com/quickjs-ng/quickjs", uni);
+REGISTER("quickjs-v", "QuickJS-ng / v", "ECMAScript, unicodeSets", "ECMAScript", "0.15.1", "https://github.com/quickjs-ng/quickjs", uniSets);

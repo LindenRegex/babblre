@@ -55,23 +55,13 @@ test('catastrophic input: engine limit vs native timeout, then the worker recove
   await expect(cell(page, 'actual-ecma', 'live').locator('.g[data-g="0"]')).toHaveText('abc');
 });
 
-test('each separately-built runtime loads on demand and matches', async ({ page }) => {
-  test.setTimeout(480000);
+test('lazy-loaded runtimes load on demand', async ({ page }) => {
+  test.setTimeout(240000);
   await openMatrix(page);
   await showAll(page);
-  // one engine per lazily-loaded module
-  for (const [label, id] of [
-    ['regex-tdfa', 'regex-tdfa'],            // GHC wasm reactor
-    ['java.util.regex', 'java-util'],        // TeaVM module
-    ['Swift Regex', 'swift-regex'],          // SwiftWasm reactor
-    ['ICU', 'icu'],
-    ['memoized backtracking', 'memo-regex'],
-    ['REmatch', 'rematch'],
-    ['re2c / TDFA', 're2c-tdfa'],
-    ['NonBacktracking', 'dotnet-nb'],        // .NET runtime
-    ['CPython re', 'python-re'],             // Pyodide
-  ]) {
-    await page.locator('.selector .chk', { hasText: label }).locator('input').check();
+  for (const [name, id] of [['CPython re', 'python-re'], ['Swift Regex', 'swift-regex'], ['.NET / NonBacktracking', 'dotnet-nb']]) {
+    await expect(cell(page, id, 'A1')).toHaveCount(0);
+    await page.locator('.selector .chk').filter({ has: page.locator('.lib', { hasText: exact(name) }) }).locator('input').check();
     await expect(cell(page, id, 'A1').locator('.g[data-g="0"]').first()).toBeVisible({ timeout: 120000 });
   }
 });

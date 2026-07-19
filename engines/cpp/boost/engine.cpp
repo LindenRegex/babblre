@@ -16,7 +16,9 @@ EngineResult run(const std::string& p, const std::string& s, boost::regex::flag_
 EngineResult perl(const std::string& p, const std::string& s)  { return run(p, s, boost::regex::perl); }
 EngineResult posix(const std::string& p, const std::string& s) { return run(p, s, boost::regex::extended, boost::regex_constants::match_single_line); }
 EngineResult grep(const std::string& p, const std::string& s)  { return run(p, s, boost::regex::grep); }
+EngineResult perlLongest(const std::string& p, const std::string& s) { return run(p, s, boost::regex::perl, boost::regex_constants::match_posix); }
 }
 REGISTER("boost-pcre", "boost::regex / Perl", "Perl/PCRE", "Perl/PCRE", "1.91.0", "https://www.boost.org/doc/libs/release/libs/regex/", perl);
 REGISTER("boost-posix", "boost::regex / POSIX", "POSIX ERE", "POSIX", "1.91.0", "https://www.boost.org/doc/libs/release/libs/regex/", posix);
 REGISTER("boost-grep", "boost::regex / grep", "POSIX BRE", "POSIX", "1.91.0", "https://www.boost.org/doc/libs/release/libs/regex/", grep);
+REGISTER("boost-perl-longest", "boost::regex / Perl-longest", "Perl syntax, leftmost-longest", "Perl/PCRE", "1.91.0", "https://www.boost.org/doc/libs/release/libs/regex/", perlLongest);

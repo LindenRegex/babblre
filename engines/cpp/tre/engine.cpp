@@ -5,9 +5,9 @@ extern "C" {
 #include "../../../vendor/tre/local_includes/tre.h"
 }
 namespace {
-EngineResult common(const std::string& pat, const std::string& in, bool fuzzy) {
+EngineResult common(const std::string& pat, const std::string& in, bool fuzzy, int cf = REG_EXTENDED, int ef = 0) {
   regex_t re;
-  int rc = tre_regcomp(&re, pat.c_str(), REG_EXTENDED);
+  int rc = tre_regcomp(&re, pat.c_str(), cf);
   if (rc) { char b[256]; tre_regerror(rc, &re, b, sizeof b); return badPattern(b); }
   auto _ = finally([&]{ tre_regfree(&re); });
   std::size_t n = re.re_nsub + 1;
@@ -18,12 +18,16 @@ EngineResult common(const std::string& pat, const std::string& in, bool fuzzy) {
     regamatch_t am; am.nmatch = n; am.pmatch = m.data();
     matched = tre_regaexec(&re, in.c_str(), &am, ap, 0) == 0;
   } else {
-    matched = tre_regexec(&re, in.c_str(), n, m.data(), 0) == 0;
+    matched = tre_regexec(&re, in.c_str(), n, m.data(), ef) == 0;
   }
   return matched ? okRegmatch(m) : noMatch();
 }
 EngineResult exact(const std::string& p, const std::string& s) { return common(p, s, false); }
 EngineResult fuzzy(const std::string& p, const std::string& s) { return common(p, s, true); }
+EngineResult bt(const std::string& p, const std::string& s)    { return common(p, s, false, REG_EXTENDED, REG_BACKTRACKING_MATCHER); }
+EngineResult ungreedy(const std::string& p, const std::string& s) { return common(p, s, false, REG_EXTENDED | REG_UNGREEDY); }
 }
 REGISTER("tre", "TRE / exact", "POSIX", "POSIX", "0.9.0", "https://github.com/laurikari/tre", exact);
 REGISTER("tre-fuzzy", "TRE / fuzzy", "POSIX (cost≤1)", "other", "0.9.0", "https://github.com/laurikari/tre", fuzzy);
+REGISTER("tre-backtrack", "TRE / backtracking", "POSIX syntax, backtracking matcher", "other", "0.9.0", "https://github.com/laurikari/tre", bt);
+REGISTER("tre-ungreedy", "TRE / ungreedy", "POSIX, quantifiers swapped", "other", "0.9.0", "https://github.com/laurikari/tre", ungreedy);

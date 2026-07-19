@@ -53,6 +53,8 @@ let dispatch id pat inp = match id with
   | "ocaml-re"       -> re_match_with Re.Pcre.re pat inp
   | "ocaml-str"      -> str_match pat inp
   | "ocaml-re-posix" -> re_match_with (fun p -> Re.longest (Re.Posix.re p)) pat inp
+  | "ocaml-re-longest"  -> re_match_with (fun p -> Re.longest (Re.Pcre.re p)) pat inp
+  | "ocaml-re-shortest" -> re_match_with (fun p -> Re.shortest (Re.Pcre.re p)) pat inp
   | "ocaml-re-emacs" -> re_match_with Re.Emacs.re pat inp
   | "regelk"         -> regelk_match pat inp
   | _ -> err "unknown engine"

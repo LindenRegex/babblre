@@ -15,9 +15,9 @@ bool isLimit(int rc) {
 EngineResult negError(int rc) {
   return isLimit(rc) ? limitError("limit: " + pcre2err(rc)) : matchError(pcre2err(rc));
 }
-EngineResult run(const std::string& pat, const std::string& in) {
+EngineResult run(const std::string& pat, const std::string& in, uint32_t co) {
   int ec; PCRE2_SIZE eo;
-  pcre2_code* re = pcre2_compile((PCRE2_SPTR)pat.c_str(), pat.size(), 0, &ec, &eo, nullptr);
+  pcre2_code* re = pcre2_compile((PCRE2_SPTR)pat.c_str(), pat.size(), co, &ec, &eo, nullptr);
   if (!re) return badPattern(pcre2err(ec));
   pcre2_match_data* md = pcre2_match_data_create_from_pattern(re, nullptr);
   auto _ = finally([&]{ pcre2_match_data_free(md); pcre2_code_free(re); });
@@ -41,6 +41,9 @@ EngineResult dfa(const std::string& pat, const std::string& in) {
   PCRE2_SIZE* ov = pcre2_get_ovector_pointer(md);
   return group0((int)ov[0], (int)ov[1]);
 }
+EngineResult perl(const std::string& p, const std::string& s) { return run(p, s, 0); }
+EngineResult utf(const std::string& p, const std::string& s)  { return run(p, s, PCRE2_UTF | PCRE2_UCP); }
 }
-REGISTER("pcre2", "PCRE2 / Perl", "Perl/PCRE", "Perl/PCRE", "10.47", "https://www.pcre.org/", run);
+REGISTER("pcre2", "PCRE2 / Perl", "Perl/PCRE", "Perl/PCRE", "10.47", "https://www.pcre.org/", perl);
+REGISTER("pcre2-utf", "PCRE2 / UTF", "Perl/PCRE, UTF+UCP", "Perl/PCRE", "10.47", "https://www.pcre.org/", utf);
 REGISTER("pcre2-dfa", "PCRE2 / DFA", "leftmost-longest, group-0", "linear", "10.47", "https://www.pcre.org/current/doc/html/pcre2_dfa_match.html", dfa);

@@ -18,9 +18,10 @@ if (argv.includes('--list')) {
   const out = [''];
   for (const base of [...groups.keys()].sort((a, b) => a.localeCompare(b))) {
     const vs = groups.get(base).sort((a, b) => (a.variant || '').localeCompare(b.variant || ''));
+    const links = vs.map((v) => `[\`${v.variant ?? 'default'}\`](${v.url})`).join(', ');
     out.push(vs.length === 1 && vs[0].variant === null
       ? `- [\`${base}\`](${vs[0].url})`
-      : `- \`${base}\`: ` + vs.map((v) => `[\`${v.variant}\`](${v.url})`).join(', '));
+      : `- \`${base}\`: ${links}`);
   }
   out.push('');
   console.log(out.join('\n'));

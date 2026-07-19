@@ -25,6 +25,8 @@ EngineResult run(const std::string& pat, const std::string& in, OnigSyntaxType* 
 }
 EngineResult perlng(const std::string& p, const std::string& s) { return run(p, s, ONIG_SYNTAX_PERL_NG, ONIG_OPTION_NONE); }
 EngineResult posix(const std::string& p, const std::string& s)  { return run(p, s, ONIG_SYNTAX_POSIX_EXTENDED, ONIG_OPTION_FIND_LONGEST); }
+EngineResult ruby(const std::string& p, const std::string& s)   { return run(p, s, ONIG_SYNTAX_RUBY, ONIG_OPTION_NONE); }
 }
 REGISTER("oniguruma", "Oniguruma / Perl-NG", "Perl-NG", "Perl/PCRE", "6.9.10", "https://github.com/kkos/oniguruma", perlng);
 REGISTER("oniguruma-posix", "Oniguruma / POSIX", "POSIX ERE", "POSIX", "6.9.10", "https://github.com/kkos/oniguruma", posix);
+REGISTER("oniguruma-ruby", "Oniguruma / Ruby", "Ruby", "Perl/PCRE", "6.9.10", "https://github.com/kkos/oniguruma", ruby);

@@ -86,8 +86,8 @@ build_pcre() {
   done
   archive "$OUT/$7" "$6" emcc -O2 -DNDEBUG -DHAVE_CONFIG_H $5 -I "$S" -- "${srcs[@]}"
 }
-build_pcre2() { build_pcre PCRE2 vendor/pcre2/src pcre2 '*_jit_*|*pcre2_printint.c|*pcre2_fuzzsupport.c|*pcre2_dftables.c' '-DPCRE2_CODE_UNIT_WIDTH=8 -DPCRE2_STATIC' '' libpcre2.a; }
-build_pcre1() { build_pcre PCRE1 vendor/pcre1 pcre '*jit*|*dftables*|*_test*|*fuzz*|*printint*' '-DPCRE_STATIC' pcre1 libpcre1.a; }
+build_pcre2() { build_pcre PCRE2 vendor/pcre2/src pcre2 '*_jit_*|*pcre2_printint.c|*pcre2_fuzzsupport.c|*pcre2_dftables.c' '-DPCRE2_CODE_UNIT_WIDTH=8 -DPCRE2_STATIC -DSUPPORT_UNICODE' '' libpcre2.a; }
+build_pcre1() { build_pcre PCRE1 vendor/pcre1 pcre '*jit*|*dftables*|*_test*|*fuzz*|*printint*' '-DPCRE_STATIC -DSUPPORT_UTF -DSUPPORT_UCP' pcre1 libpcre1.a; }
 
 build_abseil() {
   echo "== Abseil (for RE2) =="

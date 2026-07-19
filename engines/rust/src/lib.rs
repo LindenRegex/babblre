@@ -34,11 +34,15 @@ macro_rules! regex_api_engine {
 }
 
 static ENGINES: &[Engine] = &[
-    Engine { id: "rust-regex",  info: engines::regex::INFO,      run: engines::regex::run },
-    Engine { id: "regex-lite",  info: engines::regex_lite::INFO, run: engines::regex_lite::run },
-    Engine { id: "regress",     info: engines::regress::INFO,    run: engines::regress::run },
-    Engine { id: "fancy-regex", info: engines::fancy::INFO,      run: engines::fancy::run },
-    Engine { id: "resharp-rs",  info: engines::resharp::INFO,    run: engines::resharp::run },
+    Engine { id: "rust-regex",       info: engines::regex::INFO,        run: engines::regex::run },
+    Engine { id: "rust-regex-ascii", info: engines::regex::INFO_ASCII,  run: engines::regex::run_ascii },
+    Engine { id: "rust-regex-swap",  info: engines::regex::INFO_SWAP,   run: engines::regex::run_swap },
+    Engine { id: "regex-lite",       info: engines::regex_lite::INFO,   run: engines::regex_lite::run },
+    Engine { id: "regress",          info: engines::regress::INFO,      run: engines::regress::run },
+    Engine { id: "regress-u",        info: engines::regress::INFO_U,    run: engines::regress::run_u },
+    Engine { id: "regress-v",        info: engines::regress::INFO_V,    run: engines::regress::run_v },
+    Engine { id: "fancy-regex",      info: engines::fancy::INFO,        run: engines::fancy::run },
+    Engine { id: "resharp-rs",       info: engines::resharp::INFO,      run: engines::resharp::run },
 ];
 
 #[no_mangle] pub extern "C" fn alloc(len: usize) -> *mut u8 {

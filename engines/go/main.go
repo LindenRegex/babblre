@@ -9,7 +9,7 @@ import (
 	"github.com/dlclark/regexp2/v2"
 )
 
-var engines = map[string]func(pat, in string) any{"go-regexp": runRE2, "regexp2": runRegexp2}
+var engines = map[string]func(pat, in string) any{"go-regexp": runRE2, "regexp2": runRegexp2, "regexp2-rtl": runRegexp2RTL}
 
 func runRE2(pat, in string) any {
 	re, err := regexp.Compile(pat)
@@ -35,8 +35,11 @@ func runRE2(pat, in string) any {
 	return map[string]any{"matched": true, "groups": groups}
 }
 
-func runRegexp2(pat, in string) any {
-	re, err := regexp2.Compile(pat)
+func runRegexp2(pat, in string) any    { return runRegexp2Opts(pat, in) }
+func runRegexp2RTL(pat, in string) any { return runRegexp2Opts(pat, in, regexp2.RightToLeft) }
+
+func runRegexp2Opts(pat, in string, opts ...regexp2.CompileOption) any {
+	re, err := regexp2.Compile(pat, opts...)
 	if err != nil {
 		return map[string]any{"error": err.Error()}
 	}
