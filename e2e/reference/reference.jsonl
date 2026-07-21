@@ -55,10 +55,8 @@
 {"engine":"actual-ecma","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"actual-ecma","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"actual-ecma","case":"LF27","result":{"killed":true}}
-{"engine":"actual-ecma","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"actual-ecma","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"actual-ecma","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"actual-ecma","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"actual-ecma","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"actual-ecma","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"actual-ecma","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"actual-ecma","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"actual-ecma","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -120,10 +118,8 @@
 {"engine":"actual-ecma-u","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"actual-ecma-u","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"actual-ecma-u","case":"LF27","result":{"killed":true}}
-{"engine":"actual-ecma-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"actual-ecma-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"actual-ecma-u","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
-{"engine":"actual-ecma-u","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"actual-ecma-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"actual-ecma-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"actual-ecma-u","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"actual-ecma-u","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"actual-ecma-u","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -185,10 +181,8 @@
 {"engine":"actual-ecma-v","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"actual-ecma-v","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"actual-ecma-v","case":"LF27","result":{"killed":true}}
-{"engine":"actual-ecma-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"actual-ecma-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"actual-ecma-v","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
-{"engine":"actual-ecma-v","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"actual-ecma-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"actual-ecma-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"actual-ecma-v","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"actual-ecma-v","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"actual-ecma-v","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -252,8 +246,6 @@
 {"engine":"automata-lib","case":"LF27","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"automata-lib","case":"U3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"automata-lib","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"automata-lib","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -315,10 +307,8 @@
 {"engine":"boost-grep","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-grep","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-grep","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"boost-grep","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"boost-grep","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"boost-grep","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"boost-grep","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-grep","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-grep","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"boost-grep","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-grep","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-grep","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -380,10 +370,8 @@
 {"engine":"boost-pcre","case":"LF25","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"boost-pcre","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"boost-pcre","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"complexity: The complexity of matching the regular expression exceeded predefined bounds.  Try refactoring the regular expression to make each choice made by the state machine unambiguous.  This exception is thrown to prevent \"eternal\" matches that take an indefinite period time to locate.","kind":"limit"}}
-{"engine":"boost-pcre","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"boost-pcre","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"boost-pcre","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"boost-pcre","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-pcre","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-pcre","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"boost-pcre","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-pcre","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-pcre","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -445,10 +433,8 @@
 {"engine":"boost-perl-longest","case":"LF25","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"boost-perl-longest","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"boost-perl-longest","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"complexity: The complexity of matching the regular expression exceeded predefined bounds.  Try refactoring the regular expression to make each choice made by the state machine unambiguous.  This exception is thrown to prevent \"eternal\" matches that take an indefinite period time to locate.","kind":"limit"}}
-{"engine":"boost-perl-longest","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"boost-perl-longest","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"boost-perl-longest","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"boost-perl-longest","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-perl-longest","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-perl-longest","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"boost-perl-longest","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-perl-longest","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-perl-longest","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -510,10 +496,8 @@
 {"engine":"boost-posix","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"boost-posix","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"Invalid preceding regular expression prior to repetition operator.  The error occurred while parsing the regular expression: 'a{2}?>>>HERE>>>'."}}
 {"engine":"boost-posix","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"complexity: The complexity of matching the regular expression exceeded predefined bounds.  Try refactoring the regular expression to make each choice made by the state machine unambiguous.  This exception is thrown to prevent \"eternal\" matches that take an indefinite period time to locate.","kind":"limit"}}
-{"engine":"boost-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"boost-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"boost-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"boost-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"boost-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"boost-posix","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"boost-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -575,10 +559,8 @@
 {"engine":"dk-brics","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dk-brics","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"dk-brics","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"dk-brics","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"dk-brics","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"dk-brics","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"dk-brics","case":"U4","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"dk-brics","case":"U1","result":{"ok":true,"matched":false,"groups":[]}}
+{"engine":"dk-brics","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dk-brics","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dk-brics","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dk-brics","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -640,10 +622,8 @@
 {"engine":"dk-brics-plain","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dk-brics-plain","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"dk-brics-plain","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"dk-brics-plain","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"dk-brics-plain","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"dk-brics-plain","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"dk-brics-plain","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dk-brics-plain","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dk-brics-plain","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dk-brics-plain","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dk-brics-plain","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dk-brics-plain","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -705,10 +685,8 @@
 {"engine":"dotnet-bt","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dotnet-bt","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"dotnet-bt","case":"LF27","result":{"killed":true}}
-{"engine":"dotnet-bt","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"dotnet-bt","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"dotnet-bt","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"dotnet-bt","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-bt","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-bt","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dotnet-bt","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-bt","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-bt","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -770,10 +748,8 @@
 {"engine":"dotnet-ecma","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dotnet-ecma","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"dotnet-ecma","case":"LF27","result":{"killed":true}}
-{"engine":"dotnet-ecma","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"dotnet-ecma","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"dotnet-ecma","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"dotnet-ecma","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-ecma","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-ecma","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dotnet-ecma","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-ecma","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-ecma","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -835,10 +811,8 @@
 {"engine":"dotnet-nb","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dotnet-nb","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"dotnet-nb","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"dotnet-nb","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"dotnet-nb","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"dotnet-nb","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"dotnet-nb","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-nb","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-nb","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dotnet-nb","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-nb","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-nb","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -900,10 +874,8 @@
 {"engine":"dotnet-rtl","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"dotnet-rtl","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"dotnet-rtl","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"dotnet-rtl","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"dotnet-rtl","case":"U2","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
-{"engine":"dotnet-rtl","case":"U3","result":{"ok":true,"matched":true,"groups":[[1,3]]}}
-{"engine":"dotnet-rtl","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-rtl","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"dotnet-rtl","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"dotnet-rtl","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-rtl","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"dotnet-rtl","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -965,10 +937,8 @@
 {"engine":"engine262","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"engine262","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"engine262","case":"LF27","result":{"killed":true}}
-{"engine":"engine262","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"engine262","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"engine262","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"engine262","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"engine262","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"engine262","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"engine262","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"engine262","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"engine262","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1030,10 +1000,8 @@
 {"engine":"engine262-u","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"engine262-u","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"engine262-u","case":"LF27","result":{"killed":true}}
-{"engine":"engine262-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"engine262-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"engine262-u","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
-{"engine":"engine262-u","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"engine262-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"engine262-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"engine262-u","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"engine262-u","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"engine262-u","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1095,10 +1063,8 @@
 {"engine":"engine262-v","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"engine262-v","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"engine262-v","case":"LF27","result":{"killed":true}}
-{"engine":"engine262-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"engine262-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"engine262-v","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
-{"engine":"engine262-v","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"engine262-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"engine262-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"engine262-v","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"engine262-v","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"engine262-v","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1160,10 +1126,8 @@
 {"engine":"fado","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '$' in the current parser context, at line 1 col 1"}}
 {"engine":"fado","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '{' in the current parser context, at line 1 col 2"}}
 {"engine":"fado","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"Unexpected token Token('RPAR', ')') at line 1, column 4."}}
-{"engine":"fado","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"fado","case":"U2","result":{"ok":false,"matched":false,"groups":[],"error":"Unexpected token Token('_CONCATT', '.') at line 1, column 1."}}
-{"engine":"fado","case":"U3","result":{"ok":false,"matched":false,"groups":[],"error":"Unexpected token Token('_CONCATT', '.') at line 1, column 1."}}
-{"engine":"fado","case":"U4","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '#' in the current parser context, at line 1 col 1"}}
+{"engine":"fado","case":"U1","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '#' in the current parser context, at line 1 col 1"}}
+{"engine":"fado","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"fado","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"No terminal matches '=' in the current parser context, at line 1 col 1"}}
 {"engine":"fado","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"fado","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -1225,10 +1189,8 @@
 {"engine":"fancy-regex","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"fancy-regex","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"fancy-regex","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"fancy-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"fancy-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"fancy-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"fancy-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"fancy-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"fancy-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"fancy-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"fancy-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"fancy-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1290,10 +1252,8 @@
 {"engine":"glibc","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"glibc","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"glibc","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"glibc","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"glibc","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"glibc","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"glibc","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1355,10 +1315,8 @@
 {"engine":"glibc-awk","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc-awk","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc-awk","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"glibc-awk","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"glibc-awk","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"glibc-awk","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"glibc-awk","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc-awk","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc-awk","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"glibc-awk","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc-awk","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc-awk","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1420,10 +1378,8 @@
 {"engine":"glibc-emacs","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc-emacs","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc-emacs","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"glibc-emacs","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"glibc-emacs","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"glibc-emacs","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"glibc-emacs","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc-emacs","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc-emacs","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"glibc-emacs","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc-emacs","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc-emacs","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1485,10 +1441,8 @@
 {"engine":"glibc-grep","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc-grep","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"glibc-grep","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"glibc-grep","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"glibc-grep","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"glibc-grep","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"glibc-grep","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc-grep","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"glibc-grep","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"glibc-grep","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc-grep","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"glibc-grep","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1550,10 +1504,8 @@
 {"engine":"go-regexp","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"go-regexp","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"go-regexp","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"go-regexp","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"go-regexp","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"go-regexp","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"go-regexp","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"go-regexp","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"go-regexp","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"go-regexp","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"go-regexp","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"go-regexp","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1616,9 +1568,7 @@
 {"engine":"greenery","case":"LF26","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"greenery","case":"LF27","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"greenery","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"greenery","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"greenery","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"greenery","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"greenery","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"greenery","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"greenery","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"greenery","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -1680,10 +1630,8 @@
 {"engine":"icu","case":"LF25","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"icu","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"icu","case":"LF27","result":{"killed":true}}
-{"engine":"icu","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"icu","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"icu","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
-{"engine":"icu","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"icu","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"icu","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"icu","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"icu","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"icu","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1745,10 +1693,8 @@
 {"engine":"icu-uword","case":"LF25","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"icu-uword","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"icu-uword","case":"LF27","result":{"killed":true}}
-{"engine":"icu-uword","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"icu-uword","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"icu-uword","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
-{"engine":"icu-uword","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"icu-uword","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"icu-uword","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"icu-uword","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"icu-uword","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"icu-uword","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1811,9 +1757,7 @@
 {"engine":"interegular","case":"LF26","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"interegular","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"'$'"}}
 {"engine":"interegular","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"interegular","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"interegular","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"interegular","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
+{"engine":"interegular","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"interegular","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"interegular","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"interegular","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -1875,10 +1819,8 @@
 {"engine":"java-util","case":"LF25","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"java-util","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"java-util","case":"LF27","result":{"killed":true}}
-{"engine":"java-util","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"java-util","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"java-util","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
-{"engine":"java-util","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"java-util","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"java-util","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"java-util","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"java-util","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"java-util","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -1940,10 +1882,8 @@
 {"engine":"lexertl","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"lexertl","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"lexertl","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"lexertl","case":"U1","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"lexertl","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"lexertl","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"lexertl","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"lexertl","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"lexertl","case":"U2","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"lexertl","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"lexertl","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"lexertl","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2005,10 +1945,8 @@
 {"engine":"matp","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"matp","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"matp","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"matp","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"matp","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"matp","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"matp","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"matp","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"matp","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"matp","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"matp","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"matp","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2070,10 +2008,8 @@
 {"engine":"memo-regex","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"memo-regex","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"memo-regex","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"memo-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"memo-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"memo-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"memo-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"memo-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"memo-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"memo-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"memo-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"memo-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2135,10 +2071,8 @@
 {"engine":"minrx","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"minrx","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"minrx","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"minrx","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"minrx","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"minrx","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"minrx","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"minrx","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"minrx","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"minrx","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"minrx","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"minrx","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2200,10 +2134,8 @@
 {"engine":"minrx-firstsub","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"minrx-firstsub","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"minrx-firstsub","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"minrx-firstsub","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"minrx-firstsub","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"minrx-firstsub","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"minrx-firstsub","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"minrx-firstsub","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"minrx-firstsub","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"minrx-firstsub","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"minrx-firstsub","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"minrx-firstsub","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2265,10 +2197,8 @@
 {"engine":"minrx-minimal","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"minrx-minimal","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"minrx-minimal","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"minrx-minimal","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"minrx-minimal","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"minrx-minimal","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"minrx-minimal","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"minrx-minimal","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"minrx-minimal","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"minrx-minimal","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"minrx-minimal","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"minrx-minimal","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2330,10 +2260,8 @@
 {"engine":"mujs","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"mujs","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"mujs","case":"LF27","result":{"killed":true}}
-{"engine":"mujs","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"mujs","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"mujs","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"mujs","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"mujs","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"mujs","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"mujs","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"mujs","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"mujs","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2395,10 +2323,8 @@
 {"engine":"musl-posix","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"musl-posix","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"musl-posix","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"musl-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"musl-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"musl-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"musl-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"musl-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"musl-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"musl-posix","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"musl-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"musl-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2460,10 +2386,8 @@
 {"engine":"nim-regex","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"nim-regex","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"nim-regex","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"nim-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"nim-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"nim-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"nim-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"nim-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"nim-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"nim-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"nim-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"nim-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2527,8 +2451,6 @@
 {"engine":"nu-re","case":"LF27","result":{"killed":true}}
 {"engine":"nu-re","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"nu-re","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"nu-re","case":"U3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"nu-re","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"nu-re","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: parse error"}}
 {"engine":"nu-re","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"nu-re","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -2590,10 +2512,8 @@
 {"engine":"ocaml-re","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-re","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"ocaml-re","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"ocaml-re","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"ocaml-re","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"ocaml-re","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"ocaml-re","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-re","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2655,10 +2575,8 @@
 {"engine":"ocaml-re-emacs","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Parse_error"}}
 {"engine":"ocaml-re-emacs","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-re-emacs","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"ocaml-re-emacs","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"ocaml-re-emacs","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"ocaml-re-emacs","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"ocaml-re-emacs","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-emacs","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-emacs","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-re-emacs","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Emacs.Parse_error"}}
 {"engine":"ocaml-re-emacs","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re-emacs","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2720,10 +2638,8 @@
 {"engine":"ocaml-re-longest","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-re-longest","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"ocaml-re-longest","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"ocaml-re-longest","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"ocaml-re-longest","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"ocaml-re-longest","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"ocaml-re-longest","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-longest","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-longest","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-re-longest","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re-longest","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re-longest","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2785,10 +2701,8 @@
 {"engine":"ocaml-re-posix","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re-posix","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re-posix","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"ocaml-re-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"ocaml-re-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"ocaml-re-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"ocaml-re-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-re-posix","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"Re__Parse_buffer.Parse_error"}}
 {"engine":"ocaml-re-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2850,10 +2764,8 @@
 {"engine":"ocaml-re-shortest","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-re-shortest","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"ocaml-re-shortest","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"ocaml-re-shortest","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"ocaml-re-shortest","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"ocaml-re-shortest","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"ocaml-re-shortest","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-shortest","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-re-shortest","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-re-shortest","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re-shortest","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-re-shortest","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2915,10 +2827,8 @@
 {"engine":"ocaml-str","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-str","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-str","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"ocaml-str","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"ocaml-str","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"ocaml-str","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"ocaml-str","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-str","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ocaml-str","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ocaml-str","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ocaml-str","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ocaml-str","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -2980,10 +2890,8 @@
 {"engine":"oniguruma","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"oniguruma","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"oniguruma","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"retry-limit-in-match over","kind":"limit"}}
-{"engine":"oniguruma","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"oniguruma","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"oniguruma","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"oniguruma","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"oniguruma","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"oniguruma","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"oniguruma","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3045,10 +2953,8 @@
 {"engine":"oniguruma-posix","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"oniguruma-posix","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"oniguruma-posix","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"retry-limit-in-match over","kind":"limit"}}
-{"engine":"oniguruma-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"oniguruma-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"oniguruma-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"oniguruma-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"oniguruma-posix","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"oniguruma-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"oniguruma-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3110,10 +3016,8 @@
 {"engine":"oniguruma-ruby","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"oniguruma-ruby","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"oniguruma-ruby","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"retry-limit-in-match over","kind":"limit"}}
-{"engine":"oniguruma-ruby","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"oniguruma-ruby","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"oniguruma-ruby","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"oniguruma-ruby","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma-ruby","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"oniguruma-ruby","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"oniguruma-ruby","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"oniguruma-ruby","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"oniguruma-ruby","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3175,10 +3079,8 @@
 {"engine":"pcre1","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre1","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"pcre1","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"match limit exceeded","kind":"limit"}}
-{"engine":"pcre1","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"pcre1","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"pcre1","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"pcre1","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre1","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3240,10 +3142,8 @@
 {"engine":"pcre1-dfa","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre1-dfa","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"pcre1-dfa","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"pcre1-dfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"pcre1-dfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"pcre1-dfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"pcre1-dfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1-dfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre1-dfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre1-dfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1-dfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1-dfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3305,10 +3205,8 @@
 {"engine":"pcre1-utf","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre1-utf","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"pcre1-utf","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"match limit exceeded","kind":"limit"}}
-{"engine":"pcre1-utf","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"pcre1-utf","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"pcre1-utf","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"pcre1-utf","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"pcre1-utf","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"pcre1-utf","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre1-utf","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1-utf","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre1-utf","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3370,10 +3268,8 @@
 {"engine":"pcre2","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre2","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"pcre2","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"limit: match limit exceeded","kind":"limit"}}
-{"engine":"pcre2","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"pcre2","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"pcre2","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"pcre2","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre2","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3435,10 +3331,8 @@
 {"engine":"pcre2-dfa","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre2-dfa","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"pcre2-dfa","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"pcre2-dfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"pcre2-dfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"pcre2-dfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"pcre2-dfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2-dfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"pcre2-dfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre2-dfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2-dfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2-dfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3500,10 +3394,8 @@
 {"engine":"pcre2-utf","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"pcre2-utf","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"pcre2-utf","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"limit: match limit exceeded","kind":"limit"}}
-{"engine":"pcre2-utf","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"pcre2-utf","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"pcre2-utf","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"pcre2-utf","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"pcre2-utf","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"pcre2-utf","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"pcre2-utf","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2-utf","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"pcre2-utf","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3567,8 +3459,6 @@
 {"engine":"pire","case":"LF27","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pire","case":"U1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pire","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"pire","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"pire","case":"U4","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pire","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pire","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pire","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -3630,10 +3520,8 @@
 {"engine":"plan9","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"plan9","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"plan9","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"plan9","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"plan9","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"plan9","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"plan9","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"plan9","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"plan9","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"plan9","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"plan9","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"plan9","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3697,8 +3585,6 @@
 {"engine":"pyformlang","case":"LF27","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"pyformlang","case":"U3","result":{"killed":true}}
-{"engine":"pyformlang","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"pyformlang","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -3760,10 +3646,8 @@
 {"engine":"python-re","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-re","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"python-re","case":"LF27","result":{"killed":true}}
-{"engine":"python-re","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"python-re","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"python-re","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"python-re","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-re","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-re","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"python-re","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-re","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-re","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3825,10 +3709,8 @@
 {"engine":"python-regex","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-regex","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"python-regex","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"python-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"python-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"python-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"python-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"python-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3890,10 +3772,8 @@
 {"engine":"python-regex-posix","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-regex-posix","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"python-regex-posix","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"python-regex-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"python-regex-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"python-regex-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"python-regex-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"python-regex-posix","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -3955,10 +3835,8 @@
 {"engine":"python-regex-v1","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"python-regex-v1","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"python-regex-v1","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"python-regex-v1","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"python-regex-v1","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"python-regex-v1","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"python-regex-v1","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex-v1","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"python-regex-v1","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"python-regex-v1","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex-v1","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"python-regex-v1","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4020,10 +3898,8 @@
 {"engine":"quickjs","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"quickjs","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"quickjs","case":"LF27","result":{"killed":true}}
-{"engine":"quickjs","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"quickjs","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"quickjs","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"quickjs","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"quickjs","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"quickjs","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"quickjs","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"quickjs","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"quickjs","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4085,10 +3961,8 @@
 {"engine":"quickjs-u","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"quickjs-u","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"quickjs-u","case":"LF27","result":{"killed":true}}
-{"engine":"quickjs-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"quickjs-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"quickjs-u","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
-{"engine":"quickjs-u","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"quickjs-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"quickjs-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"quickjs-u","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"quickjs-u","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"quickjs-u","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4150,10 +4024,8 @@
 {"engine":"quickjs-v","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"quickjs-v","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"quickjs-v","case":"LF27","result":{"killed":true}}
-{"engine":"quickjs-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"quickjs-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"quickjs-v","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"quickjs-v","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"quickjs-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"quickjs-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"quickjs-v","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"quickjs-v","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"quickjs-v","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4215,10 +4087,8 @@
 {"engine":"re1-backtrack","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-backtrack","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-backtrack","case":"LF27","result":{"killed":true}}
-{"engine":"re1-backtrack","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re1-backtrack","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"re1-backtrack","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"re1-backtrack","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-backtrack","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-backtrack","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re1-backtrack","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-backtrack","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re1-backtrack","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4280,10 +4150,8 @@
 {"engine":"re1-pike","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-pike","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-pike","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re1-pike","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re1-pike","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"re1-pike","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"re1-pike","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-pike","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-pike","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re1-pike","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-pike","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re1-pike","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4345,10 +4213,8 @@
 {"engine":"re1-recursive","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursive","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursive","case":"LF27","result":{"killed":true}}
-{"engine":"re1-recursive","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re1-recursive","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"re1-recursive","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"re1-recursive","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-recursive","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-recursive","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re1-recursive","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursive","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re1-recursive","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4410,10 +4276,8 @@
 {"engine":"re1-recursiveloop","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursiveloop","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursiveloop","case":"LF27","result":{"killed":true}}
-{"engine":"re1-recursiveloop","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re1-recursiveloop","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"re1-recursiveloop","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"re1-recursiveloop","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-recursiveloop","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re1-recursiveloop","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re1-recursiveloop","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re1-recursiveloop","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re1-recursiveloop","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4477,8 +4341,6 @@
 {"engine":"re1-thompson","case":"LF27","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"U1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"re1-thompson","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"re1-thompson","case":"U4","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"re1-thompson","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -4540,10 +4402,8 @@
 {"engine":"re2","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"re2","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re2","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"re2","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"re2","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4605,10 +4465,8 @@
 {"engine":"re2-longest","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2-longest","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"re2-longest","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2-longest","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re2-longest","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"re2-longest","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"re2-longest","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2-longest","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2-longest","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2-longest","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2-longest","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2-longest","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4670,10 +4528,8 @@
 {"engine":"re2-posix","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\s"}}
 {"engine":"re2-posix","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"re2-posix","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re2-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"re2-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"re2-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"re2-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2-posix","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: invalid escape sequence: \\s"}}
 {"engine":"re2-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4735,10 +4591,8 @@
 {"engine":"re2c-leftmost","case":"LF25","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
 {"engine":"re2c-leftmost","case":"LF26","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
 {"engine":"re2c-leftmost","case":"LF27","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re2c-leftmost","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"re2c-leftmost","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"re2c-leftmost","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-leftmost","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-leftmost","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2c-leftmost","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2c-leftmost","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4800,10 +4654,8 @@
 {"engine":"re2c-nfa","case":"LF25","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
 {"engine":"re2c-nfa","case":"LF26","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
 {"engine":"re2c-nfa","case":"LF27","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re2c-nfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"re2c-nfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"re2c-nfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-nfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-nfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2c-nfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2c-nfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4865,10 +4717,8 @@
 {"engine":"re2c-tdfa","case":"LF25","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
 {"engine":"re2c-tdfa","case":"LF26","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
 {"engine":"re2c-tdfa","case":"LF27","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"re2c-tdfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"re2c-tdfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"re2c-tdfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-tdfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"re2c-tdfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2c-tdfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2c-tdfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4930,10 +4780,8 @@
 {"engine":"re2js","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2js","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"re2js","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2js","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"re2js","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"re2js","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
-{"engine":"re2js","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"re2js","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
+{"engine":"re2js","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"re2js","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2js","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2js","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4995,10 +4843,8 @@
 {"engine":"reflex","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"reflex","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"reflex","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"reflex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"reflex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"reflex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"reflex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"reflex","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"reflex","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"reflex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"reflex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"reflex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5060,10 +4906,8 @@
 {"engine":"regelk","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regelk","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"regelk","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"regelk","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"regelk","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"regelk","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"regelk","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regelk","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regelk","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regelk","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regelk","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regelk","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5125,10 +4969,8 @@
 {"engine":"regex-lite","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regex-lite","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"regex-lite","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"regex-lite","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"regex-lite","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"regex-lite","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"regex-lite","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regex-lite","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regex-lite","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regex-lite","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regex-lite","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regex-lite","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5190,10 +5032,8 @@
 {"engine":"regex-tdfa","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regex-tdfa","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern"}}
 {"engine":"regex-tdfa","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"regex-tdfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"regex-tdfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"regex-tdfa","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"regex-tdfa","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regex-tdfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regex-tdfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regex-tdfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regex-tdfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regex-tdfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5255,10 +5095,8 @@
 {"engine":"regexp2","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regexp2","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"regexp2","case":"LF27","result":{"killed":true}}
-{"engine":"regexp2","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"regexp2","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"regexp2","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"regexp2","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regexp2","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regexp2","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"regexp2","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regexp2","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regexp2","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5320,10 +5158,8 @@
 {"engine":"regexp2-rtl","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regexp2-rtl","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"regexp2-rtl","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"regexp2-rtl","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"regexp2-rtl","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"regexp2-rtl","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"regexp2-rtl","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regexp2-rtl","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"regexp2-rtl","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"regexp2-rtl","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regexp2-rtl","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regexp2-rtl","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5385,10 +5221,8 @@
 {"engine":"regress","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regress","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"regress","case":"LF27","result":{"killed":true}}
-{"engine":"regress","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"regress","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"regress","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"regress","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regress","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regress","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regress","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regress","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regress","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5450,10 +5284,8 @@
 {"engine":"regress-u","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regress-u","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"regress-u","case":"LF27","result":{"killed":true}}
-{"engine":"regress-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"regress-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"regress-u","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"regress-u","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regress-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regress-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regress-u","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regress-u","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regress-u","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5515,10 +5347,8 @@
 {"engine":"regress-v","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"regress-v","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"regress-v","case":"LF27","result":{"killed":true}}
-{"engine":"regress-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"regress-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"regress-v","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"regress-v","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regress-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"regress-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"regress-v","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regress-v","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"regress-v","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5580,10 +5410,8 @@
 {"engine":"rematch","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Anchor found inside capture.\n!m{$\\s+}<EOF>\n   ^"}}
 {"engine":"rematch","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Syntax error in regular expression.\n!m{a{2}?}\n       ^"}}
 {"engine":"rematch","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: Anchor found inside capture.\n!m{(a+)+$}<EOF>\n        ^"}}
-{"engine":"rematch","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"rematch","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"rematch","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"rematch","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rematch","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rematch","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"rematch","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rematch","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rematch","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5645,10 +5473,8 @@
 {"engine":"remimu","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"remimu","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2],null]}}
 {"engine":"remimu","case":"LF27","result":{"killed":true}}
-{"engine":"remimu","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4],null]}}
-{"engine":"remimu","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1],null]}}
-{"engine":"remimu","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2],null]}}
-{"engine":"remimu","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2],null]}}
+{"engine":"remimu","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2],null]}}
+{"engine":"remimu","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4],null]}}
 {"engine":"remimu","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3],null]}}
 {"engine":"remimu","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3],null]}}
 {"engine":"remimu","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5710,10 +5536,8 @@
 {"engine":"resharp-net","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"this pattern contains unsupported anchors/lookarounds: lookarounds are only supported at the start or end of the pattern, e.g. (?<=R1)R2(?=R3). See docs/syntax.md#lookarounds"}}
 {"engine":"resharp-net","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"resharp-net","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"resharp-net","case":"U1","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
-{"engine":"resharp-net","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"resharp-net","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"resharp-net","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-net","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-net","case":"U2","result":{"ok":true,"matched":true,"groups":[[2,3]]}}
 {"engine":"resharp-net","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"resharp-net","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"resharp-net","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5775,10 +5599,8 @@
 {"engine":"resharp-rs","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"resharp-rs","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"parse error: UnsupportedLazyQuantifier: Span(Position(o: 1, l: 0, c: 1), Position(o: 4, l: 0, c: 4))"}}
 {"engine":"resharp-rs","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"resharp-rs","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"resharp-rs","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"resharp-rs","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"resharp-rs","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-rs","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"resharp-rs","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"resharp-rs","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"resharp-rs","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"resharp-rs","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5840,10 +5662,8 @@
 {"engine":"rust-regex","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rust-regex","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"rust-regex","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"rust-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"rust-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"rust-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"rust-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rust-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rust-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"rust-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rust-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rust-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5905,10 +5725,8 @@
 {"engine":"rust-regex-ascii","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rust-regex-ascii","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"rust-regex-ascii","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"rust-regex-ascii","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"rust-regex-ascii","case":"U2","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    .\n    ^\nerror: pattern can match invalid UTF-8"}}
-{"engine":"rust-regex-ascii","case":"U3","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    ..\n    ^\nerror: pattern can match invalid UTF-8"}}
-{"engine":"rust-regex-ascii","case":"U4","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    #.\n     ^\nerror: pattern can match invalid UTF-8"}}
+{"engine":"rust-regex-ascii","case":"U1","result":{"ok":false,"matched":false,"groups":[],"error":"regex parse error:\n    #.\n     ^\nerror: pattern can match invalid UTF-8"}}
+{"engine":"rust-regex-ascii","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"rust-regex-ascii","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rust-regex-ascii","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rust-regex-ascii","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -5970,10 +5788,8 @@
 {"engine":"rust-regex-swap","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rust-regex-swap","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"rust-regex-swap","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"rust-regex-swap","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"rust-regex-swap","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"rust-regex-swap","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"rust-regex-swap","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rust-regex-swap","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"rust-regex-swap","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"rust-regex-swap","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rust-regex-swap","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rust-regex-swap","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6035,10 +5851,8 @@
 {"engine":"rxspencer","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rxspencer","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: repetition-operator operand invalid"}}
 {"engine":"rxspencer","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"rxspencer","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"rxspencer","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"rxspencer","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"rxspencer","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"rxspencer","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"rxspencer","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"rxspencer","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"rxspencer","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"rxspencer","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6102,8 +5916,6 @@
 {"engine":"slre","case":"LF27","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"slre","case":"U1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"slre","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"slre","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"slre","case":"U4","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"slre","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"slre","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"slre","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -6165,10 +5977,8 @@
 {"engine":"sregex-pike","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"sregex-pike","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"sregex-pike","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"sregex-pike","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"sregex-pike","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"sregex-pike","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"sregex-pike","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"sregex-pike","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"sregex-pike","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"sregex-pike","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"sregex-pike","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"sregex-pike","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6232,8 +6042,6 @@
 {"engine":"sregex-thompson","case":"LF27","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"U1","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"U2","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"sregex-thompson","case":"U3","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
-{"engine":"sregex-thompson","case":"U4","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"sregex-thompson","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -6295,10 +6103,8 @@
 {"engine":"srell","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"srell","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"srell","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"complexity: error_complexity","kind":"limit"}}
-{"engine":"srell","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"srell","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"srell","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"srell","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"srell","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"srell","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"srell","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"srell","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"srell","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6360,10 +6166,8 @@
 {"engine":"srell-u","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"srell-u","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"srell-u","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"complexity: error_complexity","kind":"limit"}}
-{"engine":"srell-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"srell-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"srell-u","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"srell-u","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"srell-u","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"srell-u","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"srell-u","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"srell-u","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"srell-u","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6425,10 +6229,8 @@
 {"engine":"srell-v","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"srell-v","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"srell-v","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"complexity: error_complexity","kind":"limit"}}
-{"engine":"srell-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"srell-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"srell-v","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"srell-v","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"srell-v","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"srell-v","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"srell-v","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"srell-v","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"srell-v","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6490,10 +6292,8 @@
 {"engine":"std-awk","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
 {"engine":"std-awk","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"The parser did not consume the entire regular expression."}}
 {"engine":"std-awk","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"The complexity of an attempted match against a regular expression exceeded a pre-set level."}}
-{"engine":"std-awk","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"std-awk","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"std-awk","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"std-awk","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-awk","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-awk","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"std-awk","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"The expression contained an invalid escaped character, or a trailing escape."}}
 {"engine":"std-awk","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-awk","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6555,10 +6355,8 @@
 {"engine":"std-ecma","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-ecma","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"std-ecma","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"The complexity of an attempted match against a regular expression exceeded a pre-set level."}}
-{"engine":"std-ecma","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"std-ecma","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"std-ecma","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"std-ecma","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-ecma","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-ecma","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"std-ecma","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-ecma","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-ecma","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6620,10 +6418,8 @@
 {"engine":"std-grep","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
 {"engine":"std-grep","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"std-grep","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"std-grep","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"std-grep","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"std-grep","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"std-grep","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-grep","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-grep","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"std-grep","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"An empty regex is not allowed in the POSIX grammar."}}
 {"engine":"std-grep","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-grep","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6685,10 +6481,8 @@
 {"engine":"std-posix","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"The parser did not consume the entire regular expression."}}
 {"engine":"std-posix","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"The parser did not consume the entire regular expression."}}
 {"engine":"std-posix","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"The complexity of an attempted match against a regular expression exceeded a pre-set level."}}
-{"engine":"std-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"std-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"std-posix","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"std-posix","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-posix","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"std-posix","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"std-posix","case":"LT/^K (#x0B)","result":{"ok":false,"matched":false,"groups":[],"error":"The parser did not consume the entire regular expression."}}
 {"engine":"std-posix","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"std-posix","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6752,8 +6546,6 @@
 {"engine":"subreg","case":"LF27","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"subreg","case":"U1","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"subreg","case":"U2","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"subreg","case":"U3","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
-{"engine":"subreg","case":"U4","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
 {"engine":"subreg","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"subreg","case":"io-pos","result":{"ok":true,"matched":true,"groups":[],"bool":true}}
 {"engine":"subreg","case":"io-neg","result":{"ok":true,"matched":false,"groups":[],"bool":true}}
@@ -6815,10 +6607,8 @@
 {"engine":"swift-regex","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"swift-regex","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"swift-regex","case":"LF27","result":{"killed":true}}
-{"engine":"swift-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"swift-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"swift-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"swift-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"swift-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"swift-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"swift-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"swift-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"swift-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6880,10 +6670,8 @@
 {"engine":"t-rex","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"t-rex","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"t-rex","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"t-rex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"t-rex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"t-rex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"t-rex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"t-rex","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"t-rex","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"t-rex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"t-rex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"t-rex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -6945,10 +6733,8 @@
 {"engine":"tiny-regex-c","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tiny-regex-c","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tiny-regex-c","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"tiny-regex-c","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"tiny-regex-c","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"tiny-regex-c","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"tiny-regex-c","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tiny-regex-c","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tiny-regex-c","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tiny-regex-c","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tiny-regex-c","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tiny-regex-c","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -7010,10 +6796,8 @@
 {"engine":"tinyre","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tinyre","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"tinyre","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"tinyre","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"tinyre","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,4]]}}
-{"engine":"tinyre","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"tinyre","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"tinyre","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
+{"engine":"tinyre","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tinyre","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tinyre","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tinyre","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -7075,10 +6859,8 @@
 {"engine":"tre","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tre","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"tre","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"tre","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"tre","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"tre","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"tre","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tre","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -7140,10 +6922,8 @@
 {"engine":"tre-backtrack","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tre-backtrack","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"tre-backtrack","case":"LF27","result":{"killed":true}}
-{"engine":"tre-backtrack","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"tre-backtrack","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"tre-backtrack","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"tre-backtrack","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre-backtrack","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre-backtrack","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tre-backtrack","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre-backtrack","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre-backtrack","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -7205,10 +6985,8 @@
 {"engine":"tre-fuzzy","case":"LF25","result":{"ok":true,"matched":true,"groups":[[2,2]]}}
 {"engine":"tre-fuzzy","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"tre-fuzzy","case":"LF27","result":{"ok":true,"matched":true,"groups":[[0,31],[0,31]]}}
-{"engine":"tre-fuzzy","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"tre-fuzzy","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"tre-fuzzy","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"tre-fuzzy","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre-fuzzy","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre-fuzzy","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tre-fuzzy","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre-fuzzy","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre-fuzzy","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -7270,10 +7048,8 @@
 {"engine":"tre-ungreedy","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"tre-ungreedy","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"tre-ungreedy","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"tre-ungreedy","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"tre-ungreedy","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"tre-ungreedy","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"tre-ungreedy","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre-ungreedy","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"tre-ungreedy","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"tre-ungreedy","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre-ungreedy","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"tre-ungreedy","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -7335,10 +7111,8 @@
 {"engine":"ximtech","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ximtech","case":"LF26","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"ximtech","case":"LF27","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"ximtech","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"ximtech","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"ximtech","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"ximtech","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ximtech","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"ximtech","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"ximtech","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ximtech","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"ximtech","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -7400,10 +7174,8 @@
 {"engine":"xpressive","case":"LF25","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"xpressive","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"xpressive","case":"LF27","result":{"killed":true}}
-{"engine":"xpressive","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"xpressive","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"xpressive","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"xpressive","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"xpressive","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"xpressive","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"xpressive","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"xpressive","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"xpressive","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
@@ -7465,10 +7237,8 @@
 {"engine":"zig-regex","case":"LF25","result":{"ok":true,"matched":true,"groups":[[1,2]]}}
 {"engine":"zig-regex","case":"LF26","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"zig-regex","case":"LF27","result":{"ok":true,"matched":true,"groups":[[0,30],[0,30]]}}
-{"engine":"zig-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
-{"engine":"zig-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
-{"engine":"zig-regex","case":"U3","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
-{"engine":"zig-regex","case":"U4","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"zig-regex","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
+{"engine":"zig-regex","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"zig-regex","case":"LT/^K (#x0B)","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"zig-regex","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"zig-regex","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}

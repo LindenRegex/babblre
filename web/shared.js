@@ -5,7 +5,7 @@ const { span } = van.tags;
 
 export const CASES = await fetch(new URL('./cases.json', import.meta.url)).then((r) => r.json());
 
-export const SOURCE_ORDER = ['boost / POSIX', 'Linden', 'lingua-franca', 'unicode'];
+export const SOURCE_ORDER = ['boost / POSIX', 'Linden', 'lingua-franca', 'other'];
 const SOURCE = Object.fromEntries(CASES.map((c) => [c.id, c.source]));
 for (const c of CASES) if (!SOURCE_ORDER.includes(c.source))
   throw new Error(`cases.json: case ${c.id} has source ${JSON.stringify(c.source)} not in SOURCE_ORDER`);

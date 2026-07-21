@@ -56,9 +56,7 @@
   {"id":"LF25","regex":"$\\s+","input":"a\r","note":"D-OracleJava: does $ match before a final \\r?","source":"lingua-franca"},
   {"id":"LF26","regex":"a{2}?","input":"aa","note":"D-Ruby: {2}? lazy vs optional","source":"lingua-franca"},
   {"id":"LF27","regex":"(a+)+$","input":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!","note":"catastrophic backtracking (ReDoS): linear engines reject instantly, backtrackers time out / hit a complexity limit","source":"lingua-franca"},
-  {"id":"U1","regex":"b","input":"é b","note":"search after a 2-byte char — offsets differ by unit (byte 3 vs codepoint/utf16 2)","source":"unicode"},
-  {"id":"U2","regex":".","input":"😀","note":"astral char (1 cp / 2 utf16 / 4 bytes): whole-codepoint vs one-byte vs lone-surrogate match","source":"unicode"},
-  {"id":"U3","regex":"..","input":"😀x","note":"'..' matches 2 chars vs 2 code units (😀 only) vs 2 bytes (half of 😀)","source":"unicode"},
-  {"id":"U4","regex":"#.","input":"#🦔#","note":". consumes one code unit, code point, or byte depending on the engine","featured":true,"source":"unicode"},
-  {"id":"LT/^K (#x0B)","regex":"=\\s=","input":"=\u000b=","note":"See Perl 5.18's release notes: \"No one could recall why \\s didn't match \\cK, the vertical tab. Now it does.\".  Not all engines followed.","featured":true,"source":"unicode"}
+  {"id":"U1","regex":"#.","input":"#🐢#","note":". consumes one code unit, code point, or byte depending on the engine","featured":true,"source":"other"},
+  {"id":"U2","regex":"a","input":"λ a","note":"search after a multibyte char","source":"other"},
+  {"id":"LT/^K (#x0B)","regex":"=\\s=","input":"=\u000b=","note":"See Perl 5.18's release notes: “No one could recall why \\s didn't match \\cK, the vertical tab. Now it does.”.  Not all engines followed suit.","featured":true,"source":"other"}
 ]
