@@ -12,26 +12,30 @@ for (const c of CASES) if (!SOURCE_ORDER.includes(c.source))
 export function caseSource(id) { const s = SOURCE[id]; if (s === undefined) throw new Error(`unknown case id ${id}`); return s; }
 
 const RUNTIMES = [
-  { kind: 'cpp',    url: 'api/wasm/worker.js?module=engines.js&style=emscripten' },
-  { kind: 'rust',   url: 'api/wasm/worker.js?module=rust_regex.wasm&style=raw' },
-  { kind: 'zig',    url: 'api/wasm/worker.js?module=zig_regex.wasm&style=raw' },
-  { kind: 'go',     url: 'api/go/worker.js' },
-  { kind: 'dotnet', url: 'api/dotnet/worker.js', opts: { type: 'module' } },
-  { kind: 'python', url: 'api/python/worker.js', opts: { type: 'module' } },
-  { kind: 'js',     url: 'api/js/worker.js?module=js' },
-  { kind: 'e262',   url: 'api/js/worker.js?module=e262' },
-  { kind: 'ocaml',  url: 'api/js/worker.js?module=ocaml' },
-  { kind: 'nim',    url: 'api/js/worker.js?module=nim' },
-  { kind: 'haskell', url: 'api/haskell/worker.js' },
-  { kind: 'java',   url: 'api/java/worker.js', opts: { type: 'module' } },
-  { kind: 'swift',  url: 'api/swift/worker.js' },
-  { kind: 'icu',    url: 'api/wasm/worker.js?module=icu_regex.js&style=emscripten&factory=createIcu' },
-  { kind: 'memo',   url: 'api/wasm/worker.js?module=memo_regex.js&style=emscripten&factory=createMemo' },
-  { kind: 'rematch', url: 'api/wasm/worker.js?module=rematch.js&style=emscripten&factory=createRematch' },
-  { kind: 're2c',   url: 'api/wasm/worker.js?module=re2c_regex.js&style=emscripten&factory=createRe2c' },
+  { kind: 'cpp',    label: 'C/C++ engines',    url: 'api/wasm/worker.js?module=engines.js&style=emscripten' },
+  { kind: 'rust',   label: 'Rust regex',       url: 'api/wasm/worker.js?module=rust_regex.wasm&style=raw' },
+  { kind: 'zig',    label: 'Zig regex',        url: 'api/wasm/worker.js?module=zig_regex.wasm&style=raw' },
+  { kind: 'go',     label: 'Go regexp',        url: 'api/go/worker.js' },
+  { kind: 'dotnet', label: '.NET runtime',     url: 'api/dotnet/worker.js', opts: { type: 'module' } },
+  { kind: 'python', label: 'Python (Pyodide)', url: 'api/python/worker.js', opts: { type: 'module' } },
+  { kind: 'js',     label: 'JS engines',       url: 'api/js/worker.js?module=js' },
+  { kind: 'e262',   label: 'engine262',        url: 'api/js/worker.js?module=e262' },
+  { kind: 'ocaml',  label: 'OCaml',            url: 'api/js/worker.js?module=ocaml' },
+  { kind: 'nim',    label: 'Nim',              url: 'api/js/worker.js?module=nim' },
+  { kind: 'haskell', label: 'Haskell (GHC)',   url: 'api/haskell/worker.js' },
+  { kind: 'java',   label: 'Java (TeaVM)',     url: 'api/java/worker.js', opts: { type: 'module' } },
+  { kind: 'swift',  label: 'Swift',            url: 'api/swift/worker.js' },
+  { kind: 'icu',    label: 'ICU',              url: 'api/wasm/worker.js?module=icu_regex.js&style=emscripten&factory=createIcu' },
+  { kind: 'memo',   label: 'memoized regex',   url: 'api/wasm/worker.js?module=memo_regex.js&style=emscripten&factory=createMemo' },
+  { kind: 'rematch', label: 'REmatch',         url: 'api/wasm/worker.js?module=rematch.js&style=emscripten&factory=createRematch' },
+  { kind: 're2c',   label: 're2c',             url: 'api/wasm/worker.js?module=re2c_regex.js&style=emscripten&factory=createRe2c' },
 ];
 const RT = Object.fromEntries(RUNTIMES.map((r) => [r.kind, r]));
+export const RUNTIME_LABELS = Object.fromEntries(RUNTIMES.map((r) => [r.kind, r.label || r.kind]));
 const kill = (w) => { try { w?.terminate(); } catch (_) {} };
+
+export const runtimeState = van.state({});
+function setRt(kind, s) { if (runtimeState.val[kind] !== s) runtimeState.val = { ...runtimeState.val, [kind]: s }; }
 
 function runtimeList(rt) {
   return new Promise((resolve) => {
@@ -195,29 +199,29 @@ function client(kind) {
 }
 function makeRuntimeClient(kind) {
   const rt = RT[kind];
-  let worker = null, ready = false, queue = [], current = null, initTimer = null;
+  let worker = null, ready = false, everReady = false, queue = [], current = null, initTimer = null;
   function settle(value) { if (current) { clearTimeout(current.t); const r = current.resolve; current = null; r(value); } }
   function failAll(value) {
     clearTimeout(initTimer); settle(value);
     while (queue.length) queue.shift().resolve(value);
     kill(worker);
     worker = null; ready = false;
+    setRt(kind, 'failed');
   }
   function spawn() {
     ready = false;
+    setRt(kind, everReady ? 'reloading' : 'loading');
     const w = worker = new Worker(rt.url, rt.opts);
     w.onmessage = (ev) => {
       if (worker !== w) return;   // ignore a stray message from a superseded worker
       const d = ev.data;
       if (d.compiled) { moduleCache.set(rt.url, d.compiled); return; }
-      if (d.ready) { ready = true; clearTimeout(initTimer); pump(); return; }
+      if (d.ready) { ready = true; everReady = true; clearTimeout(initTimer); setRt(kind, 'ready'); pump(); return; }
       if (!current) return;
-      // respawn to contain a wasm trap then retry the match once on the fresh module
       if (d.crashed) {
         const c = current; current = null; clearTimeout(c.t);
         kill(w); worker = null; ready = false;
-        if (c.retried) c.resolve(d.result); else { c.retried = true; queue.unshift(c); }
-        spawn(); pump(); return;
+        c.resolve(d.result); pump(); return;
       }
       clearTimeout(current.t); const r = current.resolve; current = null; r(d.result); pump();
     };
@@ -225,7 +229,7 @@ function makeRuntimeClient(kind) {
       if (worker !== w) return;
       if (!ready) { failAll(UNAVAILABLE); return; }
       kill(w); worker = null; ready = false;
-      settle(KILLED); spawn(); pump();
+      settle(KILLED); pump();
     };
     w.postMessage({ cmd: 'init', module: moduleCache.get(rt.url) });
     initTimer = setTimeout(() => { if (!ready) failAll(UNAVAILABLE); }, INIT_TIMEOUT_MS);
@@ -239,7 +243,7 @@ function makeRuntimeClient(kind) {
     current.t = setTimeout(() => {
       kill(worker); worker = null; ready = false;
       const r = current.resolve; current = null; r(KILLED);
-      spawn(); pump();
+      pump();
     }, current.timeout);
   }
   return {

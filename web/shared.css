@@ -32,7 +32,30 @@ button, input { font: inherit; color: inherit; }
 button { cursor: pointer; background: #f3f4f6; border: 1px solid var(--line); border-radius: 4px; padding: .2rem .55rem; }
 input[type=text] { border: 1px solid var(--line); border-radius: 4px; padding: .15rem .4rem; background: #fff; }
 a { color: var(--tango-sky-blue); }
-[aria-busy="true"]::after { content: '⋯'; color: var(--muted); }
+
+.booting { color: var(--muted); font-size: .95rem; padding: 1.2rem .2rem;
+           animation: rc-pulse 1.3s ease-in-out infinite; }
+@keyframes rc-pulse { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+
+.rcicon { width: 1.1em; height: 1.1em; vertical-align: -.2em; color: var(--muted);
+          stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.match .busy { opacity: .85; }
+.rc-cmp { animation: rc-spin .8s linear infinite; }
+.rc-cmp .track { opacity: .25; }
+@keyframes rc-spin { to { transform: rotate(360deg); } }
+.rc-dl .tray { opacity: .55; }
+.rc-dl .arr  { animation: rc-bob 1.1s ease-in-out infinite; }
+@keyframes rc-bob { 0%, 100% { transform: translateY(-1.5px); opacity: .55; } 55% { transform: translateY(1.5px); opacity: 1; } }
+
+.dlbar { position: fixed; left: .7rem; bottom: .6rem; z-index: 50; pointer-events: none; }
+.dlbox { background: var(--bg); border: 1px solid var(--line); border-radius: 8px;
+         padding: .4rem .6rem .45rem; box-shadow: 0 2px 12px rgba(0, 0, 0, .12); max-width: min(78vw, 22rem); }
+.dlhead { font-size: .6rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-bottom: .3rem; }
+.dlrow  { display: flex; align-items: center; gap: .45rem; font-size: .76rem; color: var(--label); padding: .07rem 0; }
+.dlrow .lbl  { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dlrow .dlok { color: var(--agree-1); font-weight: 700; width: 1.1em; text-align: center; }
+.dlrow.done  { color: var(--muted); }
+.dlrow .rcicon { flex: none; }
 
 .flavor  { font-size: .8rem; font-style: italic; color: var(--c, var(--muted)); }
 .flavor .ver { font-style: normal; font-weight: 400; color: var(--muted); }

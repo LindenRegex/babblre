@@ -1,5 +1,5 @@
 import { van, CASES, CORE_IDS, NEUTRAL, KILLED, CLASSES, SOURCE_ORDER, caseSource, colorsFor, distinctCount, renderMatch,
-         discoverEngines, matchOne } from './shared.js';
+         discoverEngines, matchOne, runtimeState, RUNTIME_LABELS } from './shared.js';
 const { div, button, label, input, table, thead, tbody, tr, th, td, code, span, a } = van.tags;
 const svgEl = van.tags('http://www.w3.org/2000/svg');
 
@@ -22,6 +22,17 @@ const extIcon = () => svgEl.svg({ class: 'ext', viewBox: '0 0 24 24', width: '11
   svgEl.path({ d: 'M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4' }));
 const extLink = (u, kids) => a({ href: u, target: '_blank', rel: 'noopener', class: 'extlink',
   title: 'open engine website', onclick: (ev) => ev.stopPropagation() }, kids);
+
+const dlFlags = Object.fromEntries([...new Set(ENGINES.map((e) => e.kind))].map((k) =>
+  [k, van.derive(() => { const s = runtimeState.val[k]; return s === undefined || s === 'loading'; })]));
+const downloading = (eid) => !!dlFlags[BY_ID[eid]?.kind]?.val;
+const dlIcon = () => svgEl.svg({ class: 'rcicon rc-dl', viewBox: '0 0 24 24', 'aria-hidden': 'true' },
+  svgEl.path({ class: 'tray', d: 'M4 19h16' }),
+  svgEl.g({ class: 'arr' }, svgEl.path({ d: 'M12 4v9' }), svgEl.path({ d: 'M7.5 10l4.5 4.5 4.5-4.5' })));
+const cmpIcon = () => svgEl.svg({ class: 'rcicon rc-cmp', viewBox: '0 0 24 24', 'aria-hidden': 'true' },
+  svgEl.circle({ class: 'track', cx: '12', cy: '12', r: '8' }),
+  svgEl.path({ class: 'arc', d: 'M12 4a8 8 0 0 1 8 8' }));
+const busyIcon = (dl) => span({ class: 'busy', title: dl ? 'downloading engine…' : 'computing match…' }, dl ? dlIcon() : cmpIcon());
 
 const sel = van.state(new Set(coreAvail));
 let selKey = null, selCache = [];
@@ -85,9 +96,8 @@ function refresh() { selEngines().forEach(ensureMgr); }
 
 const liveResult = (c = {}) => c.status === 'done' ? c.engine : c.status === 'timeout' ? KILLED : null;
 const liveColors = () => colorsById(selEngines().map((e) => liveResult(cells.val[e.id])), strEl.value);
-function liveBody(c) {
-  if (c.status === 'init') return [span({ class: 'note nomatch' }, '…')];
-  if (!c.engine && c.status !== 'timeout') return [span({ 'aria-busy': 'true' }, '')];
+function liveBody(c, id) {
+  if (!c.engine && c.status !== 'timeout') return [busyIcon(downloading(id))];
   return renderMatch(c.input, liveResult(c) || c.engine, dispMode.val);
 }
 
@@ -109,9 +119,10 @@ const cell = (eid, cid, cls, color, body) => td({ class: cls, 'data-engine': eid
 const matchCell = (eid, cid, input, mode) => cell(eid, cid,
   () => boolClass(resultOf(eid, cid)),
   () => colorsOf(cid).val[eid],
-  () => matchDiv(renderMatch(input, resultOf(eid, cid), mode)));
+  () => { const res = resultOf(eid, cid);
+          return res != null ? matchDiv(renderMatch(input, res, mode)) : matchDiv([busyIcon(downloading(eid))]); });
 const liveCell = (id) => cell(id, 'live', () => boolClass(cells.val[id]?.engine),
-                              () => liveColors()[id], () => matchDiv(liveBody(cells.val[id] || {})));
+                              () => liveColors()[id], () => matchDiv(liveBody(cells.val[id] || {}, id)));
 const liveInputs = () => [label('regex', reEl), label('string', strEl)];
 
 function view() {
@@ -152,6 +163,49 @@ function toolbar() {
           engUrl(e) ? extLink(engUrl(e), extIcon()) : null)))));
 }
 
-van.add(document.getElementById('app'), toolbar(), div({ class: 'scroll' }, view()));
+const DL_DEBOUNCE = 220, DONE_LINGER = 1400;
+const dlRows = van.state([]);
+const dlTimers = new Map();
+const dlDoneTimers = new Map();
+let dlPrev = {};
+function dlSet(kind, patch) {
+  const rows = dlRows.val, i = rows.findIndex((r) => r.kind === kind);
+  if (patch === null) { if (i >= 0) dlRows.val = rows.filter((r) => r.kind !== kind); return; }
+  const nr = { ...(i >= 0 ? rows[i] : { kind, label: RUNTIME_LABELS[kind] || kind }), ...patch };
+  dlRows.val = i >= 0 ? rows.map((r, k) => (k === i ? nr : r)) : [...rows, nr];
+}
+van.derive(() => {
+  const st = runtimeState.val;
+  for (const kind in st) {
+    const s = st[kind];
+    if (s === dlPrev[kind]) continue;
+    if (s === 'loading') {
+      clearTimeout(dlTimers.get(kind));
+      dlTimers.set(kind, setTimeout(() => { if (runtimeState.val[kind] === 'loading') dlSet(kind, { done: false }); }, DL_DEBOUNCE));
+    } else if (s === 'ready' || s === 'failed') {
+      clearTimeout(dlTimers.get(kind)); dlTimers.delete(kind);
+      if (dlRows.val.some((r) => r.kind === kind)) {
+        if (s === 'ready') {
+          dlSet(kind, { done: true });
+          clearTimeout(dlDoneTimers.get(kind));
+          dlDoneTimers.set(kind, setTimeout(() => { dlSet(kind, null); dlDoneTimers.delete(kind); }, DONE_LINGER));
+        } else { dlSet(kind, null); }
+      }
+    }
+  }
+  dlPrev = { ...st };
+});
+const dlRow = (r) => div({ class: 'dlrow' + (r.done ? ' done' : '') },
+  r.done ? span({ class: 'dlok' }, '✓') : dlIcon(),
+  span({ class: 'lbl' }, r.label));
+const dlPanel = () => div({ class: 'dlbar' }, () => {
+  const rows = dlRows.val;
+  return rows.length ? div({ class: 'dlbox' }, div({ class: 'dlhead' }, 'downloading engines'), ...rows.map(dlRow)) : div();
+});
+
+const app = document.getElementById('app');
+app.replaceChildren();
+van.add(app, toolbar(), div({ class: 'scroll' }, view()));
+van.add(document.body, dlPanel());
 
 selEngines().forEach((e) => load(e));
