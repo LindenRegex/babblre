@@ -1,0 +1,1803 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicateType": "https://slsa.dev/provenance/v1",
+  "subject": [
+    {
+      "name": "api/dotnet/worker.js",
+      "digest": {
+        "sha256": "23e5b169c71cca89e1946b637d5bcc8d43ce9fdb38e8de833215be6482f4d7d1"
+      }
+    },
+    {
+      "name": "api/go/worker.js",
+      "digest": {
+        "sha256": "2f98600b465cada7433b2af9ea67c8027f8a17ac6667a93a7af6a6ff1ee520e0"
+      }
+    },
+    {
+      "name": "api/haskell/worker.js",
+      "digest": {
+        "sha256": "e39a21b46131a2c070706610a829d3e2a9ccac7194da1ba9dc422a3a711af4ab"
+      }
+    },
+    {
+      "name": "api/java/worker.js",
+      "digest": {
+        "sha256": "6e493d5b80d13c3e74c17d0014ae9c132ce69e0d75aa9d79795ecfae2a168eef"
+      }
+    },
+    {
+      "name": "api/js/worker.js",
+      "digest": {
+        "sha256": "52a2bf3a4ac35a183cb8c4672eb6202918c9091019d38405608f654e96514aac"
+      }
+    },
+    {
+      "name": "api/protocol.js",
+      "digest": {
+        "sha256": "178e44eccc2e96573046be18fab7168b1563e3341faa0c5e20b225fa86513ea6"
+      }
+    },
+    {
+      "name": "api/python/worker.js",
+      "digest": {
+        "sha256": "0cc4eff5ead6b9975dbf74e28ebf28a44ecb3c39121268c8e92911d6a68b8b7d"
+      }
+    },
+    {
+      "name": "api/swift/worker.js",
+      "digest": {
+        "sha256": "d6bc2436cda2ee742d1560d677bd25bc6be4e3c4726b80a68ed037031c3f2116"
+      }
+    },
+    {
+      "name": "api/wasm/worker.js",
+      "digest": {
+        "sha256": "8de1a29ff0c8e56aa1a4f8b26e2d03245558c6e1ef014d2150177645b4f964e4"
+      }
+    },
+    {
+      "name": "cases.json",
+      "digest": {
+        "sha256": "208f5a3406a93b54de3456300b75172738da4def9e549183fc3885418780d5d5"
+      }
+    },
+    {
+      "name": "dotnet/.stamp",
+      "digest": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "dotnet/RegexBridge.runtimeconfig.json",
+      "digest": {
+        "sha256": "079ccee481948a8080bf9ebd39f8b66018e8909cffc5550d4118f95f92acb2a7"
+      }
+    },
+    {
+      "name": "dotnet/_framework/FSharp.Core.wasm",
+      "digest": {
+        "sha256": "cab1cfd410e02b148b24563d6297107a0ec09a7662100fa66477b69c2d3066f1"
+      }
+    },
+    {
+      "name": "dotnet/_framework/RegexBridge.wasm",
+      "digest": {
+        "sha256": "309f13c3b0e8bca285830982bd58e17aef20344617dd9ae21515c243847ec3e2"
+      }
+    },
+    {
+      "name": "dotnet/_framework/Resharp.Runtime.wasm",
+      "digest": {
+        "sha256": "25171418bbc24beab847035c257a4a70fb8b293b8e7d6456d3cf19ce1a546ffe"
+      }
+    },
+    {
+      "name": "dotnet/_framework/Resharp.wasm",
+      "digest": {
+        "sha256": "bdbf4fafe2684dbc6027d5b44c9842b64df3ac570784cceec67afb922f2a7f61"
+      }
+    },
+    {
+      "name": "dotnet/_framework/System.Collections.Concurrent.wasm",
+      "digest": {
+        "sha256": "4ff7620aabc4156f65493ccafcaa5f23da2afe784a71802d37a6c44b2cea512d"
+      }
+    },
+    {
+      "name": "dotnet/_framework/System.Collections.wasm",
+      "digest": {
+        "sha256": "11ee00f7e86b1231d5cb7cfe067103e2ade04abbaf9ef8e4dadf87b725793e3d"
+      }
+    },
+    {
+      "name": "dotnet/_framework/System.Private.CoreLib.wasm",
+      "digest": {
+        "sha256": "090bd9e0d219f255f21fcd4b999b3152f5fe472698f60d1a81ec82cfe24c855b"
+      }
+    },
+    {
+      "name": "dotnet/_framework/System.Runtime.InteropServices.JavaScript.wasm",
+      "digest": {
+        "sha256": "1f7d6192ceaee8d7dba70de51917c45367af098d8cfcf8d96b9e77c8892b3252"
+      }
+    },
+    {
+      "name": "dotnet/_framework/System.Text.Encodings.Web.wasm",
+      "digest": {
+        "sha256": "34904a2f09185122d2f16c8a0952bfc3aa4a8d288b33fcd1e755cb7750370bf6"
+      }
+    },
+    {
+      "name": "dotnet/_framework/System.Text.Json.wasm",
+      "digest": {
+        "sha256": "be842010ecd0a270eeb94bfbf93231581c45e16b151788172c22f1aba50fbed6"
+      }
+    },
+    {
+      "name": "dotnet/_framework/System.Text.RegularExpressions.wasm",
+      "digest": {
+        "sha256": "428b98d05d5fb9d9c790a1be3582adf0750a5346aca186e6c61dccfa44f28b51"
+      }
+    },
+    {
+      "name": "dotnet/_framework/blazor.boot.json",
+      "digest": {
+        "sha256": "64ab70567fd373071d3cbe32d4b43703078bcce594fa52f6e2220d87c9d7b709"
+      }
+    },
+    {
+      "name": "dotnet/_framework/cs/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "19df70189168d99dde4e6498542ed1cd2a0c5e8ad27f157ffa280bdd63321e2a"
+      }
+    },
+    {
+      "name": "dotnet/_framework/de/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "5e37848a9e561bc585791b09acf8702e919b0b830d95eb4663269389f68dde67"
+      }
+    },
+    {
+      "name": "dotnet/_framework/dotnet.js",
+      "digest": {
+        "sha256": "dc620cb5b06f6da1cb660f379766813c3c05fa5eb60b15c025eb76414d531dba"
+      }
+    },
+    {
+      "name": "dotnet/_framework/dotnet.js.map",
+      "digest": {
+        "sha256": "1ee012765107fc0a4b1ffcd9f27eb6a3118b512693526526a404683df23ef780"
+      }
+    },
+    {
+      "name": "dotnet/_framework/dotnet.native.js",
+      "digest": {
+        "sha256": "6d76a17a12bdd0e84e0ca420e5e9628f8b27203e7da7a08d3be9aec05ef1f30b"
+      }
+    },
+    {
+      "name": "dotnet/_framework/dotnet.native.js.symbols",
+      "digest": {
+        "sha256": "9382b07d733950ddd84efe0d4a5d68e881d05e2e035c5d1c98dff610d0a74bba"
+      }
+    },
+    {
+      "name": "dotnet/_framework/dotnet.native.wasm",
+      "digest": {
+        "sha256": "2194b7b1b552f9ea595d48aea66a9835b8f4d140f8ff1348ad73342abbbf000b"
+      }
+    },
+    {
+      "name": "dotnet/_framework/dotnet.runtime.js",
+      "digest": {
+        "sha256": "7be7f88d90f66b0b20b217e81391ab9215441c53fa1518ffbfa04c54e1ee89d9"
+      }
+    },
+    {
+      "name": "dotnet/_framework/dotnet.runtime.js.map",
+      "digest": {
+        "sha256": "36df4816208c57e3000a1c167b0240b0a3a0e363ceaebd0a0e5bd6337c7c3bf4"
+      }
+    },
+    {
+      "name": "dotnet/_framework/es/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "e231b0f3aed780b268f099c8d4fafa568460fb0376708b59a535cf3ee2b2f2de"
+      }
+    },
+    {
+      "name": "dotnet/_framework/fr/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "d4444d5083531aae1742fee5151613214c0b73df98003f7c65847232797a2b3c"
+      }
+    },
+    {
+      "name": "dotnet/_framework/icudt_CJK.dat",
+      "digest": {
+        "sha256": "4992ed42745cd09930a8769bd155153fb4f7b813d2798cf1cc39e9c4fa549c79"
+      }
+    },
+    {
+      "name": "dotnet/_framework/icudt_EFIGS.dat",
+      "digest": {
+        "sha256": "f1f22d7ad618f24434c30ea8c704cb893de85e50701caba66de3f6a51178c937"
+      }
+    },
+    {
+      "name": "dotnet/_framework/icudt_no_CJK.dat",
+      "digest": {
+        "sha256": "2fbb15ecd1183f7eff42bd853c278fa39709a918135d1c061eec05e50fb435fb"
+      }
+    },
+    {
+      "name": "dotnet/_framework/it/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "35ee144c7db66932dd927d1c67043b793027d45f9e8f9ba27e9fc549fb7f0f19"
+      }
+    },
+    {
+      "name": "dotnet/_framework/ja/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "decb65d4d407261f18be627a8589502f4bd27da16cd63090c517afd380bb1139"
+      }
+    },
+    {
+      "name": "dotnet/_framework/ko/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "3595efeeb075e781a31c366274db914e3aeda7b1c27ea74e1c4fcdcb635976c8"
+      }
+    },
+    {
+      "name": "dotnet/_framework/pl/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "a53a340f613a8222c76c9fc6bae3a8b4ec69ac62392404aaf012cda2ebc30249"
+      }
+    },
+    {
+      "name": "dotnet/_framework/pt-BR/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "de6381345c3dcf658f3e1abb23a24e9e5317d23cc64974e7ab734f937683f4ff"
+      }
+    },
+    {
+      "name": "dotnet/_framework/ru/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "2a87e11b1b0aa982ec02484071863c95d72e35348d9258a342446bb3eb826755"
+      }
+    },
+    {
+      "name": "dotnet/_framework/supportFiles/0_runtimeconfig.bin",
+      "digest": {
+        "sha256": "6d95400d513dfefba4e152bd51c31ddc044438d152a1650b61a72ccb90c72f72"
+      }
+    },
+    {
+      "name": "dotnet/_framework/tr/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "245b38d92dacbe022b97069577a8664dd7085946d79142ff5ae630e2700be3cd"
+      }
+    },
+    {
+      "name": "dotnet/_framework/zh-Hans/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "f5a2c923ccf15fd44100034b3dbde1191b2b38e10dd01ea0bf3820c46fd43810"
+      }
+    },
+    {
+      "name": "dotnet/_framework/zh-Hant/FSharp.Core.resources.wasm",
+      "digest": {
+        "sha256": "8210c48b283a19bfce45497f1ab02ed2eadf37b69abc6228fd851acb2c1f9cb8"
+      }
+    },
+    {
+      "name": "dotnet/main.js",
+      "digest": {
+        "sha256": "660e5878b6c1dd4eecbf4ec57824cc9d63934153a02dec1aa657ff97885b9651"
+      }
+    },
+    {
+      "name": "dotnet/package.json",
+      "digest": {
+        "sha256": "4db3f375c580dbd2fe977190c854014c577b08c59615b41d4bc53163840e625f"
+      }
+    },
+    {
+      "name": "engines.js",
+      "digest": {
+        "sha256": "b91fcff492023eea850d16be8b14fde76bdfa5164bcf77138bd953695032f68a"
+      }
+    },
+    {
+      "name": "engines.wasm",
+      "digest": {
+        "sha256": "a105557eb7fbba91c641cc945cd504b01493d54ec8a5d062574be7fdadba1374"
+      }
+    },
+    {
+      "name": "go_regex.wasm",
+      "digest": {
+        "sha256": "81910422b031d3830590fff615c1d845a0670d3951ce0da962073bfd708d385c"
+      }
+    },
+    {
+      "name": "haskell_regex.wasm",
+      "digest": {
+        "sha256": "1d509a1a0a037796bfe3df2db3a08e8d50fece1b8a4c3a2af7389eb62eb632fa"
+      }
+    },
+    {
+      "name": "icu_regex.js",
+      "digest": {
+        "sha256": "080f291bcb359c229d95360402a3c62d260275899e5b5af847d53353a4f2b25c"
+      }
+    },
+    {
+      "name": "icu_regex.wasm",
+      "digest": {
+        "sha256": "e0d7c28fe4f3b646ba4716ce50484d57ca88005df6850c7facdbeab50a0e0fbe"
+      }
+    },
+    {
+      "name": "index.html",
+      "digest": {
+        "sha256": "5d06a88b7e13a125e9a7f05a083d95451cb928fe1dcbb1c842956968b0660a76"
+      }
+    },
+    {
+      "name": "java_regex.js",
+      "digest": {
+        "sha256": "71bca7bc13dc63d4478891260106aa7046d71de3ea416c5bd08aed329e604871"
+      }
+    },
+    {
+      "name": "js/browser.js",
+      "digest": {
+        "sha256": "ce9150d9b6c36e68702a4e604d0f57f633162c122163602b66656c244d11deef"
+      }
+    },
+    {
+      "name": "js/engine262.js",
+      "digest": {
+        "sha256": "896c9a419a9c8bff8e83303d45a862b81f36745ba31d5050a413e04c6efb1246"
+      }
+    },
+    {
+      "name": "js/re2js.js",
+      "digest": {
+        "sha256": "98efd65c66ca0f10c12b36727e6e6da26fa5c828da69f93a948cf2e2b44d2500"
+      }
+    },
+    {
+      "name": "matrix.js",
+      "digest": {
+        "sha256": "38c16ae4b4fda30f3b4bff8c82155efee8574b921b455de24a021f7a0e58e525"
+      }
+    },
+    {
+      "name": "memo_regex.js",
+      "digest": {
+        "sha256": "a584aa01615ebdd52bebdc3b757ba16dff7023fc0e4d6e004796a4acead07f1a"
+      }
+    },
+    {
+      "name": "memo_regex.wasm",
+      "digest": {
+        "sha256": "4f543cf571fc1ea3a7d3e4d0aecdd3df96367ba66effe512c871532a36aba27e"
+      }
+    },
+    {
+      "name": "nim.js",
+      "digest": {
+        "sha256": "b81a377a460cbbdd3006a4ffd38833d0d698e8a7e80d6534727e5ea87baa7df1"
+      }
+    },
+    {
+      "name": "ocaml.js",
+      "digest": {
+        "sha256": "d2c55ffe07d468df37e75fa96b00e620763b047e91b943657e2264d055ccfea3"
+      }
+    },
+    {
+      "name": "package.json",
+      "digest": {
+        "sha256": "3ca9d4afd21425087cf31893b8f9f63c81b0b8408db5e343ca76e5f8aa26ab9a"
+      }
+    },
+    {
+      "name": "python/engines.py",
+      "digest": {
+        "sha256": "17608bc23c4bc79ff7dfffae6cd16bd84e373e10d616bd31de9bd996237a3072"
+      }
+    },
+    {
+      "name": "python/freeze.txt",
+      "digest": {
+        "sha256": "086ea5651c4db8898fb38caf049e4d9b0498d2e34cd21851f89aecfc7b3c8fd2"
+      }
+    },
+    {
+      "name": "re2c_regex.js",
+      "digest": {
+        "sha256": "99a28e177663632fc7340c4ef61f13ce47ced611744cc7d1438e0924b7fc1d41"
+      }
+    },
+    {
+      "name": "re2c_regex.wasm",
+      "digest": {
+        "sha256": "2a3fb7ade0a6322b8902f420dff07747e39cf613c4fcc481893e8a01087915fb"
+      }
+    },
+    {
+      "name": "rematch.js",
+      "digest": {
+        "sha256": "931620b799d894b1efd9e0f8757fd3ea84af0806cb64a3122705b39e2220138e"
+      }
+    },
+    {
+      "name": "rematch.wasm",
+      "digest": {
+        "sha256": "ff10df7bf2b994844b44419b197b50744e5bc999014b4b278a509c7f9ba1f7d6"
+      }
+    },
+    {
+      "name": "rust_regex.wasm",
+      "digest": {
+        "sha256": "930dfcee912b56f9635c29094ddba67b4846cde2296f5e9109a5d2911621326f"
+      }
+    },
+    {
+      "name": "shared.css",
+      "digest": {
+        "sha256": "dd3482423b592bcfdbfaced65d34ddd62600b6f1529bc3c0f4476020e71c182e"
+      }
+    },
+    {
+      "name": "shared.js",
+      "digest": {
+        "sha256": "569a3ebfbc6aa2450f9d3499e697e1411098eab89b8e378ed6c7b0b218c2cb87"
+      }
+    },
+    {
+      "name": "swift_regex.wasm",
+      "digest": {
+        "sha256": "884c26696a7cf33d4f481890486b4c4559a8b31eea446eabb6b0458cb27d5823"
+      }
+    },
+    {
+      "name": "units.js",
+      "digest": {
+        "sha256": "e6dd512e8bec2e3041d9fb6e156792a4490f8c209288acf45fc31b078dc3b9ac"
+      }
+    },
+    {
+      "name": "van.min.js",
+      "digest": {
+        "sha256": "24e114e9aba558abffa98440a2f6200a806cb41fbbedf5fd5347294e75274af5"
+      }
+    },
+    {
+      "name": "wasm_exec.js",
+      "digest": {
+        "sha256": "0c949f4996f9a89698e4b5c586de32249c3b69b7baadb64d220073cc04acba14"
+      }
+    },
+    {
+      "name": "zig_regex.wasm",
+      "digest": {
+        "sha256": "90f42abce53ac1b34b900978df7a7e9c599ea320ae8a9ee850ce869a30cdd824"
+      }
+    }
+  ],
+  "predicate": {
+    "buildDefinition": {
+      "buildType": "https://github.com/moby/buildkit/blob/master/docs/attestations/slsa-definitions.md",
+      "resolvedDependencies": [
+        {
+          "uri": "pkg:docker/debian@bookworm-20250520-slim?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "90522eeb7e5923ee2b871c639059537b30521272f10ca86fdbbbb2b75a8c40cd"
+          }
+        }
+      ],
+      "externalParameters": {
+        "configSource": {
+          "path": "Dockerfile"
+        },
+        "request": {
+          "frontend": "dockerfile.v0",
+          "args": {
+            "target": "site"
+          },
+          "locals": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "dockerfile"
+            }
+          ],
+          "root": {
+            "configSource": {
+              "path": "Dockerfile"
+            },
+            "request": {
+              "args": {
+                "target": "site",
+                "vcs:localdir:context": ".",
+                "vcs:localdir:dockerfile": "etc",
+                "vcs:revision": "1d7c9a95ec2ef78f95500c7c35b851653a0fcc12",
+                "vcs:source": "https://github.com/LindenRegex/babblre"
+              }
+            }
+          },
+          "compatibilityVersion": 30
+        }
+      },
+      "internalParameters": {
+        "buildConfig": {
+          "digestMapping": {
+            "sha256:0b90b2c72ca30929999331f8048d1778d2a30c7c64a6162c7ad58c16d88e6d72": "step11",
+            "sha256:30b4708cc5bed649e320d3e656967ec770ade215b2734d76fcab613d635e3732": "step4",
+            "sha256:3b03695955ca7772515cbe00f76fc7af3a7e083b2396b63c2d41d0e334a32dbe": "step9",
+            "sha256:3f556e1bbd55c93cb138a75c0454eb8849ff717bfdeb104134e6f67d07cc0a1b": "step5",
+            "sha256:4188f9b22b336c63504b3a40d841496fbe147b1fc3e7b6e99414a1233183ea1c": "step1",
+            "sha256:4bf4b6c31cac83b6feaa384e02d60bbe36632f2b27902efd220bb13ad9803035": "step3",
+            "sha256:4c80713d49bf3c3c1f9caf4b6df78109fe10d11e7930a7ffea4994dc3f3a2920": "step0",
+            "sha256:5bfbc997bf8ddb23452a51861ce8c2f902c92a7ec8eb6b7398cd374aab7386ea": "step7",
+            "sha256:7956f124b736852acb8319e3b80b54a638664f1e2de58eef65676944981934e4": "step12",
+            "sha256:a8bd85cd5fb6294f1078e42e4f58c5e435b20b7d03297713f2be350467b02d21": "step2",
+            "sha256:e816cb75da9a773f3d0f23879d33d7db9c8fa3c483f4206affa3ff5b372edc60": "step10",
+            "sha256:e92f0be65cb2228346e88b5f5a34d2982dc9016fb9c5cece5d7c2a9df875546f": "step6",
+            "sha256:fbfe42f8f5daeaaa11ab8f850065fb6e4baef2e298a744910414f3e515ddb922": "step8"
+          },
+          "llbDefinition": [
+            {
+              "id": "step0",
+              "op": {
+                "Op": {
+                  "source": {
+                    "identifier": "docker-image://docker.io/library/debian:bookworm-20250520-slim@sha256:90522eeb7e5923ee2b871c639059537b30521272f10ca86fdbbbb2b75a8c40cd"
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step1",
+              "inputs": [
+                "step0:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "apt-get update \u0026\u0026 apt-get install -y --no-install-recommends       build-essential g++ make cmake git curl ca-certificates xz-utils unzip jq zstd       python3 python-is-python3 autoconf automake libtool pkg-config       libicu-dev bison flex libxml2 opam       libncurses6 libcurl4 libsqlite3-0 libuuid1     \u0026\u0026 rm -rf /var/lib/apt/lists/*"
+                      ],
+                      "cwd": "/",
+                      "env": [
+                        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "DEBIAN_FRONTEND=noninteractive"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step2",
+              "inputs": [
+                "step1:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "curl -fsSL https://deb.nodesource.com/setup_22.x | bash -     \u0026\u0026 apt-get install -y --no-install-recommends nodejs \u0026\u0026 rm -rf /var/lib/apt/lists/*"
+                      ],
+                      "cwd": "/",
+                      "env": [
+                        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "DEBIAN_FRONTEND=noninteractive"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step3",
+              "op": {
+                "Op": {
+                  "source": {
+                    "attrs": {
+                      "local.excludepatterns": "[\"emsdk\",\".cargo\",\".rustup\",\"boost_1_*\",\"go\",\".dotnet\",\".opam\",\".nim\",\".nimble\",\".zig\",\".ldc\",\"e2e/node_modules\",\"e2e/test-results\",\"e2e/playwright-report\",\".pw-browsers\",\".chromedeps\",\".apt\",\".npmcache\",\".fccache\",\"fonts.conf\",\"build\",\"web/js\",\"web/python\",\"dist\",\".dockerignore\",\"web/engines.js\",\"web/engines.wasm\",\"web/rust_regex.wasm\",\"web/go_regex.wasm\",\"web/wasm_exec.js\",\"web/dotnet\",\"engines/rust/target\",\"engines/dotnet/bin\",\"engines/dotnet/obj\",\"*.tmp\",\"*.log\",\".DS_Store\",\"__pycache__\",\".cache\",\".local\",\".nuget\",\"work\",\"engines/ocaml/*.cm*\",\"web/ocaml.js\",\"web/nim.js\",\"web/zig_regex.wasm\",\"engines/zig/zig-out\",\"engines/zig/.zig-cache\",\"web/haskell_regex.wasm\",\"engines/haskell/dist-newstyle\",\".ghc-wasm\",\"web/java_regex.js\",\"engines/java/target\",\".jdk\",\".maven\",\".m2\",\"web/swift_regex.wasm\",\"engines/swift/.build\",\".swift\",\".swiftpm\",\"web/icu_regex.js\",\"web/icu_regex.wasm\",\"web/memo_regex.js\",\"web/memo_regex.wasm\",\"web/rematch.js\",\"web/rematch.wasm\",\"web/re2c_regex.js\",\"web/re2c_regex.wasm\",\"vendor/icu\",\".config\",\".git\"]",
+                      "local.sharedkeyhint": "context"
+                    },
+                    "identifier": "local://context"
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step4",
+              "inputs": [
+                "step2:0",
+                "step3:0"
+              ],
+              "op": {
+                "Op": {
+                  "file": {
+                    "actions": [
+                      {
+                        "Action": {
+                          "copy": {
+                            "allowEmptyWildcard": true,
+                            "allowWildcard": true,
+                            "createDestPath": true,
+                            "dest": "/tmp/e2e/",
+                            "dirCopyContents": true,
+                            "followSymlink": true,
+                            "mode": -1,
+                            "src": "/e2e/package.json",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": 0,
+                        "output": -1,
+                        "secondaryInput": 1
+                      },
+                      {
+                        "Action": {
+                          "copy": {
+                            "allowEmptyWildcard": true,
+                            "allowWildcard": true,
+                            "createDestPath": true,
+                            "dest": "/tmp/e2e/",
+                            "dirCopyContents": true,
+                            "followSymlink": true,
+                            "mode": -1,
+                            "src": "/e2e/package-lock.json",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": 2,
+                        "output": 0,
+                        "secondaryInput": 1
+                      }
+                    ]
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step5",
+              "inputs": [
+                "step4:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "cd /tmp/e2e \u0026\u0026 npm ci \u0026\u0026 npx playwright install --with-deps chromium \u0026\u0026 rm -rf /tmp/e2e/node_modules"
+                      ],
+                      "cwd": "/",
+                      "env": [
+                        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "DEBIAN_FRONTEND=noninteractive",
+                        "PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers",
+                        "npm_config_cache=/opt/npm-cache"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step6",
+              "inputs": [
+                "step5:0"
+              ],
+              "op": {
+                "Op": {
+                  "file": {
+                    "actions": [
+                      {
+                        "Action": {
+                          "mkdir": {
+                            "makeParents": true,
+                            "mode": 493,
+                            "path": "/work",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": 0,
+                        "output": 0,
+                        "secondaryInput": -1
+                      }
+                    ]
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step7",
+              "inputs": [
+                "step6:0",
+                "step3:0"
+              ],
+              "op": {
+                "Op": {
+                  "file": {
+                    "actions": [
+                      {
+                        "Action": {
+                          "copy": {
+                            "allowEmptyWildcard": true,
+                            "allowWildcard": true,
+                            "createDestPath": true,
+                            "dest": "/work/etc/toolchains.sh",
+                            "dirCopyContents": true,
+                            "followSymlink": true,
+                            "mode": -1,
+                            "src": "/etc/toolchains.sh",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": 0,
+                        "output": 0,
+                        "secondaryInput": 1
+                      }
+                    ]
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step8",
+              "inputs": [
+                "step7:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "bash etc/toolchains.sh"
+                      ],
+                      "cwd": "/work",
+                      "env": [
+                        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "DEBIAN_FRONTEND=noninteractive",
+                        "PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers",
+                        "npm_config_cache=/opt/npm-cache",
+                        "HOME=/work"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step9",
+              "inputs": [
+                "step8:0",
+                "step3:0"
+              ],
+              "op": {
+                "Op": {
+                  "file": {
+                    "actions": [
+                      {
+                        "Action": {
+                          "copy": {
+                            "allowEmptyWildcard": true,
+                            "allowWildcard": true,
+                            "createDestPath": true,
+                            "dest": "/work/",
+                            "dirCopyContents": true,
+                            "followSymlink": true,
+                            "mode": -1,
+                            "src": "/",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": 0,
+                        "output": 0,
+                        "secondaryInput": 1
+                      }
+                    ]
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step10",
+              "inputs": [
+                "step9:0"
+              ],
+              "op": {
+                "Op": {
+                  "exec": {
+                    "meta": {
+                      "args": [
+                        "/bin/sh",
+                        "-c",
+                        "make dist"
+                      ],
+                      "cwd": "/work",
+                      "env": [
+                        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                        "DEBIAN_FRONTEND=noninteractive",
+                        "PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers",
+                        "npm_config_cache=/opt/npm-cache",
+                        "HOME=/work"
+                      ],
+                      "removeMountStubsRecursive": true
+                    },
+                    "mounts": [
+                      {
+                        "dest": "/"
+                      }
+                    ]
+                  }
+                },
+                "constraints": {},
+                "platform": {
+                  "Architecture": "amd64",
+                  "OS": "linux"
+                }
+              }
+            },
+            {
+              "id": "step11",
+              "inputs": [
+                "step10:0"
+              ],
+              "op": {
+                "Op": {
+                  "file": {
+                    "actions": [
+                      {
+                        "Action": {
+                          "copy": {
+                            "allowEmptyWildcard": true,
+                            "allowWildcard": true,
+                            "createDestPath": true,
+                            "dest": "/",
+                            "dirCopyContents": true,
+                            "followSymlink": true,
+                            "mode": -1,
+                            "src": "/work/dist",
+                            "timestamp": -1
+                          }
+                        },
+                        "input": -1,
+                        "output": 0,
+                        "secondaryInput": 0
+                      }
+                    ]
+                  }
+                },
+                "constraints": {}
+              }
+            },
+            {
+              "id": "step12",
+              "inputs": [
+                "step11:0"
+              ],
+              "op": {
+                "Op": {}
+              }
+            }
+          ]
+        },
+        "builderPlatform": "linux/amd64",
+        "dockerfileVersion": "1.25.0",
+        "github_actor": "cpitclaudel",
+        "github_actor_id": "8181630",
+        "github_event_name": "push",
+        "github_event_payload": {
+          "after": "1d7c9a95ec2ef78f95500c7c35b851653a0fcc12",
+          "base_ref": null,
+          "before": "beae10cdceda189b4d3d013c84a5dc3a30176999",
+          "commits": [
+            {
+              "author": {
+                "email": "clement.pit-claudel@epfl.ch",
+                "name": "Clément Pit-Claudel",
+                "username": "cpitclaudel"
+              },
+              "committer": {
+                "email": "clement.pit-claudel@epfl.ch",
+                "name": "Clément Pit-Claudel",
+                "username": "cpitclaudel"
+              },
+              "distinct": true,
+              "id": "59eb40a18f1c9f33021ef883096169bfc878a2ef",
+              "message": "Make re2c report errors instead of trapping",
+              "timestamp": "2026-07-23T11:15:56Z",
+              "tree_id": "95d0a2434fed8f0a5b46c506fd90640d8bb5d3f4",
+              "url": "https://github.com/LindenRegex/babblre/commit/59eb40a18f1c9f33021ef883096169bfc878a2ef"
+            },
+            {
+              "author": {
+                "email": "clement.pit-claudel@epfl.ch",
+                "name": "Clément Pit-Claudel",
+                "username": "cpitclaudel"
+              },
+              "committer": {
+                "email": "clement.pit-claudel@epfl.ch",
+                "name": "Clément Pit-Claudel",
+                "username": "cpitclaudel"
+              },
+              "distinct": true,
+              "id": "1d7c9a95ec2ef78f95500c7c35b851653a0fcc12",
+              "message": "Retry flaky cells in the reference check",
+              "timestamp": "2026-07-23T11:15:56Z",
+              "tree_id": "8b502e55b488042c80537c03f9d38163c9f6eaf9",
+              "url": "https://github.com/LindenRegex/babblre/commit/1d7c9a95ec2ef78f95500c7c35b851653a0fcc12"
+            }
+          ],
+          "compare": "https://github.com/LindenRegex/babblre/compare/beae10cdceda...1d7c9a95ec2e",
+          "created": false,
+          "deleted": false,
+          "forced": true,
+          "head_commit": {
+            "author": {
+              "email": "clement.pit-claudel@epfl.ch",
+              "name": "Clément Pit-Claudel",
+              "username": "cpitclaudel"
+            },
+            "committer": {
+              "email": "clement.pit-claudel@epfl.ch",
+              "name": "Clément Pit-Claudel",
+              "username": "cpitclaudel"
+            },
+            "distinct": true,
+            "id": "1d7c9a95ec2ef78f95500c7c35b851653a0fcc12",
+            "message": "Retry flaky cells in the reference check",
+            "timestamp": "2026-07-23T11:15:56Z",
+            "tree_id": "8b502e55b488042c80537c03f9d38163c9f6eaf9",
+            "url": "https://github.com/LindenRegex/babblre/commit/1d7c9a95ec2ef78f95500c7c35b851653a0fcc12"
+          },
+          "organization": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/224993210?v=4",
+            "description": "",
+            "events_url": "https://api.github.com/orgs/LindenRegex/events",
+            "hooks_url": "https://api.github.com/orgs/LindenRegex/hooks",
+            "id": 224993210,
+            "issues_url": "https://api.github.com/orgs/LindenRegex/issues",
+            "login": "LindenRegex",
+            "members_url": "https://api.github.com/orgs/LindenRegex/members{/member}",
+            "node_id": "O_kgDODWkfug",
+            "public_members_url": "https://api.github.com/orgs/LindenRegex/public_members{/member}",
+            "repos_url": "https://api.github.com/orgs/LindenRegex/repos",
+            "url": "https://api.github.com/orgs/LindenRegex"
+          },
+          "pusher": {
+            "email": "cpitclaudel@users.noreply.github.com",
+            "name": "cpitclaudel"
+          },
+          "ref": "refs/heads/main",
+          "repository": {
+            "allow_forking": true,
+            "archive_url": "https://api.github.com/repos/LindenRegex/babblre/{archive_format}{/ref}",
+            "archived": false,
+            "assignees_url": "https://api.github.com/repos/LindenRegex/babblre/assignees{/user}",
+            "blobs_url": "https://api.github.com/repos/LindenRegex/babblre/git/blobs{/sha}",
+            "branches_url": "https://api.github.com/repos/LindenRegex/babblre/branches{/branch}",
+            "clone_url": "https://github.com/LindenRegex/babblre.git",
+            "collaborators_url": "https://api.github.com/repos/LindenRegex/babblre/collaborators{/collaborator}",
+            "comments_url": "https://api.github.com/repos/LindenRegex/babblre/comments{/number}",
+            "commits_url": "https://api.github.com/repos/LindenRegex/babblre/commits{/sha}",
+            "compare_url": "https://api.github.com/repos/LindenRegex/babblre/compare/{base}...{head}",
+            "contents_url": "https://api.github.com/repos/LindenRegex/babblre/contents/{+path}",
+            "contributors_url": "https://api.github.com/repos/LindenRegex/babblre/contributors",
+            "created_at": 1784314668,
+            "custom_properties": {},
+            "default_branch": "main",
+            "deployments_url": "https://api.github.com/repos/LindenRegex/babblre/deployments",
+            "description": "JS / WASM builds of 80+ regex engines.",
+            "disabled": false,
+            "downloads_url": "https://api.github.com/repos/LindenRegex/babblre/downloads",
+            "events_url": "https://api.github.com/repos/LindenRegex/babblre/events",
+            "fork": false,
+            "forks": 0,
+            "forks_count": 0,
+            "forks_url": "https://api.github.com/repos/LindenRegex/babblre/forks",
+            "full_name": "LindenRegex/babblre",
+            "git_commits_url": "https://api.github.com/repos/LindenRegex/babblre/git/commits{/sha}",
+            "git_refs_url": "https://api.github.com/repos/LindenRegex/babblre/git/refs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/LindenRegex/babblre/git/tags{/sha}",
+            "git_url": "git://github.com/LindenRegex/babblre.git",
+            "has_discussions": false,
+            "has_downloads": true,
+            "has_issues": true,
+            "has_pages": true,
+            "has_projects": true,
+            "has_pull_requests": true,
+            "has_wiki": false,
+            "homepage": "http://lin.den.re/babblre/",
+            "hooks_url": "https://api.github.com/repos/LindenRegex/babblre/hooks",
+            "html_url": "https://github.com/LindenRegex/babblre",
+            "id": 1304306125,
+            "is_template": false,
+            "issue_comment_url": "https://api.github.com/repos/LindenRegex/babblre/issues/comments{/number}",
+            "issue_events_url": "https://api.github.com/repos/LindenRegex/babblre/issues/events{/number}",
+            "issues_url": "https://api.github.com/repos/LindenRegex/babblre/issues{/number}",
+            "keys_url": "https://api.github.com/repos/LindenRegex/babblre/keys{/key_id}",
+            "labels_url": "https://api.github.com/repos/LindenRegex/babblre/labels{/name}",
+            "language": "C",
+            "languages_url": "https://api.github.com/repos/LindenRegex/babblre/languages",
+            "license": null,
+            "master_branch": "main",
+            "merges_url": "https://api.github.com/repos/LindenRegex/babblre/merges",
+            "milestones_url": "https://api.github.com/repos/LindenRegex/babblre/milestones{/number}",
+            "mirror_url": null,
+            "name": "babblre",
+            "node_id": "R_kgDOTb4hzQ",
+            "notifications_url": "https://api.github.com/repos/LindenRegex/babblre/notifications{?since,all,participating}",
+            "open_issues": 0,
+            "open_issues_count": 0,
+            "organization": "LindenRegex",
+            "owner": {
+              "avatar_url": "https://avatars.githubusercontent.com/u/224993210?v=4",
+              "email": null,
+              "events_url": "https://api.github.com/users/LindenRegex/events{/privacy}",
+              "followers_url": "https://api.github.com/users/LindenRegex/followers",
+              "following_url": "https://api.github.com/users/LindenRegex/following{/other_user}",
+              "gists_url": "https://api.github.com/users/LindenRegex/gists{/gist_id}",
+              "gravatar_id": "",
+              "html_url": "https://github.com/LindenRegex",
+              "id": 224993210,
+              "login": "LindenRegex",
+              "name": "LindenRegex",
+              "node_id": "O_kgDODWkfug",
+              "organizations_url": "https://api.github.com/users/LindenRegex/orgs",
+              "received_events_url": "https://api.github.com/users/LindenRegex/received_events",
+              "repos_url": "https://api.github.com/users/LindenRegex/repos",
+              "site_admin": false,
+              "starred_url": "https://api.github.com/users/LindenRegex/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/LindenRegex/subscriptions",
+              "type": "Organization",
+              "url": "https://api.github.com/users/LindenRegex",
+              "user_view_type": "public"
+            },
+            "private": false,
+            "pull_request_creation_policy": "all",
+            "pulls_url": "https://api.github.com/repos/LindenRegex/babblre/pulls{/number}",
+            "pushed_at": 1784808209,
+            "releases_url": "https://api.github.com/repos/LindenRegex/babblre/releases{/id}",
+            "size": 11280,
+            "ssh_url": "git@github.com:LindenRegex/babblre.git",
+            "stargazers": 0,
+            "stargazers_count": 0,
+            "stargazers_url": "https://api.github.com/repos/LindenRegex/babblre/stargazers",
+            "statuses_url": "https://api.github.com/repos/LindenRegex/babblre/statuses/{sha}",
+            "subscribers_url": "https://api.github.com/repos/LindenRegex/babblre/subscribers",
+            "subscription_url": "https://api.github.com/repos/LindenRegex/babblre/subscription",
+            "svn_url": "https://github.com/LindenRegex/babblre",
+            "tags_url": "https://api.github.com/repos/LindenRegex/babblre/tags",
+            "teams_url": "https://api.github.com/repos/LindenRegex/babblre/teams",
+            "topics": [],
+            "trees_url": "https://api.github.com/repos/LindenRegex/babblre/git/trees{/sha}",
+            "updated_at": "2026-07-23T10:13:48Z",
+            "url": "https://api.github.com/repos/LindenRegex/babblre",
+            "visibility": "public",
+            "watchers": 0,
+            "watchers_count": 0,
+            "web_commit_signoff_required": false
+          },
+          "sender": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/8181630?v=4",
+            "events_url": "https://api.github.com/users/cpitclaudel/events{/privacy}",
+            "followers_url": "https://api.github.com/users/cpitclaudel/followers",
+            "following_url": "https://api.github.com/users/cpitclaudel/following{/other_user}",
+            "gists_url": "https://api.github.com/users/cpitclaudel/gists{/gist_id}",
+            "gravatar_id": "",
+            "html_url": "https://github.com/cpitclaudel",
+            "id": 8181630,
+            "login": "cpitclaudel",
+            "node_id": "MDQ6VXNlcjgxODE2MzA=",
+            "organizations_url": "https://api.github.com/users/cpitclaudel/orgs",
+            "received_events_url": "https://api.github.com/users/cpitclaudel/received_events",
+            "repos_url": "https://api.github.com/users/cpitclaudel/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/cpitclaudel/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/cpitclaudel/subscriptions",
+            "type": "User",
+            "url": "https://api.github.com/users/cpitclaudel",
+            "user_view_type": "public"
+          }
+        },
+        "github_job": "build",
+        "github_ref": "refs/heads/main",
+        "github_ref_name": "main",
+        "github_ref_protected": "false",
+        "github_ref_type": "branch",
+        "github_repository": "LindenRegex/babblre",
+        "github_repository_id": "1304306125",
+        "github_repository_owner": "LindenRegex",
+        "github_repository_owner_id": "224993210",
+        "github_run_attempt": "1",
+        "github_run_id": "30005478879",
+        "github_run_number": "11",
+        "github_runner_arch": "X64",
+        "github_runner_environment": "github-hosted",
+        "github_runner_image_os": "ubuntu24",
+        "github_runner_image_version": "20260720.247.2",
+        "github_runner_name": "GitHub Actions 1000000386",
+        "github_runner_os": "Linux",
+        "github_runner_tracking_id": "github_dd7d7674-4db0-4ffd-9eaa-e97549f0cfff",
+        "github_server_url": "https://github.com",
+        "github_triggering_actor": "cpitclaudel",
+        "github_workflow": "CI",
+        "github_workflow_ref": "LindenRegex/babblre/.github/workflows/ci.yml@refs/heads/main",
+        "github_workflow_sha": "1d7c9a95ec2ef78f95500c7c35b851653a0fcc12"
+      }
+    },
+    "runDetails": {
+      "builder": {
+        "id": "https://github.com/LindenRegex/babblre/actions/runs/30005478879/attempts/1"
+      },
+      "metadata": {
+        "invocationId": "pnhtk5lgx0j6b0zq0yz98itki",
+        "startedOn": "2026-07-23T12:30:27.234195024Z",
+        "finishedOn": "2026-07-23T12:30:40.47105784Z",
+        "buildkit_metadata": {
+          "vcs": {
+            "localdir:context": ".",
+            "localdir:dockerfile": "etc",
+            "revision": "1d7c9a95ec2ef78f95500c7c35b851653a0fcc12",
+            "source": "https://github.com/LindenRegex/babblre"
+          },
+          "source": {
+            "locations": {
+              "step0": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 1
+                        },
+                        "end": {
+                          "line": 1
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step1": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 3
+                        },
+                        "end": {
+                          "line": 3
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 4
+                        },
+                        "end": {
+                          "line": 4
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 5
+                        },
+                        "end": {
+                          "line": 5
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 6
+                        },
+                        "end": {
+                          "line": 6
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 7
+                        },
+                        "end": {
+                          "line": 7
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 8
+                        },
+                        "end": {
+                          "line": 8
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step10": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 24
+                        },
+                        "end": {
+                          "line": 24
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step11": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 33
+                        },
+                        "end": {
+                          "line": 33
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step2": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 9
+                        },
+                        "end": {
+                          "line": 9
+                        }
+                      },
+                      {
+                        "start": {
+                          "line": 10
+                        },
+                        "end": {
+                          "line": 10
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step3": {},
+              "step4": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 12
+                        },
+                        "end": {
+                          "line": 12
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step5": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 13
+                        },
+                        "end": {
+                          "line": 13
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step6": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 14
+                        },
+                        "end": {
+                          "line": 14
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step7": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 19
+                        },
+                        "end": {
+                          "line": 19
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step8": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 20
+                        },
+                        "end": {
+                          "line": 20
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "step9": {
+                "locations": [
+                  {
+                    "ranges": [
+                      {
+                        "start": {
+                          "line": 23
+                        },
+                        "end": {
+                          "line": 23
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "infos": [
+              {
+                "filename": "Dockerfile",
+                "language": "Dockerfile",
+                "data": "RlJPTSBkZWJpYW46Ym9va3dvcm0tMjAyNTA1MjAtc2xpbSBBUyBiYXNlCkVOViBERUJJQU5fRlJPTlRFTkQ9bm9uaW50ZXJhY3RpdmUKUlVOIGFwdC1nZXQgdXBkYXRlICYmIGFwdC1nZXQgaW5zdGFsbCAteSAtLW5vLWluc3RhbGwtcmVjb21tZW5kcyBcCiAgICAgIGJ1aWxkLWVzc2VudGlhbCBnKysgbWFrZSBjbWFrZSBnaXQgY3VybCBjYS1jZXJ0aWZpY2F0ZXMgeHotdXRpbHMgdW56aXAganEgenN0ZCBcCiAgICAgIHB5dGhvbjMgcHl0aG9uLWlzLXB5dGhvbjMgYXV0b2NvbmYgYXV0b21ha2UgbGlidG9vbCBwa2ctY29uZmlnIFwKICAgICAgbGliaWN1LWRldiBiaXNvbiBmbGV4IGxpYnhtbDIgb3BhbSBcCiAgICAgIGxpYm5jdXJzZXM2IGxpYmN1cmw0IGxpYnNxbGl0ZTMtMCBsaWJ1dWlkMSBcCiAgICAmJiBybSAtcmYgL3Zhci9saWIvYXB0L2xpc3RzLyoKUlVOIGN1cmwgLWZzU0wgaHR0cHM6Ly9kZWIubm9kZXNvdXJjZS5jb20vc2V0dXBfMjIueCB8IGJhc2ggLSBcCiAgICAmJiBhcHQtZ2V0IGluc3RhbGwgLXkgLS1uby1pbnN0YWxsLXJlY29tbWVuZHMgbm9kZWpzICYmIHJtIC1yZiAvdmFyL2xpYi9hcHQvbGlzdHMvKgpFTlYgUExBWVdSSUdIVF9CUk9XU0VSU19QQVRIPS9vcHQvcHctYnJvd3NlcnMgbnBtX2NvbmZpZ19jYWNoZT0vb3B0L25wbS1jYWNoZQpDT1BZIGUyZS9wYWNrYWdlLmpzb24gZTJlL3BhY2thZ2UtbG9jay5qc29uIC90bXAvZTJlLwpSVU4gY2QgL3RtcC9lMmUgJiYgbnBtIGNpICYmIG5weCBwbGF5d3JpZ2h0IGluc3RhbGwgLS13aXRoLWRlcHMgY2hyb21pdW0gJiYgcm0gLXJmIC90bXAvZTJlL25vZGVfbW9kdWxlcwpXT1JLRElSIC93b3JrCkVOViBIT01FPS93b3JrCkNNRCBbIm1ha2UiLCAiYWxsIl0KCkZST00gYmFzZSBBUyB0b29sY2hhaW5zCkNPUFkgZXRjL3Rvb2xjaGFpbnMuc2ggZXRjL3Rvb2xjaGFpbnMuc2gKUlVOIGJhc2ggZXRjL3Rvb2xjaGFpbnMuc2gKCkZST00gdG9vbGNoYWlucyBBUyBidWlsZApDT1BZIC4gLgpSVU4gbWFrZSBkaXN0CgpGUk9NIGJ1aWxkIEFTIHRlc3QKUlVOIG1ha2UgdGVzdAoKRlJPTSBidWlsZCBBUyB0ZXN0LXVpClJVTiBtYWtlIHRlc3QtdWkKCkZST00gc2NyYXRjaCBBUyBzaXRlCkNPUFkgLS1mcm9tPWJ1aWxkIC93b3JrL2Rpc3QgLwo=",
+                "llbDefinition": [
+                  {
+                    "id": "step0",
+                    "op": {
+                      "Op": {
+                        "source": {
+                          "identifier": "local://dockerfile",
+                          "attrs": {
+                            "local.differ": "none",
+                            "local.followpaths": "[\"Dockerfile\",\"Dockerfile.dockerignore\",\"dockerfile\"]",
+                            "local.sharedkeyhint": "dockerfile"
+                          }
+                        }
+                      },
+                      "constraints": {}
+                    }
+                  },
+                  {
+                    "id": "step1",
+                    "op": {
+                      "Op": {}
+                    },
+                    "inputs": [
+                      "step0:0"
+                    ]
+                  }
+                ],
+                "digestMapping": {
+                  "sha256:dcd6ff9e0c0651cf1aa35f6f61c21093680dac566f3a7d2c2cd9d806471b1ca7": "step0",
+                  "sha256:f963109b9b79c230a66b5ebcc80095e36926365baca6592c7eea010c78225345": "step1"
+                }
+              }
+            ]
+          },
+          "layers": {
+            "step10:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62",
+                  "size": 28225330
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:a46995726d22e14d11aa41c0d96ddc088aa238804c6fa2b64ed316e01a63f648",
+                  "size": 198444082
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:0fd24eb3ae193e5de596bd3a8f6a1919b21ea13a3c97dc1e5d945475b8da0d03",
+                  "size": 61402862
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:cf0110ccb28226d46e4952c6d29cd1d95f271f164511fb9ec2b3c0eb50d2c980",
+                  "size": 2067
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9df3d4ee878ebd3033579e0199f61d841a6d1f855d68d4c88b559c87ec551df3",
+                  "size": 418561620
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:46422a10dd8bde66e9d0559c4891073d08a54d3535f3e63dce8c6f313fdfa84e",
+                  "size": 94
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9adf03ea9c7feec7aa2764047c46d258728f83046f67c8cdcb0916e9201aba4e",
+                  "size": 2403
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:7d7c71b4d1f3dfa6061e317dc23c62056a8cf8c21cb8d62cf61087592a7f3d40",
+                  "size": 5378429769
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:75e6547f68a04ad3ab48c6996dfe2b7277b44be815173b71fbe586b0dd5bd4d4",
+                  "size": 129335757
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:35f08bc32ddf34b87d7bffa06349d41d0336c5729b058fcd9c12eebad78e868d",
+                  "size": 331576035
+                }
+              ]
+            ],
+            "step1:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62",
+                  "size": 28225330
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:a46995726d22e14d11aa41c0d96ddc088aa238804c6fa2b64ed316e01a63f648",
+                  "size": 198444082
+                }
+              ]
+            ],
+            "step2:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62",
+                  "size": 28225330
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:a46995726d22e14d11aa41c0d96ddc088aa238804c6fa2b64ed316e01a63f648",
+                  "size": 198444082
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:0fd24eb3ae193e5de596bd3a8f6a1919b21ea13a3c97dc1e5d945475b8da0d03",
+                  "size": 61402862
+                }
+              ]
+            ],
+            "step4:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62",
+                  "size": 28225330
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:a46995726d22e14d11aa41c0d96ddc088aa238804c6fa2b64ed316e01a63f648",
+                  "size": 198444082
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:0fd24eb3ae193e5de596bd3a8f6a1919b21ea13a3c97dc1e5d945475b8da0d03",
+                  "size": 61402862
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:cf0110ccb28226d46e4952c6d29cd1d95f271f164511fb9ec2b3c0eb50d2c980",
+                  "size": 2067
+                }
+              ]
+            ],
+            "step5:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62",
+                  "size": 28225330
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:a46995726d22e14d11aa41c0d96ddc088aa238804c6fa2b64ed316e01a63f648",
+                  "size": 198444082
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:0fd24eb3ae193e5de596bd3a8f6a1919b21ea13a3c97dc1e5d945475b8da0d03",
+                  "size": 61402862
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:cf0110ccb28226d46e4952c6d29cd1d95f271f164511fb9ec2b3c0eb50d2c980",
+                  "size": 2067
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9df3d4ee878ebd3033579e0199f61d841a6d1f855d68d4c88b559c87ec551df3",
+                  "size": 418561620
+                }
+              ]
+            ],
+            "step6:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62",
+                  "size": 28225330
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:a46995726d22e14d11aa41c0d96ddc088aa238804c6fa2b64ed316e01a63f648",
+                  "size": 198444082
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:0fd24eb3ae193e5de596bd3a8f6a1919b21ea13a3c97dc1e5d945475b8da0d03",
+                  "size": 61402862
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:cf0110ccb28226d46e4952c6d29cd1d95f271f164511fb9ec2b3c0eb50d2c980",
+                  "size": 2067
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9df3d4ee878ebd3033579e0199f61d841a6d1f855d68d4c88b559c87ec551df3",
+                  "size": 418561620
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:46422a10dd8bde66e9d0559c4891073d08a54d3535f3e63dce8c6f313fdfa84e",
+                  "size": 94
+                }
+              ]
+            ],
+            "step7:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62",
+                  "size": 28225330
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:a46995726d22e14d11aa41c0d96ddc088aa238804c6fa2b64ed316e01a63f648",
+                  "size": 198444082
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:0fd24eb3ae193e5de596bd3a8f6a1919b21ea13a3c97dc1e5d945475b8da0d03",
+                  "size": 61402862
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:cf0110ccb28226d46e4952c6d29cd1d95f271f164511fb9ec2b3c0eb50d2c980",
+                  "size": 2067
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9df3d4ee878ebd3033579e0199f61d841a6d1f855d68d4c88b559c87ec551df3",
+                  "size": 418561620
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:46422a10dd8bde66e9d0559c4891073d08a54d3535f3e63dce8c6f313fdfa84e",
+                  "size": 94
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9adf03ea9c7feec7aa2764047c46d258728f83046f67c8cdcb0916e9201aba4e",
+                  "size": 2403
+                }
+              ]
+            ],
+            "step8:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62",
+                  "size": 28225330
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:a46995726d22e14d11aa41c0d96ddc088aa238804c6fa2b64ed316e01a63f648",
+                  "size": 198444082
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:0fd24eb3ae193e5de596bd3a8f6a1919b21ea13a3c97dc1e5d945475b8da0d03",
+                  "size": 61402862
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:cf0110ccb28226d46e4952c6d29cd1d95f271f164511fb9ec2b3c0eb50d2c980",
+                  "size": 2067
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9df3d4ee878ebd3033579e0199f61d841a6d1f855d68d4c88b559c87ec551df3",
+                  "size": 418561620
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:46422a10dd8bde66e9d0559c4891073d08a54d3535f3e63dce8c6f313fdfa84e",
+                  "size": 94
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9adf03ea9c7feec7aa2764047c46d258728f83046f67c8cdcb0916e9201aba4e",
+                  "size": 2403
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:7d7c71b4d1f3dfa6061e317dc23c62056a8cf8c21cb8d62cf61087592a7f3d40",
+                  "size": 5378429769
+                }
+              ]
+            ],
+            "step9:0": [
+              [
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:61320b01ae5e0798393ef25f2dc72faf43703e60ba089b07d7170acbabbf8f62",
+                  "size": 28225330
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:a46995726d22e14d11aa41c0d96ddc088aa238804c6fa2b64ed316e01a63f648",
+                  "size": 198444082
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:0fd24eb3ae193e5de596bd3a8f6a1919b21ea13a3c97dc1e5d945475b8da0d03",
+                  "size": 61402862
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:cf0110ccb28226d46e4952c6d29cd1d95f271f164511fb9ec2b3c0eb50d2c980",
+                  "size": 2067
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9df3d4ee878ebd3033579e0199f61d841a6d1f855d68d4c88b559c87ec551df3",
+                  "size": 418561620
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:46422a10dd8bde66e9d0559c4891073d08a54d3535f3e63dce8c6f313fdfa84e",
+                  "size": 94
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:9adf03ea9c7feec7aa2764047c46d258728f83046f67c8cdcb0916e9201aba4e",
+                  "size": 2403
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:7d7c71b4d1f3dfa6061e317dc23c62056a8cf8c21cb8d62cf61087592a7f3d40",
+                  "size": 5378429769
+                },
+                {
+                  "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                  "digest": "sha256:75e6547f68a04ad3ab48c6996dfe2b7277b44be815173b71fbe586b0dd5bd4d4",
+                  "size": 129335757
+                }
+              ]
+            ]
+          }
+        },
+        "buildkit_completeness": {
+          "request": true,
+          "resolvedDependencies": false
+        }
+      }
+    }
+  }
+}
