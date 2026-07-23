@@ -33,11 +33,14 @@ export async function collect() {
   }));
   const rechecks = {};
   for (const e of engines)
-    for (const c of ALL_CASES) if (rows[e.id][c.id].killed) (rechecks[e.kind] ??= []).push([e.id, c]);
+    for (const c of ALL_CASES) { const r = rows[e.id][c.id]; if (r.killed || isInfra(r)) (rechecks[e.kind] ??= []).push([e.id, c]); }
   await Promise.all(Object.values(rechecks).map(async (cells) => {
     for (const [id, c] of cells) {
-      let r = await matchOne(id, c.regex, c.input);
-      if (r.killed) r = await matchOne(id, c.regex, c.input);
+      let r = rows[id][c.id];
+      for (let t = 0; t < 2 && (r.killed || isInfra(r)); t++) {
+        if (isInfra(r)) await sleep(1000);
+        r = await matchOne(id, c.regex, c.input);
+      }
       rows[id][c.id] = r;
     }
   }));
