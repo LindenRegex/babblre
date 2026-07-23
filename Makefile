@@ -33,7 +33,7 @@ DOTNET ?= $(CURDIR)/.dotnet/dotnet
 
 LANGS := wasm rust go dotnet ocaml nim zig haskell java swift icu memoregex rematch re2c js python
 
-.PHONY: all toolchains engines $(LANGS) serve test test-ui reference-test reference-capture FORCE check-symbols clean distclean deepclean vendor-fetch vendor-clean vendor-recreate vendor-submodules docker-image dist dist-docker
+.PHONY: all toolchains engines $(LANGS) serve test test-ui reference-test reference-capture FORCE check-symbols clean distclean deepclean vendor-fetch vendor-clean vendor-recreate vendor-submodules vendor-patch docker-image dist dist-docker
 
 toolchains: ; etc/toolchains.sh
 all: toolchains
@@ -86,8 +86,13 @@ vendor/icu/wasm/lib/libicui18n.a: $(NAT)
 	$(NAT) icu
 vendor/rematch/build-wasm/lib/libREmatch.a: $(NAT)
 	$(NAT) rematch
-vendor/re2c/build-wasm/libre2c.a: $(NAT)
+vendor/re2c/build-wasm/libre2c.a: $(NAT) | vendor-patch
 	$(NAT) re2clib
+
+# Patch pristine submodule checkouts; order-only prereq of the submodule builds above so a reset re-patches.
+VENDOR_PATCHES := re2c
+vendor-patch:
+	@set -e; for p in $(VENDOR_PATCHES); do etc/vendor/$$p.sh vendor/$$p; done
 
 vendor-fetch:
 	@set -e; for e in $(VENDOR_ENGINES); do echo "== vendor $$e =="; etc/vendor/$$e.sh engines/cpp/$$e; done

@@ -1,0 +1,86 @@
+diff --git a/bootstrap/lib/parse.cc b/bootstrap/lib/parse.cc
+index c612e3831..ea0142702 100644
+--- a/bootstrap/lib/parse.cc
++++ b/bootstrap/lib/parse.cc
+@@ -144,7 +144,7 @@ typedef enum yysymbol_kind_t yysymbol_kind_t;
+ 
+ extern "C" {
+     static int yylex(YYSTYPE* yylval, const uint8_t*& pattern, Ast& ast);
+-    static void yyerror(const uint8_t* pattern, Ast&, const char* msg) RE2C_ATTR((noreturn));
++    static void yyerror(const uint8_t* pattern, Ast&, const char* msg);
+ }
+ 
+ 
+@@ -1360,9 +1360,9 @@ yyreturnlab:
+ #pragma GCC diagnostic pop
+ 
+ extern "C" {
+-    static void yyerror(const uint8_t* pattern, Ast&, const char* msg) {
+-        fprintf(stderr, "%s (on regexp %s)", msg, pattern);
+-        exit(1);
++    static void yyerror(const uint8_t*, Ast&, const char*) {
++        // Never exit()/abort() — in a wasm build that traps the whole module. Failure is signaled
++        // via yyparse()'s return code (see parse()), so bad/unsupported syntax fails gracefully.
+     }
+ 
+     static int yylex(YYSTYPE* yylval, const uint8_t*& pattern, Ast& ast) {
+@@ -1374,8 +1374,8 @@ namespace re2c {
+ 
+ const AstNode* parse(const char* pattern, Ast& ast) {
+     const uint8_t *p = reinterpret_cast<const uint8_t*>(pattern);
+-    yyparse(p, ast);
+-    return regexp;
++    regexp = nullptr;
++    return yyparse(p, ast) == 0 ? regexp : nullptr;
+ }
+ 
+ } // namespace re2c
+diff --git a/lib/parse.ypp b/lib/parse.ypp
+index 4c21b983c..3088ecc19 100644
+--- a/lib/parse.ypp
++++ b/lib/parse.ypp
+@@ -39,7 +39,7 @@ using namespace re2c;
+ %{
+ extern "C" {
+     static int yylex(YYSTYPE* yylval, const uint8_t*& pattern, Ast& ast);
+-    static void yyerror(const uint8_t* pattern, Ast&, const char* msg) RE2C_ATTR((noreturn));
++    static void yyerror(const uint8_t* pattern, Ast&, const char* msg);
+ }
+ 
+ %}
+@@ -84,9 +84,9 @@ primary
+ #pragma GCC diagnostic pop
+ 
+ extern "C" {
+-    static void yyerror(const uint8_t* pattern, Ast&, const char* msg) {
+-        fprintf(stderr, "%s (on regexp %s)", msg, pattern);
+-        exit(1);
++    static void yyerror(const uint8_t*, Ast&, const char*) {
++        // Never exit()/abort() — in a wasm build that traps the whole module. Failure is signaled
++        // via yyparse()'s return code (see parse()), so bad/unsupported syntax fails gracefully.
+     }
+ 
+     static int yylex(YYSTYPE* yylval, const uint8_t*& pattern, Ast& ast) {
+@@ -98,8 +98,8 @@ namespace re2c {
+ 
+ const AstNode* parse(const char* pattern, Ast& ast) {
+     const uint8_t *p = reinterpret_cast<const uint8_t*>(pattern);
+-    yyparse(p, ast);
+-    return regexp;
++    regexp = nullptr;
++    return yyparse(p, ast) == 0 ? regexp : nullptr;
+ }
+ 
+ } // namespace re2c
+diff --git a/lib/regcomp.cc b/lib/regcomp.cc
+index 74e8de689..ea9506aed 100644
+--- a/lib/regcomp.cc
++++ b/lib/regcomp.cc
+@@ -63,6 +63,7 @@ int regcomp(regex_t* preg, const char* pattern, int cflags) {
+ 
+     Ast ast(ast_alc, out_alc);
+     const AstNode* a = parse(pattern, ast);
++    if (a == nullptr) return 1;   // parse failed (invalid or unsupported syntax) — report, don't trap
+ 
+     std::vector<AstRule> arv{AstRule{a, ast.sem_act(NOWHERE, nullptr, nullptr, false)}};
+     RESpec re(opt, msg);

@@ -4537,7 +4537,7 @@
 {"engine":"re2c-leftmost","case":"A1","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2]]}}
 {"engine":"re2c-leftmost","case":"A3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2c-leftmost","case":"B1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"re2c-leftmost","case":"B2","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"B2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-leftmost","case":"C1","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"re2c-leftmost","case":"C3","result":{"ok":true,"matched":true,"groups":[[0,3],[1,3]]}}
 {"engine":"re2c-leftmost","case":"D1","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[2,2]]}}
@@ -4556,13 +4556,13 @@
 {"engine":"re2c-leftmost","case":"K1","result":{"ok":true,"matched":true,"groups":[[0,4],[0,4]]}}
 {"engine":"re2c-leftmost","case":"L1","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],null,[1,2]]}}
 {"engine":"re2c-leftmost","case":"L2","result":{"ok":true,"matched":true,"groups":[[0,4],[0,2],[1,2]]}}
-{"engine":"re2c-leftmost","case":"L3","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"L4","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"L5","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"L6","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"L3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-leftmost","case":"L4","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-leftmost","case":"L5","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-leftmost","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-leftmost","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-leftmost","case":"L8","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"L9","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-leftmost","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-leftmost","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"re2c-leftmost","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4576,31 +4576,31 @@
 {"engine":"re2c-leftmost","case":"LF10","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"LF11","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"LF12","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-leftmost","case":"LF13","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"LF14","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"LF15","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"LF13","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-leftmost","case":"LF14","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-leftmost","case":"LF15","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-leftmost","case":"LF16","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"LF17","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-leftmost","case":"LF18","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"LF18","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-leftmost","case":"LF19","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2c-leftmost","case":"LF20","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,2]]}}
 {"engine":"re2c-leftmost","case":"LF21","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],null,[1,2]]}}
-{"engine":"re2c-leftmost","case":"LF22","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"LF23","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"LF22","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-leftmost","case":"LF23","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-leftmost","case":"LF24","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-leftmost","case":"LF25","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"LF26","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-leftmost","case":"LF27","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-leftmost","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-leftmost","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-leftmost","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"re2c-leftmost","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2c-leftmost","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-leftmost","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2c-leftmost","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-leftmost","case":"io-esc","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-leftmost","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-nfa","case":"A1","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2]]}}
 {"engine":"re2c-nfa","case":"A3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2c-nfa","case":"B1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"re2c-nfa","case":"B2","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"B2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-nfa","case":"C1","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"re2c-nfa","case":"C3","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"re2c-nfa","case":"D1","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[2,2]]}}
@@ -4619,13 +4619,13 @@
 {"engine":"re2c-nfa","case":"K1","result":{"ok":true,"matched":true,"groups":[[0,4],[0,4]]}}
 {"engine":"re2c-nfa","case":"L1","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],null,[1,2]]}}
 {"engine":"re2c-nfa","case":"L2","result":{"ok":true,"matched":true,"groups":[[0,4],[0,2],[1,2]]}}
-{"engine":"re2c-nfa","case":"L3","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"L4","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"L5","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"L6","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"L3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-nfa","case":"L4","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-nfa","case":"L5","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-nfa","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-nfa","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-nfa","case":"L8","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"L9","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-nfa","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-nfa","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"re2c-nfa","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4639,31 +4639,31 @@
 {"engine":"re2c-nfa","case":"LF10","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"LF11","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"LF12","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-nfa","case":"LF13","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"LF14","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"LF15","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"LF13","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-nfa","case":"LF14","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-nfa","case":"LF15","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-nfa","case":"LF16","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"LF17","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-nfa","case":"LF18","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"LF18","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-nfa","case":"LF19","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2c-nfa","case":"LF20","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,2]]}}
 {"engine":"re2c-nfa","case":"LF21","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],null,[1,2]]}}
-{"engine":"re2c-nfa","case":"LF22","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"LF23","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"LF22","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-nfa","case":"LF23","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-nfa","case":"LF24","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-nfa","case":"LF25","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"LF26","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-nfa","case":"LF27","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-nfa","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-nfa","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-nfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"re2c-nfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2c-nfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-nfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2c-nfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-nfa","case":"io-esc","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-nfa","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-tdfa","case":"A1","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2]]}}
 {"engine":"re2c-tdfa","case":"A3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2c-tdfa","case":"B1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
-{"engine":"re2c-tdfa","case":"B2","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"B2","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-tdfa","case":"C1","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"re2c-tdfa","case":"C3","result":{"ok":true,"matched":true,"groups":[[0,3],[2,3]]}}
 {"engine":"re2c-tdfa","case":"D1","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[2,2]]}}
@@ -4682,13 +4682,13 @@
 {"engine":"re2c-tdfa","case":"K1","result":{"ok":true,"matched":true,"groups":[[0,4],[0,4]]}}
 {"engine":"re2c-tdfa","case":"L1","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],null,[1,2]]}}
 {"engine":"re2c-tdfa","case":"L2","result":{"ok":true,"matched":true,"groups":[[0,4],[0,2],[1,2]]}}
-{"engine":"re2c-tdfa","case":"L3","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"L4","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"L5","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"L6","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"L3","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-tdfa","case":"L4","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-tdfa","case":"L5","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-tdfa","case":"L6","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-tdfa","case":"L7","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-tdfa","case":"L8","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"L9","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"L8","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-tdfa","case":"L9","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-tdfa","case":"L10","result":{"ok":true,"matched":true,"groups":[[0,1],[1,1]]}}
 {"engine":"re2c-tdfa","case":"LF1","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"LF2","result":{"ok":true,"matched":false,"groups":[]}}
@@ -4702,27 +4702,27 @@
 {"engine":"re2c-tdfa","case":"LF10","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"LF11","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"LF12","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-tdfa","case":"LF13","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"LF14","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"LF15","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"LF13","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-tdfa","case":"LF14","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-tdfa","case":"LF15","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-tdfa","case":"LF16","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"LF17","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-tdfa","case":"LF18","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"LF18","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-tdfa","case":"LF19","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2c-tdfa","case":"LF20","result":{"ok":true,"matched":true,"groups":[[0,2],[0,2],[0,2]]}}
 {"engine":"re2c-tdfa","case":"LF21","result":{"ok":true,"matched":true,"groups":[[0,2],[1,2],null,[1,2]]}}
-{"engine":"re2c-tdfa","case":"LF22","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"LF23","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"LF22","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-tdfa","case":"LF23","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-tdfa","case":"LF24","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-tdfa","case":"LF25","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"LF26","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
-{"engine":"re2c-tdfa","case":"LF27","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"LF25","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-tdfa","case":"LF26","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
+{"engine":"re2c-tdfa","case":"LF27","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2c-tdfa","case":"U1","result":{"ok":true,"matched":true,"groups":[[0,2]]}}
 {"engine":"re2c-tdfa","case":"U2","result":{"ok":true,"matched":true,"groups":[[3,4]]}}
 {"engine":"re2c-tdfa","case":"LT/^K (#x0B)","result":{"ok":true,"matched":false,"groups":[]}}
 {"engine":"re2c-tdfa","case":"io-pos","result":{"ok":true,"matched":true,"groups":[[0,3]]}}
 {"engine":"re2c-tdfa","case":"io-neg","result":{"ok":true,"matched":false,"groups":[]}}
-{"engine":"re2c-tdfa","case":"io-esc","result":{"ok":false,"matched":false,"error":"engine crashed","groups":[]}}
+{"engine":"re2c-tdfa","case":"io-esc","result":{"ok":false,"matched":false,"groups":[],"error":"invalid pattern: compile error"}}
 {"engine":"re2js","case":"A1","result":{"ok":true,"matched":true,"groups":[[0,1],[0,1]]}}
 {"engine":"re2js","case":"A3","result":{"ok":true,"matched":true,"groups":[[0,1]]}}
 {"engine":"re2js","case":"B1","result":{"ok":true,"matched":true,"groups":[[0,5]]}}
